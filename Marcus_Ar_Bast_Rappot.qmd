@@ -1,0 +1,20 @@
+---
+title: "Marcus_Ar_Bast_Rappot"
+format: html
+---
+
+```{r}
+source("Marcus_Ar_Bast_Script1.R")
+df <- load_data()
+print_unique_chars_only(df)
+df_clean <- clean_data(df)
+print_unique_chars_only(df_clean)
+```
+Example of an comment. 
+Here is the place i will write my comments and the report of 
+- syfte
+- metod
+- resultat
+- regressionsanalys
+- slutsatser
+- begränsningar
