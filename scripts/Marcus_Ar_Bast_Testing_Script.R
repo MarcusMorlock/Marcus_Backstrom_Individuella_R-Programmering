@@ -1,5 +1,5 @@
 library(tidyverse)
-df <- read_csv("insurance_costs.csv")
+df <- read_csv("data/insurance_costs.csv")
 
 glimpse(df)
 df_clean <- df %>% 

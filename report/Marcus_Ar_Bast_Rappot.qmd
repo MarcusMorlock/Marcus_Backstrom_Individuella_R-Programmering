@@ -2,10 +2,16 @@
 title: "Marcus_Ar_Bast_Rappot"
 format: html
 ---
+source("../scripts/")
+```{r}
+source("../scripts/01_load_data.R")
+df_raw <- load_data("../data/insurance_costs.csv")
+```
+
 
 ```{r}
-source("Marcus_Ar_Bast_Script1.R")
-df <- load_data()
+source("../scripts/Marcus_Ar_Bast_Script1.R")
+df <- load_data("../data/insurance_costs.csv")
 print_unique_chars_only(df)
 df_clean <- clean_data(df)
 print_unique_chars_only(df_clean)

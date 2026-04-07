@@ -1,4 +1,4 @@
-load_data <- function(csv_path = "insurance_costs.csv"){
+load_data <- function(csv_path = ""){
   library(tidyverse)
   df <- read_csv(csv_path)
   glimpse(df)
