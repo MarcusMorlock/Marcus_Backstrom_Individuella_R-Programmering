@@ -16,7 +16,10 @@ clean_data <- function(df) {
       smoker = str_to_lower(smoker),
       chronic_condition = str_to_lower(chronic_condition),
       exercise_level = str_to_lower(exercise_level),
-      plan_type = str_to_lower(plan_type)
+      plan_type = str_to_lower(plan_type),
+      prior_accidents = as.integer(prior_accidents, na.rm = TRUE),
+      prior_claims = as.integer(prior_claims, na.rm = TRUE),
+      annual_checkups = as.integer(annual_checkups, na.rm = TRUE)
     )
  glimpse(df_clean)
 }
