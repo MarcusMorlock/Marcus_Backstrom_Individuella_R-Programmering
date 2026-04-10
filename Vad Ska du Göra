@@ -12,6 +12,7 @@ hantera relevanta saknade värden på ett rimligt sätt
 städa kategoriska variabler om det behövs
 kontrollera att variabler har rimliga datatyper
 överväg och motivera om nya variabler behövs samt skapa dessa om det är relevant för din analys
+
 Exempel på nya variabler kan vara:
 BMI-kategori
 risknivå

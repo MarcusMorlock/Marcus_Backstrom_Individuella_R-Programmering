@@ -23,3 +23,19 @@ print_unique_chars_only_v2 <- function(df, skip_col = "") {
     print(unique(df[[col]]))
   }
 }
+
+look_at_data <- function(df, skip_col = "", glimpse = TRUE, summary = TRUE, colSums = TRUE, unique = TRUE) {
+  if (glimpse) {
+    glimpse(df)
+  }
+  if (summary) {
+    print(summary(df))
+  }
+  if (colSums) {
+    print(colSums(is.na(df)))
+  }
+  if (unique) {
+    print_unique_chars_only_v2(df = df, skip_col = "customer_id")
+  }
+  
+}

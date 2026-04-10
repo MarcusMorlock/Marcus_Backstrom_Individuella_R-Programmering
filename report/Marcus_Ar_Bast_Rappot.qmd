@@ -11,17 +11,29 @@ source("../scripts/load_data.R")
 source("../scripts/utility.R")
 
 df_raw <- load_data("../data/insurance_costs.csv")
-print_unique_chars_only(df = df_raw, skip_col = "customer_id")
-print_unique_chars_only_v2(df = df_raw, skip_col = "customer_id")
+look_at_data(df_raw,skip_col = "customer_id")
+
 ```
 # 1) Dataförståelse
 
+The Dataset consists of 1100 rows and 14 columns.
 
+There are only char and dbl data types and  customer_id has data type char thanks to "C100000" having
+a C in front.
 
+Missing Values:
 
+- bmi: 28 missing values.
+- exercise_level: 22 missing values.
+- annual_checkups: 20 missing values.
 
+Inconsistencies in the date:
 
+inconsistent capitalization:
 
+- region: "north" and "North", "south" and "Shouth"
+- smoker: "yes" and "Yes"
+- plan_type: "standard" and "Standard", "premium" and "Premium"
 
 
 ```{r}
@@ -31,6 +43,19 @@ print_unique_chars_only(df)
 df_clean <- clean_data(df)
 print_unique_chars_only(df_clean)
 ```
+
+```{r}
+source("../scripts/clean_data.R")
+df_clean <- clean_data(df_raw)
+print_unique_chars_only_v2(df_clean)
+look_at_data(df_clean)
+print(unique(df_clean$prior_claims))
+```
+
+
+
+
+
 Example of an comment. 
 Here is the place i will write my comments and the report of 
 - syfte
