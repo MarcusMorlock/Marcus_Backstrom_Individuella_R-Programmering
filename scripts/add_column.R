@@ -22,6 +22,7 @@ health_risk_level <- function(df) {
         smoker == TRUE | 
           chronic_condition == TRUE |
           bmi_category == "severely obese"|
+          bmi_category == "under weight" |
           (bmi_category == "obese" & exercise_level == "low")  ~ "high risk",
         
         #Medium Risk
