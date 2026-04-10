@@ -2,19 +2,17 @@
 title: "Marcus_Ar_Bast_Rappot"
 format: html
 ---
-
+# 1) Dataförståelse
 source("../scripts/")
 ```{r}
 
 source("../scripts/load_data.R")
-
 source("../scripts/utility.R")
 
 df_raw <- load_data("../data/insurance_costs.csv")
 look_at_data(df_raw,skip_col = "customer_id")
 
 ```
-# 1) Dataförståelse
 
 The Dataset consists of 1100 rows and 14 columns.
 
@@ -35,11 +33,26 @@ inconsistent capitalization:
 - smoker: "yes" and "Yes"
 - plan_type: "standard" and "Standard", "premium" and "Premium"
 
+#2) Datastädning och förberedelse
+
 ```{r}
 source("../scripts/clean_data.R")
 df_clean <- clean_data(df_raw)
 look_at_data(df_clean)
 print(unique(df_clean$prior_claims))
+```
+Made a new column age_group to put costumers into age groups and to use it together with sex and exercise_level to fill in the bmi by taking the median of their age_group and exercise_level and sex and filling the NA of bmi. filled the NA of both annual_checkups and exercise_level by their median as they are prone to screwed data median fits better then mean.
+
+Turned the relative char column variables into factor variables and change dbl variables into int variables. 
+
+Removed the C from customer_id.
+
+
+```{r}
+source("../scripts/add_column.R")
+df_add_column <- bmi_category(df_clean)
+df_add_column <- health_risk_level(df_add_column)
+look_at_data(df_add_column)
 ```
 
 
