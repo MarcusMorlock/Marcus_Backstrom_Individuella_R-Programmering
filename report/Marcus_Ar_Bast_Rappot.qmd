@@ -41,11 +41,42 @@ df_clean <- clean_data(df_raw)
 look_at_data(df_clean)
 print(unique(df_clean$prior_claims))
 ```
-Made a new column age_group to put costumers into age groups and to use it together with sex and exercise_level to fill in the bmi by taking the median of their age_group and exercise_level and sex and filling the NA of bmi. filled the NA of both annual_checkups and exercise_level by their median as they are prone to screwed data median fits better then mean.
-
-Turned the relative char column variables into factor variables and change dbl variables into int variables. 
 
 Removed the C from customer_id.
+
+Made new Column:
+
+- age_group age < 30 =  "under 30", age < 45 = "30-44", age < 60 = "45-59", the rest = "60 and above"
+
+Filled missing inside Columns:
+
+- exercise_level by taking the median as something like exercise can easily be screwed both high and low.
+- annual_checkups by taking the median for the same reason as exercise_level.
+- bmi by grouping the bmi by sex, age_group,exercise_level and taking the median value.
+
+Change datatypes:
+
+From char to factor:
+
+- sex
+- region
+- exercise_level
+- plan_type
+
+From dbl to int:
+
+- age
+- children
+- prior_accidents      
+- prior_claims   
+- annual_checkups           
+
+From char to logic:
+
+- smoker
+- chronic_condition    
+
+
 
 
 ```{r}
