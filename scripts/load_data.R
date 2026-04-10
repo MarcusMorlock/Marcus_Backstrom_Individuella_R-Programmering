@@ -6,4 +6,6 @@ load_data <- function(csv_path = ""){
   glimpse(df)
   
   print(colSums(is.na(df)))
+
+  return(df)
 }

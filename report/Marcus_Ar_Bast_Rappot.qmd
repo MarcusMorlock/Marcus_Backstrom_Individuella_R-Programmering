@@ -2,11 +2,26 @@
 title: "Marcus_Ar_Bast_Rappot"
 format: html
 ---
+
 source("../scripts/")
 ```{r}
-source("../scripts/01_load_data.R")
+
+source("../scripts/load_data.R")
+
+source("../scripts/utility.R")
+
 df_raw <- load_data("../data/insurance_costs.csv")
+print_unique_chars_only(df = df_raw, skip_col = "customer_id")
+print_unique_chars_only_v2(df = df_raw, skip_col = "customer_id")
 ```
+# 1) Dataförståelse
+
+
+
+
+
+
+
 
 
 ```{r}
@@ -24,3 +39,21 @@ Here is the place i will write my comments and the report of
 - regressionsanalys
 - slutsatser
 - begränsningar
+
+
+
+
+
+
+
+```{r}
+
+ggplot(df_clean)
+
+```
+
+
+
+
+
+
