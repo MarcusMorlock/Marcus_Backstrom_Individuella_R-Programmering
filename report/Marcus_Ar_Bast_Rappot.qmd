@@ -39,7 +39,7 @@ inconsistent capitalization:
 source("../scripts/clean_data.R")
 df_clean <- clean_data(df_raw)
 look_at_data(df_clean)
-print(unique(df_clean$prior_claims))
+#print(unique(df_clean$prior_claims))
 ```
 #2.1) Datastädning och förberedelse Clean up
 Removed the C from customer_id.
