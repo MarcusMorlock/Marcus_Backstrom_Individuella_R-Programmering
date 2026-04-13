@@ -1,19 +1,12 @@
-library(tidyverse)
-df <- read_csv("data/insurance_costs.csv")
+source("scripts/load_data.R")
+df_raw <- load_data("data/insurance_costs.csv")
 
-glimpse(df)
-df_clean <- df %>% 
-  mutate(
-    customer_id = str_replace(customer_id, "C", ""),
-    customer_id = as.integer(customer_id),
-    age = as.integer(age),
-    children = as.integer(children)
-  )
+source("scripts/utility.R")
 
-glimpse(df_clean)
+source("scripts/clean_data.R")
+df_clean <- clean_data(df_raw)
 
-for (col in names(df_clean)) {
-  if (is.character(df_clean[[col]])) {
-    print(unique(df_clean[[col]]))
-  }
-}
+look_at_data(df = df_clean)
+
+source("scripts/add_column.R")
+
