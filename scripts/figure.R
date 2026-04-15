@@ -13,7 +13,7 @@ library(tidyverse)
 #   
 # }
 
-col_age_group_by_charge <- function(df, save = FALSE) {
+col_age_group_by_charge <- function(df) {
   col_ageGroup_by_charge <- ggplot(df, aes(x = age_group, y = charges)) +
     geom_col() +
     scale_y_continuous(labels = comma) +
@@ -22,12 +22,22 @@ col_age_group_by_charge <- function(df, save = FALSE) {
       x = "Age Groups",
       y = "Charged"
     )
-  if (save) {
-    ggsave("col_age_group_by_charge.png")
-  }
-  
     return(col_ageGroup_by_charge)
 
 }
 
+smoker_boxplot <- function(df) {
+  df %>% 
+    mutate(
+      smoker = if_else(smoker == TRUE, "Smoker", "None Smoker")
+    ) %>% 
+    ggplot( aes(x = smoker , y = charges)) +
+    geom_boxplot() +
+    labs(
+      title = "Smokers Charged",
+      x = "Smoker",
+      y = "Amount Charged"
+    )
+    
+}
 
