@@ -117,6 +117,9 @@ people who are older and dont exercise tend to also have poorer health and harde
 
 Everyone not in high or medium risk are added here.
 
+```{r}
+df_fixed <- load_data("../data/insurance_costs_cleaned_columns_added.csv")
+```
 
 
 # 3) Beskrivande analys
@@ -148,24 +151,54 @@ this shows that majority of the income comes from people around the age of 30-59
 source("../scripts/tables.R")
 health_risk_level_charges_summarize(df_add_column)
 ```
-There´s a clear trend where low risk pay less while high risk pay more.
+There´s a clear trend where low risk pay less while medium risk pay more and high risk pays the highest.
 
-- low risk average charges around 7050
-- medium risk average charges around 8150
-- high risk average charges around 12930
+Charged Average:
+- low risk average charges:  around 7050
+- medium risk average charges:  around 8150
+- high risk average charges:  around 12930
 
+High risk group has a high range from min charges (1767) and max charges (32559), both the mean (average) and median charges of the high risk groups are the highest. This indicate that the health_risk_level variable successfully captures important cost differences on average. however the low minimum value of high risk group suggest that some costumers may be classified wrong or should be charged more.
 
-
-
-## Figure/Tabell 3
+## Smoker Charged
 ```{r}
-
+knitr::include_graphics("../save/images/smoker_charged_boxplot.png")
 ```
+This figure shows that on average smokers are charged more then none smokers but there are several cases of none smokers paying as high as smokers. Meaning that smoker pays more but there are other factors that makes people who dont smoke still get charged a high amount.
+
+
+
 
 ## Figure/Tabell 4
 ```{r}
 
+charged_prior_checkup_table(df_add_column)
+
 ```
+This table shows the average(mean) charges, prior_claims, prior_accident, annual_checkups for each plan_type.
+
+plan Types:
+- Basic
+- Standard
+- Premiums
+
+Charged:
+The average charge of each plan type is no all that large, while the min charge and max charge per plan type varied widely. an outlier is that the highest charge is an standard plan type and not premium.
+
+Prior:
+On average around 0.27 of costumers have prior claims and 0.24 have prior accidents, that means for every 4 costumer 1 will have made a claim. 
+
+Annual Check up:
+Every plan type has slightly above 2 in their average annual check up. meaning on average everyone get at least one probably two checkups per year.
+
+
+# 4) Regressionsanalys
+
+```{r}
+
+```
+
+
 
 Example of an comment. 
 Here is the place i will write my comments and the report of 

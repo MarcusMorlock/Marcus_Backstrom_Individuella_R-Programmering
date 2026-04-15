@@ -1,5 +1,5 @@
-setwd("path/to/Marcus_Individuella_R-Programmering")
 
+df_fixed <- load_data("data/insurance_costs_cleaned_columns_added.csv")
 source("scripts/load_data.R")
 df_raw <- load_data("data/insurance_costs.csv")
 
@@ -47,14 +47,46 @@ source("scripts/tables.R")
   
 health_risk_level_charges_summarize(df_add_column)  
   
+
+  
+look_at_data(df_add_column)
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
+df_add_column %>% 
+  mutate(
+    smoker = if_else(smoker == TRUE, "Smoker", "None Smoker")
+  ) %>% 
+ggplot( aes(x = smoker , y = charges)) +
+  geom_boxplot() +
+  labs(
+    title = "Smokers Charged",
+    x = "Smoker",
+    y = "Amount Charged"
+  )
+
+
+ggplot(df_add_column, aes(x = exercise_level , y = charges)) +
+  geom_boxplot() 
+
+
+
+smoker_boxplot(df_add_column)
+
+
+df_add_column %>% 
+  group_by(plan_type) %>% 
+  summarise(
+
+    avg_charges = mean(charges, na.rm = TRUE),
+    median_charges = median(charges, na.rm = TRUE),
+    avg_prior_claims = mean(prior_claims, na.rm = TRUE),
+    avg_prior_accidents = mean(prior_accidents, na.rm = TRUE),
+    avg_annual_checkups = mean(annual_checkups, na.rm = TRUE),
+    n = n()
+    
+  )
+
+df_add_column %>% 
+  select(plan_type, charges)
+
+charged_prior_checkup_table(df_add_column)
