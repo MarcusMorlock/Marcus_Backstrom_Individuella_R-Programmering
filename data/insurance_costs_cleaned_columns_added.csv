@@ -1,0 +1,1101 @@
+customer_id,age,sex,region,bmi,children,smoker,chronic_condition,exercise_level,plan_type,prior_accidents,prior_claims,annual_checkups,charges,age_group,bmi_category,health_risk_level
+100000,48,female,east,24.8,0,FALSE,FALSE,high,basic,0,0,1,6439.1,45-59,normal weight,low risk
+100001,40,male,west,29.5,1,FALSE,FALSE,medium,basic,0,1,4,8274.06,30-44,over weight,low risk
+100002,50,female,south,18.3,2,FALSE,FALSE,high,standard,0,0,3,5190.99,45-59,under weight,high risk
+100003,62,male,north,25.5,5,TRUE,FALSE,medium,basic,0,0,2,14500.35,60 and above,over weight,high risk
+100004,39,female,east,27.3,2,FALSE,FALSE,medium,basic,0,1,0,6534.4,30-44,over weight,low risk
+100005,39,female,west,23.3,4,FALSE,FALSE,high,standard,0,0,2,8026.39,30-44,normal weight,low risk
+100006,63,female,east,23.9,3,FALSE,FALSE,high,basic,0,0,1,8770.46,60 and above,normal weight,low risk
+100007,52,male,north,24.8,2,FALSE,FALSE,medium,basic,0,0,2,6926.29,45-59,normal weight,low risk
+100008,36,female,east,28.6,0,FALSE,TRUE,low,basic,0,1,3,14105.25,30-44,over weight,high risk
+100009,49,male,west,26.9,2,TRUE,FALSE,medium,standard,1,0,2,11702.8,45-59,over weight,high risk
+100010,36,male,east,17.2,2,FALSE,FALSE,high,standard,0,0,3,6429.21,30-44,under weight,high risk
+100011,36,female,west,17.8,2,FALSE,TRUE,high,basic,1,1,3,12158.24,30-44,under weight,high risk
+100012,45,male,west,24.9,1,FALSE,FALSE,high,premium,0,0,4,8101.27,45-59,normal weight,low risk
+100013,18,female,east,28.8,1,FALSE,FALSE,low,standard,0,1,4,4971.48,under 30,over weight,medium risk
+100014,20,male,north,17,1,FALSE,FALSE,medium,basic,0,3,2,10151.02,under 30,under weight,high risk
+100015,35,female,south,25,1,TRUE,FALSE,medium,basic,0,0,1,14385.41,30-44,over weight,high risk
+100016,29,male,north,25.8,0,FALSE,FALSE,high,standard,0,0,2,5028.62,under 30,over weight,low risk
+100017,46,male,south,33.9,3,FALSE,FALSE,low,standard,0,0,1,9154.14,45-59,obese,high risk
+100018,30,male,south,25.4,0,FALSE,FALSE,high,basic,0,0,3,8088,30-44,over weight,low risk
+100019,24,male,north,28.7,0,FALSE,FALSE,medium,basic,0,1,2,6700.67,under 30,over weight,low risk
+100020,61,female,south,28.7,1,FALSE,FALSE,low,premium,0,1,1,10434.98,60 and above,over weight,medium risk
+100021,39,male,north,17.8,2,FALSE,FALSE,medium,basic,1,0,1,4687.54,30-44,under weight,high risk
+100022,43,male,west,31,1,FALSE,TRUE,medium,standard,1,0,2,13185.63,30-44,obese,high risk
+100023,23,male,west,27.9,0,FALSE,TRUE,medium,premium,1,0,4,13039.91,under 30,over weight,high risk
+100024,35,female,north,29.6,2,FALSE,FALSE,low,standard,0,0,2,7100.7,30-44,over weight,medium risk
+100025,43,male,west,44,1,TRUE,FALSE,low,standard,0,0,3,18363.38,30-44,severely obese,high risk
+100026,27,male,south,17.7,4,FALSE,FALSE,high,standard,0,0,2,9139.42,under 30,under weight,high risk
+100027,47,male,south,26.8,4,FALSE,TRUE,low,basic,1,0,3,11085.38,45-59,over weight,high risk
+100028,34,female,north,26,1,FALSE,FALSE,low,standard,1,0,2,11480.03,30-44,over weight,medium risk
+100029,38,male,south,28.7,1,TRUE,TRUE,medium,standard,0,0,3,9286.86,30-44,over weight,high risk
+100030,34,female,west,27.1,2,FALSE,FALSE,medium,standard,0,0,0,3573.72,30-44,over weight,low risk
+100031,66,male,east,26.3,0,FALSE,TRUE,medium,premium,0,0,2,12952.95,60 and above,over weight,high risk
+100032,42,female,north,24.9,1,FALSE,TRUE,medium,premium,0,0,2,8772.99,30-44,normal weight,high risk
+100033,28,male,north,28.6,1,TRUE,FALSE,medium,premium,3,1,1,19282.83,under 30,over weight,high risk
+100034,53,male,south,21,4,FALSE,FALSE,medium,standard,0,0,4,5846.21,45-59,normal weight,low risk
+100035,26,female,south,30.4,0,FALSE,FALSE,low,standard,0,0,1,8833.96,under 30,obese,high risk
+100036,45,male,north,25.7,2,FALSE,FALSE,low,standard,0,0,1,8905.44,45-59,over weight,medium risk
+100037,18,female,south,21.7,3,FALSE,FALSE,medium,standard,1,2,2,6915.34,under 30,normal weight,low risk
+100038,25,male,west,25,1,FALSE,FALSE,medium,premium,0,0,3,11753.13,under 30,over weight,low risk
+100039,45,male,west,33.2,0,TRUE,TRUE,medium,basic,0,0,2,19542.61,45-59,obese,high risk
+100040,52,male,south,25.4,5,FALSE,FALSE,medium,premium,0,0,3,8290.1,45-59,over weight,low risk
+100041,44,male,west,29.2,1,FALSE,FALSE,medium,standard,0,1,3,6165.67,30-44,over weight,low risk
+100042,40,male,south,24.2,2,FALSE,FALSE,low,premium,1,0,1,9774.17,30-44,normal weight,low risk
+100043,38,female,south,30.8,0,FALSE,TRUE,low,premium,0,1,2,13249.4,30-44,obese,high risk
+100044,23,female,north,30,1,FALSE,FALSE,medium,basic,0,0,2,2697.95,under 30,obese,medium risk
+100045,33,male,east,35.5,1,FALSE,FALSE,medium,basic,0,0,3,5799.75,30-44,severely obese,high risk
+100046,36,male,west,26.5,0,FALSE,FALSE,medium,basic,0,1,0,7023.81,30-44,over weight,low risk
+100047,56,male,east,30.9,0,FALSE,TRUE,low,standard,0,3,2,15454.77,45-59,obese,high risk
+100048,46,male,south,28.1,3,FALSE,TRUE,medium,standard,1,0,3,10551.98,45-59,over weight,high risk
+100049,19,female,east,32.6,0,TRUE,FALSE,medium,standard,0,0,2,16839.09,under 30,obese,high risk
+100050,46,male,north,24.4,0,FALSE,TRUE,low,premium,0,0,2,10022.95,45-59,normal weight,high risk
+100051,37,female,west,30.7,1,FALSE,FALSE,medium,standard,0,1,2,6266.42,30-44,obese,medium risk
+100052,33,male,south,26.4,3,FALSE,FALSE,high,basic,0,0,1,5356.82,30-44,over weight,low risk
+100053,50,female,south,27.5,0,FALSE,FALSE,medium,basic,0,0,2,8048.75,45-59,over weight,low risk
+100054,55,female,east,28.3,2,FALSE,FALSE,medium,basic,0,0,2,7330.91,45-59,over weight,low risk
+100055,54,female,east,29,0,FALSE,FALSE,low,standard,0,0,4,7894.72,45-59,over weight,medium risk
+100056,31,female,north,26.6,0,FALSE,FALSE,medium,standard,1,0,1,7007.84,30-44,over weight,low risk
+100057,38,male,east,28.7,0,FALSE,TRUE,low,basic,0,0,4,11615.93,30-44,over weight,high risk
+100058,46,female,south,34.7,3,FALSE,TRUE,high,standard,0,0,3,12533.88,45-59,obese,high risk
+100059,55,female,east,32.3,0,TRUE,FALSE,medium,basic,1,1,0,19104.17,45-59,obese,high risk
+100060,36,female,west,31.2,0,FALSE,TRUE,medium,standard,1,1,3,11488.84,30-44,obese,high risk
+100061,40,female,west,25.4,1,FALSE,FALSE,medium,standard,0,0,0,6054.03,30-44,over weight,low risk
+100062,28,female,east,23.1,3,FALSE,FALSE,medium,standard,0,0,4,4399.84,under 30,normal weight,low risk
+100063,26,female,south,31.3,0,TRUE,FALSE,low,standard,0,0,3,32559.28,under 30,obese,high risk
+100064,53,male,north,31.8,1,FALSE,FALSE,high,premium,0,0,1,7726.06,45-59,obese,medium risk
+100065,60,male,west,34.7,0,FALSE,FALSE,high,basic,0,0,1,7134.77,60 and above,obese,medium risk
+100066,41,male,south,24.8,1,FALSE,TRUE,medium,standard,1,0,2,10705.79,30-44,normal weight,high risk
+100067,55,female,south,26.9,2,FALSE,FALSE,high,standard,0,0,2,7719.49,45-59,over weight,low risk
+100068,47,female,south,20.3,2,TRUE,TRUE,medium,standard,0,0,2,18460.49,45-59,normal weight,high risk
+100069,34,male,north,25.5,1,FALSE,FALSE,medium,premium,0,0,1,7947.33,30-44,over weight,low risk
+100070,47,male,east,32.1,1,FALSE,TRUE,medium,standard,0,1,3,10437.85,45-59,obese,high risk
+100071,62,female,north,26,0,TRUE,FALSE,low,standard,0,0,1,16761.41,60 and above,over weight,high risk
+100072,42,female,east,30.4,1,FALSE,FALSE,low,basic,2,0,3,10000.4,30-44,obese,high risk
+100073,62,female,south,27.2,0,FALSE,FALSE,low,standard,1,1,3,10412.34,60 and above,over weight,medium risk
+100074,18,female,north,28.2,3,FALSE,FALSE,medium,basic,0,1,2,8893.8,under 30,over weight,low risk
+100075,53,female,south,22.7,5,FALSE,TRUE,medium,basic,0,1,4,9437.22,45-59,normal weight,high risk
+100076,43,male,north,27.9,5,FALSE,FALSE,medium,standard,0,1,1,4650.85,30-44,over weight,low risk
+100077,38,male,north,17,3,FALSE,FALSE,high,standard,0,0,0,4275.09,30-44,under weight,high risk
+100078,43,male,east,26.7,2,FALSE,FALSE,medium,basic,0,0,2,8896.3,30-44,over weight,low risk
+100079,18,male,north,19.4,2,FALSE,FALSE,medium,standard,0,0,2,3824.22,under 30,normal weight,low risk
+100080,39,male,west,32.8,0,FALSE,TRUE,low,standard,0,1,2,11359.27,30-44,obese,high risk
+100081,47,male,north,31.1,2,FALSE,FALSE,low,basic,1,1,4,9212.7,45-59,obese,high risk
+100082,61,male,south,30.2,1,FALSE,TRUE,medium,standard,0,1,4,16074.81,60 and above,obese,high risk
+100083,35,female,east,34.1,1,FALSE,FALSE,medium,standard,0,2,2,8608.88,30-44,obese,medium risk
+100084,31,female,south,22.9,3,FALSE,FALSE,high,standard,0,1,2,7379.66,30-44,normal weight,low risk
+100085,35,female,north,35.2,0,FALSE,FALSE,low,standard,0,0,0,7745.49,30-44,severely obese,high risk
+100086,54,male,south,32.1,1,FALSE,TRUE,medium,standard,1,1,1,14683.06,45-59,obese,high risk
+100087,46,male,south,26.6,4,FALSE,FALSE,low,standard,1,1,3,10773.57,45-59,over weight,medium risk
+100088,35,female,west,32.4,0,FALSE,FALSE,low,premium,0,0,2,9219.75,30-44,obese,high risk
+100089,49,male,south,22.7,1,FALSE,FALSE,low,standard,3,0,2,11180.7,45-59,normal weight,medium risk
+100090,43,female,west,23.8,4,FALSE,TRUE,low,basic,2,3,2,13590.17,30-44,normal weight,high risk
+100091,55,male,west,25.2,2,FALSE,TRUE,medium,standard,0,0,3,8820.24,45-59,over weight,high risk
+100092,33,female,south,24.8,2,FALSE,FALSE,low,premium,0,0,1,8261.01,30-44,normal weight,low risk
+100093,38,female,west,22.6,0,TRUE,FALSE,high,basic,1,0,2,10389.67,30-44,normal weight,high risk
+100094,37,female,south,32.9,1,FALSE,TRUE,low,premium,0,0,1,14399.52,30-44,obese,high risk
+100095,23,female,west,25.8,3,FALSE,FALSE,low,premium,0,0,0,7077.32,under 30,over weight,medium risk
+100096,46,female,north,29.2,2,FALSE,TRUE,low,basic,0,0,2,13247.07,45-59,over weight,high risk
+100097,45,female,east,25,1,TRUE,FALSE,medium,premium,0,0,1,13996.44,45-59,over weight,high risk
+100098,42,male,south,19.3,0,FALSE,FALSE,low,standard,0,0,3,7528.82,30-44,normal weight,low risk
+100099,39,male,south,28.6,0,FALSE,FALSE,high,premium,1,0,0,5988.27,30-44,over weight,low risk
+100100,24,female,east,18.4,5,FALSE,FALSE,high,standard,0,1,1,3086.11,under 30,under weight,high risk
+100101,37,male,east,27,1,TRUE,TRUE,low,standard,0,0,2,16934.54,30-44,over weight,high risk
+100102,38,male,north,21.2,2,FALSE,TRUE,medium,standard,0,1,2,12186.74,30-44,normal weight,high risk
+100103,32,female,north,36.1,0,FALSE,FALSE,low,standard,0,0,0,6885.25,30-44,severely obese,high risk
+100104,40,female,east,31.5,2,TRUE,FALSE,medium,basic,0,0,0,19596.39,30-44,obese,high risk
+100105,47,female,east,28.1,4,TRUE,FALSE,medium,standard,0,0,4,9656.61,45-59,over weight,high risk
+100106,67,female,west,33.9,2,TRUE,FALSE,low,basic,1,1,3,23932,60 and above,obese,high risk
+100107,44,male,west,23.8,0,FALSE,FALSE,low,standard,0,0,2,6960,30-44,normal weight,low risk
+100108,45,female,west,30,2,FALSE,FALSE,medium,standard,0,0,2,7961.43,45-59,obese,medium risk
+100109,41,male,east,28.4,3,FALSE,FALSE,medium,standard,0,0,1,4914.12,30-44,over weight,low risk
+100110,18,male,south,28,1,FALSE,FALSE,low,basic,0,1,2,7361.5,under 30,over weight,medium risk
+100111,42,female,north,33.2,3,FALSE,FALSE,medium,basic,1,0,2,7089.26,30-44,obese,medium risk
+100112,43,male,west,30.8,2,FALSE,FALSE,medium,basic,0,0,3,4187.76,30-44,obese,medium risk
+100113,74,female,east,29.8,4,FALSE,FALSE,high,basic,0,0,1,5945.59,60 and above,over weight,low risk
+100114,39,male,north,20,2,FALSE,FALSE,low,standard,0,0,3,4133.36,30-44,normal weight,low risk
+100115,46,female,south,23.3,0,FALSE,FALSE,high,premium,1,1,1,9877.34,45-59,normal weight,low risk
+100116,42,male,west,26.9,1,FALSE,FALSE,medium,basic,0,0,1,5715.09,30-44,over weight,low risk
+100117,27,male,south,27.5,0,FALSE,TRUE,low,premium,0,1,0,9110.39,under 30,over weight,high risk
+100118,57,female,south,22.9,4,FALSE,FALSE,medium,standard,0,0,1,8190.29,45-59,normal weight,low risk
+100119,52,male,south,38.7,3,FALSE,FALSE,medium,standard,0,0,4,5993.13,45-59,severely obese,high risk
+100120,52,male,north,34.6,2,FALSE,TRUE,high,standard,0,2,2,15249.89,45-59,obese,high risk
+100121,30,male,south,29.8,1,FALSE,FALSE,low,standard,0,0,0,16621.26,30-44,over weight,medium risk
+100122,60,male,south,28.4,0,FALSE,FALSE,medium,basic,0,1,4,5176.81,60 and above,over weight,low risk
+100123,24,male,north,26,3,FALSE,FALSE,medium,standard,0,0,3,7418.66,under 30,over weight,low risk
+100124,50,female,west,23.5,1,TRUE,TRUE,high,standard,0,2,3,18882.87,45-59,normal weight,high risk
+100125,70,female,south,28.7,0,FALSE,FALSE,medium,standard,1,0,4,8722.03,60 and above,over weight,low risk
+100126,29,male,west,28.3,2,FALSE,FALSE,high,premium,0,0,1,5376.6,under 30,over weight,low risk
+100127,35,female,north,21.7,0,TRUE,FALSE,high,basic,2,0,3,14712.61,30-44,normal weight,high risk
+100128,43,male,north,29,1,FALSE,FALSE,medium,standard,0,1,3,7243.55,30-44,over weight,low risk
+100129,35,male,east,26.6,1,TRUE,FALSE,medium,standard,0,1,3,8967.32,30-44,over weight,high risk
+100130,22,female,south,18.3,0,TRUE,FALSE,high,standard,0,0,3,14845.51,under 30,under weight,high risk
+100131,43,female,west,23.7,5,FALSE,FALSE,low,standard,0,0,2,7894.49,30-44,normal weight,low risk
+100132,28,male,north,25.2,0,TRUE,FALSE,medium,standard,0,0,3,12955.11,under 30,over weight,high risk
+100133,48,female,east,36.2,0,FALSE,FALSE,medium,premium,1,0,1,9732.15,45-59,severely obese,high risk
+100134,30,male,east,29.6,0,FALSE,FALSE,medium,standard,0,0,1,5790.16,30-44,over weight,low risk
+100135,62,female,south,22.1,3,FALSE,FALSE,low,premium,0,0,1,13153.82,60 and above,normal weight,low risk
+100136,32,male,north,29.4,1,FALSE,FALSE,low,standard,0,0,4,7457.1,30-44,over weight,medium risk
+100137,38,female,east,20.4,2,TRUE,FALSE,low,basic,0,0,1,13405.95,30-44,normal weight,high risk
+100138,53,male,east,32.7,0,FALSE,TRUE,medium,basic,0,0,2,8331.25,45-59,obese,high risk
+100139,26,female,south,24.9,0,FALSE,FALSE,low,basic,0,0,2,4593.84,under 30,normal weight,low risk
+100140,45,male,east,27.2,1,FALSE,TRUE,high,standard,0,0,4,9797.16,45-59,over weight,high risk
+100141,59,female,south,34,3,FALSE,TRUE,medium,standard,1,1,2,17771.99,45-59,obese,high risk
+100142,21,male,east,21.1,4,FALSE,FALSE,low,standard,1,0,3,5684.06,under 30,normal weight,low risk
+100143,44,male,north,21.3,0,FALSE,FALSE,medium,standard,0,0,3,8611.39,30-44,normal weight,low risk
+100144,45,female,west,25,1,TRUE,FALSE,medium,basic,0,0,2,12796.12,45-59,over weight,high risk
+100145,52,female,south,32.5,4,FALSE,TRUE,high,basic,0,1,2,13185.26,45-59,obese,high risk
+100146,26,female,south,20.2,1,TRUE,FALSE,low,basic,0,0,3,11766.44,under 30,normal weight,high risk
+100147,25,male,north,17,3,FALSE,FALSE,low,standard,0,0,4,2911.02,under 30,under weight,high risk
+100148,49,male,north,25.7,0,FALSE,FALSE,high,basic,0,1,3,10335.08,45-59,over weight,low risk
+100149,46,male,south,30.1,4,FALSE,FALSE,high,basic,0,0,1,5072.54,45-59,obese,medium risk
+100150,45,female,south,33,3,FALSE,FALSE,medium,premium,1,0,3,12280.81,45-59,obese,medium risk
+100151,47,female,west,25.6,4,FALSE,FALSE,high,standard,0,0,2,5301.27,45-59,over weight,low risk
+100152,33,male,north,25.4,2,TRUE,TRUE,low,basic,0,2,3,18983.19,30-44,over weight,high risk
+100153,45,female,south,32.8,1,FALSE,FALSE,medium,standard,0,0,3,5740.73,45-59,obese,medium risk
+100154,46,male,south,19.2,4,TRUE,TRUE,low,standard,0,1,1,20077.94,45-59,normal weight,high risk
+100155,33,female,north,25.5,0,FALSE,FALSE,low,standard,0,0,3,6097.38,30-44,over weight,medium risk
+100156,66,male,north,29.1,1,FALSE,FALSE,high,standard,0,0,3,6856.41,60 and above,over weight,low risk
+100157,48,female,south,29.7,2,FALSE,TRUE,low,basic,1,0,4,16900.42,45-59,over weight,high risk
+100158,27,female,south,24.8,3,TRUE,FALSE,medium,standard,0,0,1,12407.58,under 30,normal weight,high risk
+100159,51,male,south,27.9,4,FALSE,FALSE,high,standard,0,0,2,6871.35,45-59,over weight,low risk
+100160,29,male,east,17,0,TRUE,FALSE,low,basic,0,0,3,13666.12,under 30,under weight,high risk
+100161,52,male,east,24.8,3,TRUE,TRUE,high,standard,1,1,0,17574.29,45-59,normal weight,high risk
+100162,57,female,north,30,2,FALSE,TRUE,high,standard,0,0,1,13634.49,45-59,obese,high risk
+100163,31,female,south,22.7,0,FALSE,FALSE,medium,standard,0,0,4,6767.27,30-44,normal weight,low risk
+100164,55,male,west,28.2,1,FALSE,FALSE,low,basic,0,0,1,9855.16,45-59,over weight,medium risk
+100165,47,male,south,29.7,0,FALSE,FALSE,medium,standard,0,0,4,11722.11,45-59,over weight,low risk
+100166,53,female,east,26.3,1,FALSE,TRUE,medium,basic,0,0,1,8888,45-59,over weight,high risk
+100167,67,female,south,29,5,FALSE,FALSE,low,standard,0,0,2,13154.3,60 and above,over weight,medium risk
+100168,39,female,west,23.1,2,FALSE,FALSE,medium,basic,0,0,3,6904.89,30-44,normal weight,low risk
+100169,32,male,west,26.3,2,FALSE,FALSE,high,basic,0,1,3,6946.87,30-44,over weight,low risk
+100170,30,female,south,29.9,5,FALSE,FALSE,low,standard,1,1,2,10310.33,30-44,over weight,medium risk
+100171,31,female,west,27.9,1,FALSE,FALSE,medium,standard,0,1,2,9955.65,30-44,over weight,low risk
+100172,41,female,north,24.8,3,FALSE,FALSE,low,standard,0,0,3,6329.54,30-44,normal weight,low risk
+100173,46,female,north,28.6,1,FALSE,FALSE,medium,standard,0,0,1,8141.87,45-59,over weight,low risk
+100174,46,female,west,30.8,3,FALSE,TRUE,high,basic,0,0,2,12476.41,45-59,obese,high risk
+100175,53,male,west,18.6,0,FALSE,FALSE,medium,standard,0,0,1,5745.52,45-59,normal weight,low risk
+100176,42,female,north,32.7,4,FALSE,FALSE,low,standard,0,0,2,10062.75,30-44,obese,high risk
+100177,61,male,south,26.6,0,FALSE,FALSE,medium,basic,0,0,1,7109.1,60 and above,over weight,low risk
+100178,39,female,north,29.3,1,FALSE,FALSE,medium,premium,0,0,1,5409.37,30-44,over weight,low risk
+100179,75,male,south,33.9,3,FALSE,FALSE,medium,basic,0,0,2,6879.18,60 and above,obese,medium risk
+100180,50,male,west,21.6,1,FALSE,FALSE,medium,premium,0,0,0,8098.64,45-59,normal weight,low risk
+100181,31,male,south,24,2,TRUE,FALSE,low,premium,0,0,0,16373.91,30-44,normal weight,high risk
+100182,28,male,south,25.8,1,FALSE,FALSE,high,standard,0,0,3,1534.57,under 30,over weight,low risk
+100183,48,female,south,24.2,3,FALSE,TRUE,medium,premium,0,0,2,11876.9,45-59,normal weight,high risk
+100184,39,female,north,35.2,0,FALSE,TRUE,medium,standard,0,1,4,12742.44,30-44,severely obese,high risk
+100185,51,male,south,23.9,0,FALSE,FALSE,high,basic,0,0,3,3961.68,45-59,normal weight,low risk
+100186,48,male,east,25.2,0,FALSE,TRUE,medium,standard,0,0,0,8232.84,45-59,over weight,high risk
+100187,41,male,west,28.4,1,FALSE,FALSE,medium,basic,0,0,2,6698.97,30-44,over weight,low risk
+100188,31,male,west,21.8,0,FALSE,FALSE,low,standard,0,0,0,7561.71,30-44,normal weight,low risk
+100189,22,male,north,25.1,1,FALSE,FALSE,medium,standard,0,0,3,7764.7,under 30,over weight,low risk
+100190,36,female,west,27.3,1,FALSE,FALSE,medium,standard,0,0,4,5270.23,30-44,over weight,low risk
+100191,53,female,west,26.3,0,FALSE,FALSE,low,basic,0,0,2,7343.73,45-59,over weight,medium risk
+100192,45,male,west,27.2,2,TRUE,TRUE,medium,standard,0,0,3,20088.05,45-59,over weight,high risk
+100193,26,male,south,24.6,4,FALSE,FALSE,high,premium,0,0,1,5300.23,under 30,normal weight,low risk
+100194,44,female,south,20.7,0,FALSE,FALSE,medium,basic,0,0,2,7846.43,30-44,normal weight,low risk
+100195,47,male,south,29.1,2,FALSE,FALSE,medium,standard,0,0,3,11955.73,45-59,over weight,low risk
+100196,31,female,north,35.1,2,FALSE,FALSE,high,basic,0,0,1,7467.4,30-44,severely obese,high risk
+100197,44,male,north,27.6,1,FALSE,FALSE,low,standard,0,0,1,9168.36,30-44,over weight,medium risk
+100198,43,female,south,28.5,2,FALSE,TRUE,medium,basic,0,0,2,11952.1,30-44,over weight,high risk
+100199,27,female,south,24.9,1,FALSE,FALSE,high,standard,0,0,3,6559.46,under 30,normal weight,low risk
+100200,47,male,east,21.9,1,FALSE,TRUE,medium,standard,0,0,2,10479.88,45-59,normal weight,high risk
+100201,49,female,south,35.4,0,FALSE,FALSE,low,basic,1,0,4,9633.83,45-59,severely obese,high risk
+100202,56,male,north,28.8,2,FALSE,TRUE,low,premium,1,0,1,17676.13,45-59,over weight,high risk
+100203,56,male,west,35.3,2,FALSE,TRUE,high,basic,1,1,2,15464.74,45-59,severely obese,high risk
+100204,24,male,west,23.7,0,FALSE,FALSE,medium,standard,0,0,3,2149.82,under 30,normal weight,low risk
+100205,30,female,west,35.3,1,FALSE,TRUE,high,basic,0,0,2,9844.91,30-44,severely obese,high risk
+100206,49,female,west,31.2,5,FALSE,FALSE,medium,basic,0,0,2,4507.34,45-59,obese,medium risk
+100207,49,female,east,30.2,1,FALSE,TRUE,medium,standard,0,1,1,12733.66,45-59,obese,high risk
+100208,49,male,west,28.8,1,FALSE,TRUE,high,standard,0,0,1,9445.43,45-59,over weight,high risk
+100209,75,male,north,27.4,4,TRUE,FALSE,medium,basic,0,0,1,18543.01,60 and above,over weight,high risk
+100210,49,male,south,33.1,2,FALSE,FALSE,medium,standard,0,0,4,8675.38,45-59,obese,medium risk
+100211,57,male,north,28.6,2,FALSE,FALSE,medium,standard,0,1,2,11853.64,45-59,over weight,low risk
+100212,54,male,north,19,3,FALSE,FALSE,high,standard,1,1,3,7297.76,45-59,normal weight,low risk
+100213,50,male,north,22.7,3,TRUE,TRUE,medium,standard,0,0,2,17964.16,45-59,normal weight,high risk
+100214,38,female,east,26.5,1,FALSE,FALSE,medium,standard,0,0,2,4908.88,30-44,over weight,low risk
+100215,52,male,west,29.2,1,FALSE,TRUE,low,basic,0,0,2,12758.51,45-59,over weight,high risk
+100216,32,female,east,26.9,1,FALSE,FALSE,high,basic,0,0,4,2446.13,30-44,over weight,low risk
+100217,39,male,north,32.9,5,FALSE,FALSE,low,basic,0,0,3,7696.86,30-44,obese,high risk
+100218,36,male,west,18.5,2,FALSE,FALSE,medium,basic,0,0,3,2535.25,30-44,normal weight,low risk
+100219,43,male,east,28.2,0,FALSE,FALSE,medium,basic,0,1,0,7614.72,30-44,over weight,low risk
+100220,72,female,south,20.2,3,TRUE,FALSE,medium,standard,1,0,2,20240.99,60 and above,normal weight,high risk
+100221,18,female,east,30.2,1,TRUE,FALSE,medium,standard,2,0,2,18910.33,under 30,obese,high risk
+100222,51,female,south,27.3,0,FALSE,FALSE,low,premium,0,0,4,10277.21,45-59,over weight,medium risk
+100223,21,female,south,28.8,2,FALSE,FALSE,medium,basic,0,0,1,1203.51,under 30,over weight,low risk
+100224,36,female,west,23.4,1,TRUE,TRUE,medium,standard,1,1,2,17360.58,30-44,normal weight,high risk
+100225,56,male,south,33.7,3,FALSE,TRUE,medium,premium,0,0,2,16062.25,45-59,obese,high risk
+100226,43,male,south,32.2,0,FALSE,FALSE,low,standard,0,0,1,8114.17,30-44,obese,high risk
+100227,28,female,west,29.7,3,FALSE,FALSE,high,basic,0,0,1,8365.81,under 30,over weight,low risk
+100228,33,female,east,26.6,2,FALSE,FALSE,medium,basic,0,1,3,5704.43,30-44,over weight,low risk
+100229,51,female,north,30.4,0,FALSE,FALSE,high,basic,0,0,2,8498.22,45-59,obese,medium risk
+100230,33,male,north,24,5,FALSE,FALSE,medium,basic,0,0,3,5647.29,30-44,normal weight,low risk
+100231,45,male,north,31.4,1,FALSE,FALSE,medium,standard,1,1,3,9191.07,45-59,obese,medium risk
+100232,43,male,east,35,0,FALSE,FALSE,high,basic,0,0,1,5065,30-44,severely obese,high risk
+100233,34,female,south,32.1,1,FALSE,FALSE,high,basic,0,0,2,4761.6,30-44,obese,medium risk
+100234,70,male,north,25.1,3,FALSE,FALSE,medium,standard,0,0,1,10603.34,60 and above,over weight,low risk
+100235,50,male,west,26.8,1,TRUE,FALSE,low,standard,0,0,4,14627.72,45-59,over weight,high risk
+100236,18,female,south,21,0,FALSE,FALSE,medium,standard,1,0,2,7885.55,under 30,normal weight,low risk
+100237,44,male,south,27.799999999999997,0,FALSE,TRUE,medium,standard,0,1,2,10133.83,30-44,over weight,high risk
+100238,33,female,south,29.3,0,TRUE,FALSE,low,standard,0,0,1,12692.48,30-44,over weight,high risk
+100239,53,male,east,19.4,3,TRUE,FALSE,low,basic,0,1,2,15695.43,45-59,normal weight,high risk
+100240,32,female,north,22,1,FALSE,FALSE,high,standard,1,0,1,4190.22,30-44,normal weight,low risk
+100241,41,male,south,26.2,0,FALSE,FALSE,low,standard,0,0,2,6635.37,30-44,over weight,medium risk
+100242,49,male,west,26.4,0,FALSE,FALSE,medium,premium,0,0,3,5214.35,45-59,over weight,low risk
+100243,53,male,south,22.4,1,TRUE,TRUE,low,basic,0,0,3,17174.51,45-59,normal weight,high risk
+100244,26,male,east,28.8,4,TRUE,FALSE,medium,standard,0,2,1,14588.23,under 30,over weight,high risk
+100245,38,female,south,28.5,1,TRUE,FALSE,low,basic,0,0,2,14652.15,30-44,over weight,high risk
+100246,36,female,north,26.4,5,FALSE,FALSE,medium,standard,0,0,3,8616.18,30-44,over weight,low risk
+100247,34,female,north,23.9,1,FALSE,TRUE,high,basic,1,1,1,9553.28,30-44,normal weight,high risk
+100248,65,female,south,32.9,0,FALSE,FALSE,medium,standard,1,0,4,15155.61,60 and above,obese,medium risk
+100249,47,male,north,35.1,4,FALSE,FALSE,low,standard,0,0,1,10010.7,45-59,severely obese,high risk
+100250,26,female,north,24.8,1,FALSE,FALSE,medium,standard,0,0,3,2510.74,under 30,normal weight,low risk
+100251,54,male,west,25.1,2,FALSE,FALSE,medium,premium,0,0,2,7604.54,45-59,over weight,low risk
+100252,70,male,west,30.6,5,FALSE,FALSE,high,standard,1,0,2,9648.87,60 and above,obese,medium risk
+100253,55,male,west,26.3,0,FALSE,FALSE,high,basic,0,0,3,5024.83,45-59,over weight,low risk
+100254,22,female,west,26.3,0,FALSE,FALSE,medium,standard,0,0,1,4860.92,under 30,over weight,low risk
+100255,36,male,south,30.6,2,FALSE,FALSE,medium,premium,0,0,2,7991.73,30-44,obese,medium risk
+100256,58,male,west,19.4,0,FALSE,TRUE,high,premium,2,0,3,16198.81,45-59,normal weight,high risk
+100257,33,female,north,33.2,0,FALSE,FALSE,low,standard,0,0,3,4492.15,30-44,obese,high risk
+100258,48,male,west,28,0,FALSE,FALSE,medium,standard,0,0,1,9109.38,45-59,over weight,low risk
+100259,52,male,west,25.9,0,FALSE,FALSE,high,premium,0,0,3,5860.06,45-59,over weight,low risk
+100260,30,female,east,26.7,3,TRUE,FALSE,medium,standard,1,1,2,14185.27,30-44,over weight,high risk
+100261,41,female,west,27.3,0,FALSE,TRUE,medium,standard,0,0,1,14679.03,30-44,over weight,high risk
+100262,18,female,east,19,1,FALSE,TRUE,medium,basic,0,0,3,9198.68,under 30,normal weight,high risk
+100263,29,female,south,33.8,2,FALSE,FALSE,low,standard,0,1,0,8013,under 30,obese,high risk
+100264,39,female,south,27.3,1,FALSE,FALSE,medium,standard,0,1,2,9966.66,30-44,over weight,low risk
+100265,26,female,east,29,0,TRUE,FALSE,medium,standard,0,1,0,16409.47,under 30,over weight,high risk
+100266,63,female,north,32.4,3,FALSE,FALSE,low,premium,1,0,2,13691.01,60 and above,obese,high risk
+100267,23,female,east,22.3,0,TRUE,FALSE,medium,basic,0,0,2,12162.85,under 30,normal weight,high risk
+100268,36,male,west,26.3,3,FALSE,TRUE,high,standard,0,1,3,12219.29,30-44,over weight,high risk
+100269,44,male,north,26.4,4,TRUE,TRUE,low,premium,0,0,2,22472.72,30-44,over weight,high risk
+100270,61,male,west,31.9,1,FALSE,FALSE,medium,standard,1,0,2,10549.47,60 and above,obese,medium risk
+100271,23,female,west,17.4,1,TRUE,FALSE,medium,basic,0,0,1,15603.22,under 30,under weight,high risk
+100272,57,female,north,27.5,1,FALSE,FALSE,medium,basic,0,0,2,9442.8,45-59,over weight,low risk
+100273,42,female,west,24.8,1,FALSE,FALSE,low,standard,0,1,4,9637.02,30-44,normal weight,low risk
+100274,29,female,south,29.1,4,FALSE,FALSE,medium,standard,0,0,3,4695.13,under 30,over weight,low risk
+100275,48,female,west,26.1,4,TRUE,FALSE,high,standard,0,0,1,13799.95,45-59,over weight,high risk
+100276,45,male,east,24.4,1,FALSE,FALSE,medium,basic,0,0,0,3581.28,45-59,normal weight,low risk
+100277,34,female,north,24.1,2,FALSE,FALSE,medium,premium,0,1,4,2967.58,30-44,normal weight,low risk
+100278,43,male,south,27,4,TRUE,TRUE,high,standard,1,0,2,16905.36,30-44,over weight,high risk
+100279,37,male,east,23.3,5,FALSE,TRUE,low,basic,0,0,2,9916.06,30-44,normal weight,high risk
+100280,43,female,south,31.3,1,FALSE,FALSE,low,standard,0,0,3,8266.51,30-44,obese,high risk
+100281,51,female,east,26.1,1,FALSE,FALSE,high,standard,0,0,2,3681.23,45-59,over weight,low risk
+100282,63,male,east,17,0,FALSE,FALSE,high,basic,1,1,2,3122.16,60 and above,under weight,high risk
+100283,26,female,north,25.3,4,TRUE,FALSE,low,basic,0,0,4,16526.86,under 30,over weight,high risk
+100284,70,female,east,23.7,0,FALSE,FALSE,low,basic,0,0,2,7888.48,60 and above,normal weight,low risk
+100285,18,male,west,19.4,2,FALSE,TRUE,low,standard,0,1,1,12189.76,under 30,normal weight,high risk
+100286,40,female,south,21.9,0,TRUE,FALSE,high,standard,0,0,1,14760.55,30-44,normal weight,high risk
+100287,50,male,north,28.2,0,FALSE,FALSE,low,standard,0,0,1,8757.86,45-59,over weight,medium risk
+100288,46,male,north,33.6,1,FALSE,FALSE,medium,standard,0,0,3,7389.57,45-59,obese,medium risk
+100289,34,female,south,28.7,5,FALSE,FALSE,high,standard,0,0,1,5954.18,30-44,over weight,low risk
+100290,39,female,west,24.7,0,FALSE,FALSE,low,basic,1,1,0,9520.55,30-44,normal weight,low risk
+100291,36,female,north,29.4,2,FALSE,FALSE,medium,premium,0,1,4,8100.24,30-44,over weight,low risk
+100292,34,female,east,25.2,0,TRUE,FALSE,low,standard,0,0,2,12307.68,30-44,over weight,high risk
+100293,53,female,north,26.1,0,FALSE,FALSE,high,basic,1,0,0,2411.23,45-59,over weight,low risk
+100294,47,male,south,22.5,1,FALSE,FALSE,medium,basic,0,0,1,5290.68,45-59,normal weight,low risk
+100295,33,female,west,19.3,1,FALSE,FALSE,medium,basic,0,0,1,6525.37,30-44,normal weight,low risk
+100296,54,female,east,26.1,0,FALSE,TRUE,medium,basic,0,0,2,12485.15,45-59,over weight,high risk
+100297,46,male,north,28.3,1,TRUE,TRUE,low,standard,0,0,4,18061.38,45-59,over weight,high risk
+100298,53,male,south,27.4,0,TRUE,TRUE,low,standard,0,0,4,17147.88,45-59,over weight,high risk
+100299,50,male,north,25.9,1,FALSE,FALSE,medium,standard,0,1,2,8915.59,45-59,over weight,low risk
+100300,31,female,south,27.3,5,FALSE,FALSE,medium,standard,0,0,2,5625.42,30-44,over weight,low risk
+100301,35,male,east,30,4,FALSE,FALSE,high,standard,0,0,2,7584.16,30-44,obese,medium risk
+100302,52,male,north,21.9,1,FALSE,FALSE,high,standard,0,0,1,3006.98,45-59,normal weight,low risk
+100303,50,female,south,31.2,2,FALSE,FALSE,medium,basic,0,0,0,10630.89,45-59,obese,medium risk
+100304,42,female,south,23,4,FALSE,FALSE,medium,standard,0,0,4,10865.46,30-44,normal weight,low risk
+100305,44,male,west,24.2,0,FALSE,FALSE,medium,standard,0,0,1,8171.86,30-44,normal weight,low risk
+100306,59,female,west,21.4,3,FALSE,TRUE,high,basic,0,0,1,10001.61,45-59,normal weight,high risk
+100307,34,female,north,25,4,FALSE,TRUE,medium,basic,0,0,2,8523.42,30-44,over weight,high risk
+100308,49,female,west,32.1,0,FALSE,FALSE,low,premium,1,0,2,12509.82,45-59,obese,high risk
+100309,39,female,south,29.7,0,FALSE,FALSE,medium,standard,0,1,0,8650.92,30-44,over weight,low risk
+100310,39,male,south,31.8,5,FALSE,TRUE,medium,standard,0,0,1,14265.74,30-44,obese,high risk
+100311,56,male,east,30.3,1,FALSE,TRUE,medium,standard,0,1,2,12235.85,45-59,obese,high risk
+100312,53,male,west,22.9,0,TRUE,FALSE,medium,standard,2,1,3,16135.34,45-59,normal weight,high risk
+100313,53,female,west,26.3,0,FALSE,FALSE,low,basic,0,0,1,9818.7,45-59,over weight,medium risk
+100314,59,female,east,24.5,1,FALSE,FALSE,medium,basic,0,1,2,6347.82,45-59,normal weight,low risk
+100315,42,female,south,33.5,2,FALSE,FALSE,low,premium,0,0,2,11425.7,30-44,obese,high risk
+100316,51,female,west,22.4,2,TRUE,FALSE,low,standard,0,0,3,14118.97,45-59,normal weight,high risk
+100317,38,female,south,31.4,5,TRUE,FALSE,low,basic,1,1,1,16831.71,30-44,obese,high risk
+100318,46,male,east,31.6,0,FALSE,FALSE,low,standard,0,0,1,4915.96,45-59,obese,high risk
+100319,40,female,south,35.7,1,FALSE,FALSE,medium,standard,0,1,2,10505.67,30-44,severely obese,high risk
+100320,43,male,east,25.7,1,TRUE,FALSE,medium,basic,1,1,3,15296.63,30-44,over weight,high risk
+100321,50,female,south,30.9,1,FALSE,FALSE,medium,basic,1,1,1,11377.81,45-59,obese,medium risk
+100322,31,female,north,37.4,0,FALSE,TRUE,medium,basic,0,0,2,11099.55,30-44,severely obese,high risk
+100323,69,female,west,25.5,5,FALSE,FALSE,low,premium,2,1,0,6842.84,60 and above,over weight,medium risk
+100324,29,male,north,20.2,3,FALSE,FALSE,low,basic,0,0,0,6966.19,under 30,normal weight,low risk
+100325,26,male,south,18.6,1,FALSE,FALSE,high,standard,0,0,2,1623.2,under 30,normal weight,low risk
+100326,57,male,north,31.2,2,FALSE,FALSE,medium,premium,0,0,1,5443.72,45-59,obese,medium risk
+100327,52,female,north,19.3,0,FALSE,FALSE,medium,basic,0,1,3,2733.09,45-59,normal weight,low risk
+100328,50,female,north,26.1,2,TRUE,TRUE,low,premium,1,1,3,17994.48,45-59,over weight,high risk
+100329,50,male,north,29.7,2,FALSE,FALSE,medium,premium,0,0,2,10829.1,45-59,over weight,low risk
+100330,42,female,west,28.3,1,FALSE,FALSE,medium,premium,0,0,2,6676.03,30-44,over weight,low risk
+100331,30,male,south,29.1,5,FALSE,FALSE,medium,basic,0,0,2,3080.68,30-44,over weight,low risk
+100332,43,female,west,28.5,2,FALSE,FALSE,medium,standard,0,0,0,7935.05,30-44,over weight,low risk
+100333,33,female,east,33,1,FALSE,TRUE,low,premium,0,0,4,9754.95,30-44,obese,high risk
+100334,55,female,south,23.6,3,TRUE,FALSE,low,premium,0,1,4,18617.53,45-59,normal weight,high risk
+100335,40,female,east,24.4,0,FALSE,TRUE,high,basic,0,0,1,12565.04,30-44,normal weight,high risk
+100336,31,male,south,23.7,1,FALSE,FALSE,high,standard,0,2,1,6172.22,30-44,normal weight,low risk
+100337,38,female,east,31.1,1,TRUE,FALSE,low,basic,0,0,1,20528.56,30-44,obese,high risk
+100338,47,female,south,31.7,1,FALSE,TRUE,medium,basic,1,0,3,15060.08,45-59,obese,high risk
+100339,35,female,south,29.3,3,TRUE,FALSE,low,standard,1,0,2,16902.06,30-44,over weight,high risk
+100340,31,female,west,32.5,1,FALSE,TRUE,low,premium,0,0,4,16125.27,30-44,obese,high risk
+100341,45,male,west,22.3,3,TRUE,TRUE,low,standard,0,1,3,18426.35,45-59,normal weight,high risk
+100342,45,male,west,35.1,2,FALSE,FALSE,low,standard,0,0,2,4859.59,45-59,severely obese,high risk
+100343,35,male,south,34.1,1,FALSE,FALSE,medium,premium,1,0,2,6969.22,30-44,obese,medium risk
+100344,36,male,west,30.6,3,FALSE,FALSE,medium,standard,0,0,3,5855.76,30-44,obese,medium risk
+100345,45,female,south,35.6,0,FALSE,FALSE,low,standard,0,0,2,9697.14,45-59,severely obese,high risk
+100346,23,male,south,19.5,0,FALSE,FALSE,low,basic,0,0,2,3490.1,under 30,normal weight,low risk
+100347,24,female,north,24.6,1,FALSE,FALSE,high,standard,0,0,3,3371.35,under 30,normal weight,low risk
+100348,33,female,east,23.9,0,FALSE,TRUE,low,standard,0,0,2,7369.8,30-44,normal weight,high risk
+100349,39,male,north,30.7,0,FALSE,TRUE,medium,premium,0,1,3,11936.55,30-44,obese,high risk
+100350,46,female,south,22.9,2,FALSE,FALSE,medium,standard,0,0,2,8841.67,45-59,normal weight,low risk
+100351,61,male,west,31.5,1,FALSE,FALSE,medium,standard,0,0,3,12036.36,60 and above,obese,medium risk
+100352,53,female,north,34,1,TRUE,FALSE,low,basic,1,1,2,18821.51,45-59,obese,high risk
+100353,40,male,north,30.6,5,FALSE,FALSE,low,premium,0,0,2,9496.5,30-44,obese,high risk
+100354,42,male,north,28.8,2,FALSE,FALSE,low,standard,0,0,3,7739.68,30-44,over weight,medium risk
+100355,29,male,west,22.7,3,FALSE,TRUE,low,basic,0,0,2,8941.89,under 30,normal weight,high risk
+100356,42,male,south,23.7,0,FALSE,TRUE,medium,basic,0,1,2,11745.6,30-44,normal weight,high risk
+100357,38,male,south,33,2,FALSE,FALSE,medium,standard,0,0,0,6599.89,30-44,obese,medium risk
+100358,46,female,west,31.1,3,FALSE,FALSE,low,basic,1,0,2,11173.41,45-59,obese,high risk
+100359,31,male,west,27,2,FALSE,FALSE,low,basic,0,0,2,7583.81,30-44,over weight,medium risk
+100360,49,female,south,27.9,2,TRUE,TRUE,medium,standard,1,0,4,18219.33,45-59,over weight,high risk
+100361,62,male,east,19,1,FALSE,FALSE,medium,standard,1,0,2,5503.11,60 and above,normal weight,low risk
+100362,41,male,west,22.7,0,FALSE,FALSE,high,premium,0,0,2,6554.35,30-44,normal weight,low risk
+100363,47,male,east,36.3,1,FALSE,TRUE,medium,standard,0,0,1,13474.39,45-59,severely obese,high risk
+100364,51,female,north,22,1,FALSE,FALSE,medium,standard,0,0,0,10899.23,45-59,normal weight,low risk
+100365,37,female,west,28.2,3,FALSE,FALSE,medium,premium,0,1,3,12061.45,30-44,over weight,low risk
+100366,45,male,east,32.1,0,FALSE,FALSE,high,standard,1,0,1,6663.76,45-59,obese,medium risk
+100367,42,female,south,21.9,5,FALSE,TRUE,high,basic,0,1,3,11417.35,30-44,normal weight,high risk
+100368,43,female,south,28.4,4,FALSE,FALSE,medium,standard,0,0,3,5005.48,30-44,over weight,low risk
+100369,32,female,north,31.4,0,FALSE,FALSE,low,standard,0,0,2,8058.87,30-44,obese,high risk
+100370,42,male,north,27.6,1,FALSE,FALSE,medium,standard,0,0,3,9046.55,30-44,over weight,low risk
+100371,48,male,west,40.6,4,FALSE,FALSE,medium,standard,1,2,2,14774.97,45-59,severely obese,high risk
+100372,61,female,north,20.6,5,FALSE,TRUE,medium,premium,0,1,2,14676.14,60 and above,normal weight,high risk
+100373,54,female,south,32.6,1,TRUE,FALSE,medium,basic,0,1,4,18481.52,45-59,obese,high risk
+100374,70,female,south,27.6,1,TRUE,TRUE,low,premium,1,1,4,22864.9,60 and above,over weight,high risk
+100375,32,male,north,30.7,1,FALSE,FALSE,medium,standard,0,0,1,6172.49,30-44,obese,medium risk
+100376,53,male,west,26.75,2,FALSE,FALSE,high,basic,0,0,0,3991.67,45-59,over weight,low risk
+100377,44,female,north,24.3,0,FALSE,TRUE,medium,premium,1,0,1,10771.69,30-44,normal weight,high risk
+100378,70,female,south,29.4,2,TRUE,FALSE,medium,basic,0,0,1,13795.14,60 and above,over weight,high risk
+100379,31,female,south,18.8,0,FALSE,FALSE,medium,standard,0,0,4,2919.97,30-44,normal weight,low risk
+100380,31,male,north,29.9,0,FALSE,FALSE,high,premium,0,1,2,9538.39,30-44,over weight,low risk
+100381,34,male,north,28.6,1,FALSE,FALSE,high,standard,0,0,2,6901.98,30-44,over weight,low risk
+100382,18,female,east,29.7,1,TRUE,FALSE,medium,standard,0,1,3,14873.54,under 30,over weight,high risk
+100383,35,female,west,32.1,1,FALSE,FALSE,medium,standard,0,1,2,7801.55,30-44,obese,medium risk
+100384,32,female,north,28.9,1,TRUE,FALSE,high,standard,0,0,2,14595.33,30-44,over weight,high risk
+100385,44,male,east,28.2,1,FALSE,FALSE,medium,standard,1,0,4,9099.56,30-44,over weight,low risk
+100386,46,female,east,23.7,0,FALSE,FALSE,medium,standard,1,0,3,8021.64,45-59,normal weight,low risk
+100387,66,male,west,25,1,FALSE,FALSE,medium,standard,0,0,3,5684.12,60 and above,over weight,low risk
+100388,54,male,south,33.2,5,FALSE,TRUE,low,standard,0,0,2,8660.29,45-59,obese,high risk
+100389,35,female,south,33.8,1,FALSE,FALSE,medium,basic,0,0,3,4713.15,30-44,obese,medium risk
+100390,30,female,south,26.1,1,FALSE,FALSE,high,standard,1,0,1,6461.6,30-44,over weight,low risk
+100391,48,female,east,27.9,2,TRUE,FALSE,medium,standard,2,0,2,17696.38,45-59,over weight,high risk
+100392,25,male,west,22.9,5,FALSE,FALSE,medium,standard,1,0,4,6685.44,under 30,normal weight,low risk
+100393,66,male,north,33.5,0,TRUE,FALSE,low,standard,2,1,2,24103.65,60 and above,obese,high risk
+100394,57,male,south,30.9,2,FALSE,FALSE,medium,standard,1,0,3,8476.39,45-59,obese,medium risk
+100395,36,male,west,36.1,2,TRUE,FALSE,low,standard,0,0,2,20684.78,30-44,severely obese,high risk
+100396,20,female,west,22.9,2,TRUE,FALSE,low,standard,0,2,0,8295.14,under 30,normal weight,high risk
+100397,60,male,west,26.3,0,TRUE,FALSE,medium,premium,0,1,3,16066.11,60 and above,over weight,high risk
+100398,41,male,east,28.5,2,TRUE,FALSE,low,basic,0,1,1,13349.75,30-44,over weight,high risk
+100399,58,female,south,30.9,0,FALSE,FALSE,medium,premium,1,0,2,10983.67,45-59,obese,medium risk
+100400,21,male,east,25.9,2,FALSE,FALSE,medium,basic,0,0,0,5785.5,under 30,over weight,low risk
+100401,34,male,east,23.3,2,FALSE,TRUE,high,basic,0,0,4,6304.9,30-44,normal weight,high risk
+100402,42,male,north,31.5,0,FALSE,FALSE,medium,premium,0,0,1,7869.98,30-44,obese,medium risk
+100403,43,male,east,30.8,3,TRUE,FALSE,low,basic,1,0,1,21794.64,30-44,obese,high risk
+100404,36,male,east,23.2,0,FALSE,TRUE,low,standard,1,1,1,10923.32,30-44,normal weight,high risk
+100405,50,male,north,33.8,3,FALSE,TRUE,medium,premium,0,0,4,13019.65,45-59,obese,high risk
+100406,28,female,west,32.3,1,FALSE,FALSE,medium,premium,1,0,3,8331.15,under 30,obese,medium risk
+100407,40,female,east,28,0,FALSE,FALSE,medium,premium,0,0,3,9021.32,30-44,over weight,low risk
+100408,44,male,west,27.9,0,TRUE,FALSE,medium,basic,0,0,2,16194.07,30-44,over weight,high risk
+100409,49,female,north,30.2,4,FALSE,FALSE,low,standard,1,0,2,10301.95,45-59,obese,high risk
+100410,51,female,south,23.9,0,FALSE,TRUE,medium,basic,0,0,1,7370.79,45-59,normal weight,high risk
+100411,27,female,east,27.2,0,FALSE,FALSE,medium,standard,0,0,2,9406.39,under 30,over weight,low risk
+100412,22,female,south,17.2,1,FALSE,FALSE,low,premium,0,0,2,7437.53,under 30,under weight,high risk
+100413,59,male,east,32,2,FALSE,TRUE,low,standard,0,1,4,15207.67,45-59,obese,high risk
+100414,46,male,east,20.6,2,FALSE,FALSE,low,standard,0,1,3,10038.67,45-59,normal weight,medium risk
+100415,32,female,north,34,0,FALSE,FALSE,low,standard,0,0,2,6489.28,30-44,obese,high risk
+100416,62,female,south,26.6,0,FALSE,TRUE,medium,standard,0,1,1,17555.17,60 and above,over weight,high risk
+100417,44,female,south,26.6,0,FALSE,TRUE,low,premium,0,0,3,13618.49,30-44,over weight,high risk
+100418,57,male,south,25.1,0,FALSE,TRUE,low,basic,0,0,1,14125.6,45-59,over weight,high risk
+100419,43,male,west,26.2,1,FALSE,FALSE,low,standard,2,0,1,14863.29,30-44,over weight,medium risk
+100420,69,female,west,34.7,2,FALSE,FALSE,high,premium,0,1,1,10810.44,60 and above,obese,medium risk
+100421,65,male,east,17,0,FALSE,FALSE,high,standard,1,1,2,8075.75,60 and above,under weight,high risk
+100422,39,male,east,33.2,1,FALSE,FALSE,low,basic,0,0,3,6500.17,30-44,obese,high risk
+100423,55,male,south,29.4,1,FALSE,FALSE,medium,standard,0,0,1,7486.74,45-59,over weight,low risk
+100424,50,male,west,22.3,5,FALSE,FALSE,low,standard,0,0,0,5987.3,45-59,normal weight,medium risk
+100425,60,female,east,23.2,4,TRUE,FALSE,medium,basic,2,2,2,17110.09,60 and above,normal weight,high risk
+100426,29,male,east,34.7,3,FALSE,TRUE,low,premium,0,2,3,19120.57,under 30,obese,high risk
+100427,51,female,west,23.5,0,FALSE,FALSE,medium,standard,0,0,1,13531.94,45-59,normal weight,low risk
+100428,56,male,south,22.7,0,FALSE,FALSE,medium,premium,0,0,1,7315.88,45-59,normal weight,low risk
+100429,19,male,west,31.9,1,FALSE,FALSE,high,standard,0,0,4,5508.74,under 30,obese,medium risk
+100430,27,male,north,28.6,0,FALSE,FALSE,low,standard,0,0,4,5868.77,under 30,over weight,medium risk
+100431,18,male,south,22.6,1,FALSE,FALSE,high,basic,0,0,4,6288.9,under 30,normal weight,low risk
+100432,38,female,south,28.4,3,FALSE,FALSE,high,standard,1,0,3,8251.96,30-44,over weight,low risk
+100433,51,male,west,23.2,3,FALSE,FALSE,low,basic,0,0,1,9884.11,45-59,normal weight,medium risk
+100434,62,male,west,33.1,3,FALSE,FALSE,low,premium,0,0,1,10406.17,60 and above,obese,high risk
+100435,43,male,east,32.3,1,FALSE,FALSE,low,basic,0,0,2,8145.1,30-44,obese,high risk
+100436,63,female,east,30.5,2,FALSE,FALSE,low,basic,0,1,2,7936.81,60 and above,obese,high risk
+100437,24,female,east,28.6,1,FALSE,FALSE,medium,standard,0,0,4,4820.57,under 30,over weight,low risk
+100438,20,female,west,34.8,0,FALSE,FALSE,medium,basic,0,0,3,2363.75,under 30,obese,medium risk
+100439,41,male,south,27.5,2,TRUE,FALSE,medium,basic,2,0,3,11566.59,30-44,over weight,high risk
+100440,47,male,west,22.3,0,FALSE,FALSE,high,standard,0,0,1,7089.39,45-59,normal weight,low risk
+100441,42,female,north,29.5,1,FALSE,FALSE,low,basic,0,0,4,3776.06,30-44,over weight,medium risk
+100442,18,female,west,36.2,1,TRUE,FALSE,high,basic,0,0,3,15898.22,under 30,severely obese,high risk
+100443,41,male,east,22.9,2,FALSE,FALSE,low,standard,0,0,1,5718.6,30-44,normal weight,low risk
+100444,25,male,south,25.4,3,FALSE,TRUE,high,standard,1,1,4,12549.23,under 30,over weight,high risk
+100445,51,male,south,29.6,1,FALSE,TRUE,medium,standard,0,0,2,8130.65,45-59,over weight,high risk
+100446,47,male,west,27.4,3,TRUE,FALSE,low,standard,0,0,0,16892.55,45-59,over weight,high risk
+100447,30,female,north,22.7,0,TRUE,FALSE,high,standard,1,0,3,13927.19,30-44,normal weight,high risk
+100448,35,female,east,32.3,1,FALSE,FALSE,low,standard,0,0,2,9195.38,30-44,obese,high risk
+100449,28,male,west,37.5,2,FALSE,FALSE,medium,premium,0,0,0,10591.21,under 30,severely obese,high risk
+100450,41,male,south,28.4,2,FALSE,TRUE,medium,basic,0,0,2,9896.02,30-44,over weight,high risk
+100451,54,male,north,23.8,5,FALSE,FALSE,medium,standard,0,0,4,2573.47,45-59,normal weight,low risk
+100452,29,male,east,20.1,0,FALSE,FALSE,medium,premium,0,1,3,8276.52,under 30,normal weight,low risk
+100453,49,male,west,28.9,2,FALSE,FALSE,medium,standard,1,0,3,8914.75,45-59,over weight,low risk
+100454,35,female,east,32.3,2,FALSE,FALSE,low,basic,1,0,1,7265.3,30-44,obese,high risk
+100455,32,female,west,29.3,4,FALSE,FALSE,medium,basic,1,1,0,6134.65,30-44,over weight,low risk
+100456,41,female,north,27.5,0,FALSE,TRUE,high,standard,0,0,2,9395.42,30-44,over weight,high risk
+100457,29,female,south,24.5,3,FALSE,FALSE,low,basic,0,0,1,9107.85,under 30,normal weight,low risk
+100458,35,male,east,22.4,2,FALSE,FALSE,low,standard,0,0,1,4987.56,30-44,normal weight,low risk
+100459,26,male,west,30.8,0,TRUE,FALSE,medium,standard,0,0,1,15050.62,under 30,obese,high risk
+100460,68,female,north,32.4,1,FALSE,FALSE,medium,standard,0,0,2,6528.52,60 and above,obese,medium risk
+100461,42,female,west,20.5,1,FALSE,FALSE,medium,basic,0,0,1,4887.28,30-44,normal weight,low risk
+100462,33,male,east,34.4,2,FALSE,FALSE,low,standard,0,0,3,10681.84,30-44,obese,high risk
+100463,45,female,south,30.2,4,FALSE,FALSE,medium,standard,0,0,1,12051.45,45-59,obese,medium risk
+100464,41,male,north,33.8,2,TRUE,FALSE,low,premium,0,0,2,21726.92,30-44,obese,high risk
+100465,39,male,west,21.4,2,FALSE,FALSE,medium,basic,0,1,0,4302.41,30-44,normal weight,low risk
+100466,50,male,north,21.6,1,FALSE,FALSE,high,basic,0,0,2,3896.45,45-59,normal weight,low risk
+100467,52,female,south,27.1,0,FALSE,FALSE,low,standard,0,0,2,10132.52,45-59,over weight,medium risk
+100468,35,female,south,29.6,0,TRUE,FALSE,medium,basic,1,2,4,13473.4,30-44,over weight,high risk
+100469,35,male,west,35.4,1,FALSE,FALSE,high,standard,0,0,3,6523.39,30-44,severely obese,high risk
+100470,38,male,east,30.6,1,FALSE,TRUE,medium,premium,0,0,2,14830.85,30-44,obese,high risk
+100471,18,female,west,25.7,0,FALSE,TRUE,high,standard,0,0,1,7108.48,under 30,over weight,high risk
+100472,22,male,north,22.3,1,FALSE,FALSE,medium,premium,0,1,2,7912.16,under 30,normal weight,low risk
+100473,60,female,east,33.6,1,FALSE,FALSE,medium,basic,0,1,3,10546.64,60 and above,obese,medium risk
+100474,63,male,east,23.8,0,TRUE,FALSE,low,basic,0,1,1,12808.23,60 and above,normal weight,high risk
+100475,39,female,west,34.7,1,FALSE,FALSE,low,basic,0,1,2,9513.36,30-44,obese,high risk
+100476,49,male,west,26.4,0,TRUE,TRUE,low,standard,0,0,3,21227.68,45-59,over weight,high risk
+100477,46,female,north,34.8,4,FALSE,FALSE,medium,premium,0,0,3,8263.57,45-59,obese,medium risk
+100478,75,female,east,31.5,3,FALSE,TRUE,medium,basic,1,0,3,12860.61,60 and above,obese,high risk
+100479,57,female,north,27.3,2,FALSE,FALSE,medium,standard,0,0,3,8120.54,45-59,over weight,low risk
+100480,40,female,east,25.1,0,FALSE,TRUE,medium,standard,1,1,4,11952.55,30-44,over weight,high risk
+100481,30,male,south,25.6,3,FALSE,FALSE,medium,premium,0,0,2,7075.12,30-44,over weight,low risk
+100482,21,male,south,28.8,3,FALSE,FALSE,medium,basic,0,0,2,5174.53,under 30,over weight,low risk
+100483,45,female,south,27.9,3,FALSE,FALSE,medium,basic,0,0,3,3081.86,45-59,over weight,low risk
+100484,32,female,east,24.5,0,FALSE,FALSE,medium,basic,0,0,3,6227.49,30-44,normal weight,low risk
+100485,24,male,south,26.2,2,FALSE,FALSE,medium,standard,0,0,4,8454.02,under 30,over weight,low risk
+100486,34,male,east,27.6,3,FALSE,FALSE,low,basic,0,0,0,4779.62,30-44,over weight,medium risk
+100487,28,male,south,17.5,2,FALSE,FALSE,high,premium,1,0,2,5618.58,under 30,under weight,high risk
+100488,64,female,north,26.15,2,FALSE,TRUE,low,standard,3,0,2,18949.07,60 and above,over weight,high risk
+100489,53,female,west,29.2,1,FALSE,FALSE,low,standard,1,0,1,13810.49,45-59,over weight,medium risk
+100490,42,male,south,22.3,1,FALSE,FALSE,high,standard,0,0,1,7058.41,30-44,normal weight,low risk
+100491,61,female,south,20.5,0,FALSE,TRUE,low,basic,0,0,3,12307.34,60 and above,normal weight,high risk
+100492,43,male,east,19.5,2,FALSE,TRUE,medium,standard,0,0,1,9200.98,30-44,normal weight,high risk
+100493,31,female,south,21.1,0,FALSE,FALSE,medium,premium,0,0,3,8715.66,30-44,normal weight,low risk
+100494,62,male,north,24.9,1,FALSE,FALSE,medium,premium,1,0,3,8106.15,60 and above,normal weight,low risk
+100495,49,female,south,36.5,0,FALSE,FALSE,low,premium,0,0,1,11371.46,45-59,severely obese,high risk
+100496,29,male,west,24.7,2,FALSE,FALSE,medium,standard,0,0,1,3409.43,under 30,normal weight,low risk
+100497,40,female,east,28.2,0,FALSE,TRUE,medium,basic,0,0,3,11952.45,30-44,over weight,high risk
+100498,31,male,east,29,2,FALSE,TRUE,medium,basic,0,0,3,8773.16,30-44,over weight,high risk
+100499,24,female,east,27.5,3,FALSE,FALSE,medium,basic,0,0,3,5701.34,under 30,over weight,low risk
+100500,54,male,north,27.5,0,FALSE,TRUE,high,standard,1,0,4,11329.88,45-59,over weight,high risk
+100501,67,male,south,22.9,0,FALSE,FALSE,low,basic,0,0,4,9048.95,60 and above,normal weight,low risk
+100502,24,male,east,33.5,0,TRUE,FALSE,medium,standard,0,0,2,17143.53,under 30,obese,high risk
+100503,49,male,north,35.8,3,FALSE,TRUE,medium,standard,0,0,4,15930.01,45-59,severely obese,high risk
+100504,34,male,south,19.7,1,FALSE,FALSE,high,premium,0,1,3,9762.63,30-44,normal weight,low risk
+100505,36,male,south,22.7,1,FALSE,TRUE,medium,standard,1,0,4,9105.23,30-44,normal weight,high risk
+100506,34,female,south,26,0,FALSE,FALSE,medium,premium,0,0,2,7406.05,30-44,over weight,low risk
+100507,31,male,west,22.8,2,FALSE,TRUE,high,basic,0,0,4,8811.16,30-44,normal weight,high risk
+100508,43,female,north,29.8,3,FALSE,FALSE,low,basic,0,0,2,7447.93,30-44,over weight,medium risk
+100509,31,female,south,23.9,3,TRUE,FALSE,high,standard,0,0,3,14391.24,30-44,normal weight,high risk
+100510,46,female,north,37.4,2,FALSE,FALSE,low,basic,0,1,1,10970.84,45-59,severely obese,high risk
+100511,41,female,west,32.8,0,FALSE,FALSE,medium,basic,0,0,2,6459.72,30-44,obese,medium risk
+100512,39,male,north,28.4,0,TRUE,TRUE,high,standard,1,0,2,19147.89,30-44,over weight,high risk
+100513,30,male,south,31.8,0,TRUE,FALSE,medium,basic,1,0,1,11970.05,30-44,obese,high risk
+100514,35,male,east,32.3,0,FALSE,FALSE,medium,standard,1,0,1,9899.96,30-44,obese,medium risk
+100515,52,male,east,25.3,0,TRUE,FALSE,low,standard,0,0,3,16207.45,45-59,over weight,high risk
+100516,49,female,south,24,0,FALSE,TRUE,high,standard,1,1,0,9930.52,45-59,normal weight,high risk
+100517,29,female,south,27.5,1,TRUE,FALSE,medium,standard,0,1,1,14504.11,under 30,over weight,high risk
+100518,43,female,south,31.4,4,FALSE,TRUE,low,standard,0,1,1,9963.74,30-44,obese,high risk
+100519,52,female,south,28.4,2,FALSE,FALSE,medium,basic,1,1,2,7174.93,45-59,over weight,low risk
+100520,20,female,north,19.7,3,FALSE,FALSE,medium,basic,0,0,1,5574.52,under 30,normal weight,low risk
+100521,49,female,south,24.1,2,FALSE,FALSE,low,standard,0,0,1,7960.23,45-59,normal weight,medium risk
+100522,33,male,south,26.9,0,FALSE,FALSE,low,standard,1,1,2,8583.89,30-44,over weight,medium risk
+100523,49,male,south,27.4,2,FALSE,FALSE,low,standard,0,0,2,8231.42,45-59,over weight,medium risk
+100524,32,male,east,36.1,0,FALSE,FALSE,medium,standard,0,0,1,6578.23,30-44,severely obese,high risk
+100525,19,male,west,20.6,2,FALSE,FALSE,medium,basic,0,1,1,6150.71,under 30,normal weight,low risk
+100526,21,male,east,29.1,1,FALSE,FALSE,medium,standard,0,0,1,4145.61,under 30,over weight,low risk
+100527,43,female,west,34.2,5,FALSE,TRUE,medium,standard,0,0,4,12913.24,30-44,obese,high risk
+100528,45,male,north,37.8,0,FALSE,FALSE,high,standard,0,0,2,5175.72,45-59,severely obese,high risk
+100529,30,male,west,25.3,0,FALSE,FALSE,medium,standard,0,0,2,7801.23,30-44,over weight,low risk
+100530,50,female,south,30,4,TRUE,FALSE,low,standard,0,0,1,16176.08,45-59,obese,high risk
+100531,20,female,north,29.4,0,FALSE,FALSE,medium,standard,0,0,2,5154.06,under 30,over weight,low risk
+100532,41,male,east,28.3,2,FALSE,FALSE,medium,standard,0,0,0,6163.66,30-44,over weight,low risk
+100533,26,female,east,26.6,2,FALSE,FALSE,medium,basic,0,0,0,4681.22,under 30,over weight,low risk
+100534,34,male,east,29.2,3,FALSE,TRUE,medium,standard,0,1,2,9466.14,30-44,over weight,high risk
+100535,43,male,north,17,5,FALSE,FALSE,medium,basic,1,1,2,8010.71,30-44,under weight,high risk
+100536,31,female,north,30.2,5,FALSE,FALSE,high,basic,0,0,1,7115.96,30-44,obese,medium risk
+100537,37,female,west,27.9,0,FALSE,FALSE,low,premium,0,0,3,6086.89,30-44,over weight,medium risk
+100538,55,female,south,26.9,3,FALSE,TRUE,medium,premium,0,0,4,10852.8,45-59,over weight,high risk
+100539,35,female,east,36.5,2,FALSE,FALSE,low,basic,2,2,2,11790.04,30-44,severely obese,high risk
+100540,53,female,east,24.8,2,FALSE,FALSE,high,standard,0,1,2,5983.22,45-59,normal weight,low risk
+100541,27,male,east,25.2,0,TRUE,TRUE,low,basic,0,0,4,15701.08,under 30,over weight,high risk
+100542,49,female,south,36.7,2,FALSE,FALSE,low,standard,0,0,3,12310.13,45-59,severely obese,high risk
+100543,61,male,south,24.3,5,FALSE,FALSE,medium,premium,0,0,2,7377,60 and above,normal weight,low risk
+100544,18,female,east,24.3,4,FALSE,FALSE,medium,premium,0,0,3,2069.18,under 30,normal weight,low risk
+100545,32,male,west,26.5,1,FALSE,FALSE,low,standard,0,0,1,6826.53,30-44,over weight,medium risk
+100546,50,female,west,31.5,0,FALSE,FALSE,medium,standard,0,0,2,7536.21,45-59,obese,medium risk
+100547,39,female,north,28.3,1,FALSE,TRUE,medium,standard,0,0,2,9357.92,30-44,over weight,high risk
+100548,47,male,north,21.8,3,TRUE,FALSE,low,standard,0,0,1,14406.65,45-59,normal weight,high risk
+100549,34,male,west,24.9,2,FALSE,TRUE,medium,premium,0,0,2,9341.61,30-44,normal weight,high risk
+100550,43,female,east,24.8,1,FALSE,FALSE,high,premium,0,0,2,4673.19,30-44,normal weight,low risk
+100551,40,male,west,27.1,0,FALSE,FALSE,medium,standard,0,0,3,4851.23,30-44,over weight,low risk
+100552,57,female,south,29.9,1,FALSE,FALSE,medium,standard,0,0,2,8660.82,45-59,over weight,low risk
+100553,45,female,east,29.5,1,FALSE,FALSE,medium,basic,0,0,2,9923.28,45-59,over weight,low risk
+100554,46,female,east,19.6,4,FALSE,TRUE,medium,basic,0,0,1,13023.42,45-59,normal weight,high risk
+100555,37,female,east,32.1,2,FALSE,FALSE,low,standard,0,0,1,5169.43,30-44,obese,high risk
+100556,36,male,south,28.5,1,FALSE,FALSE,medium,standard,1,3,2,7176.08,30-44,over weight,low risk
+100557,36,female,north,33.6,1,FALSE,TRUE,high,standard,0,0,4,9919.43,30-44,obese,high risk
+100558,47,female,east,29.6,0,FALSE,FALSE,medium,standard,0,0,1,9780.22,45-59,over weight,low risk
+100559,37,male,south,32.3,5,FALSE,FALSE,medium,standard,1,0,1,10427.21,30-44,obese,medium risk
+100560,46,male,south,29.7,1,FALSE,FALSE,low,basic,0,1,3,8593.07,45-59,over weight,medium risk
+100561,69,female,west,26.15,1,FALSE,TRUE,low,premium,1,0,1,17018.98,60 and above,over weight,high risk
+100562,53,male,south,30.2,1,FALSE,FALSE,medium,premium,0,0,3,11043.38,45-59,obese,medium risk
+100563,38,female,west,26.9,2,FALSE,TRUE,medium,premium,0,0,2,11233.5,30-44,over weight,high risk
+100564,58,male,north,38.2,2,FALSE,TRUE,low,standard,0,0,2,18944.5,45-59,severely obese,high risk
+100565,37,male,west,31.4,2,FALSE,FALSE,high,basic,0,0,2,3103.97,30-44,obese,medium risk
+100566,18,male,west,29.4,0,FALSE,TRUE,medium,standard,0,2,2,11897.39,under 30,over weight,high risk
+100567,29,female,north,21.4,1,FALSE,TRUE,high,standard,0,0,2,6905.41,under 30,normal weight,high risk
+100568,18,female,north,21,0,FALSE,FALSE,high,basic,0,0,4,3750.43,under 30,normal weight,low risk
+100569,37,female,south,28.7,2,FALSE,FALSE,high,standard,0,0,3,6603.24,30-44,over weight,low risk
+100570,42,female,north,28.2,0,FALSE,TRUE,medium,standard,0,1,3,11877.59,30-44,over weight,high risk
+100571,64,female,east,25.4,2,FALSE,TRUE,medium,premium,1,1,3,17273.92,60 and above,over weight,high risk
+100572,46,male,west,28.3,3,TRUE,FALSE,medium,basic,0,0,1,19114.05,45-59,over weight,high risk
+100573,39,female,south,34.6,4,FALSE,FALSE,medium,standard,0,0,2,11215.13,30-44,obese,medium risk
+100574,53,female,south,31,1,FALSE,FALSE,medium,standard,0,0,2,9043.81,45-59,obese,medium risk
+100575,18,male,south,21.6,1,TRUE,TRUE,high,standard,0,0,3,13611.75,under 30,normal weight,high risk
+100576,45,female,east,27.1,0,FALSE,FALSE,medium,premium,0,0,1,5958.52,45-59,over weight,low risk
+100577,52,male,north,24.2,2,FALSE,TRUE,medium,standard,0,0,3,12136.29,45-59,normal weight,high risk
+100578,23,female,east,25.2,3,FALSE,TRUE,high,premium,0,1,4,12079.25,under 30,over weight,high risk
+100579,57,female,south,26.1,0,TRUE,FALSE,low,standard,0,0,2,14378.21,45-59,over weight,high risk
+100580,46,female,east,25.5,1,TRUE,TRUE,low,standard,1,0,1,22156.6,45-59,over weight,high risk
+100581,37,female,south,21.7,3,FALSE,FALSE,medium,basic,1,1,2,6681.92,30-44,normal weight,low risk
+100582,50,male,east,27.2,3,FALSE,FALSE,medium,basic,1,1,2,6777.6,45-59,over weight,low risk
+100583,72,female,north,25.9,0,FALSE,FALSE,high,basic,0,0,3,5733.73,60 and above,over weight,low risk
+100584,44,male,north,17,2,FALSE,FALSE,medium,basic,1,0,4,6739.71,30-44,under weight,high risk
+100585,45,female,west,36.8,0,FALSE,FALSE,medium,basic,0,0,2,6589.78,45-59,severely obese,high risk
+100586,36,female,east,32.2,0,FALSE,FALSE,medium,basic,0,0,2,6716.63,30-44,obese,medium risk
+100587,31,male,north,25.5,4,FALSE,FALSE,low,basic,0,1,2,9296.66,30-44,over weight,medium risk
+100588,53,female,south,27.9,3,TRUE,FALSE,medium,premium,0,0,1,19698.73,45-59,over weight,high risk
+100589,31,male,north,21.9,3,FALSE,FALSE,high,basic,0,0,1,3057.01,30-44,normal weight,low risk
+100590,43,male,south,35.2,0,FALSE,FALSE,low,standard,1,0,4,10289.2,30-44,severely obese,high risk
+100591,36,male,south,35.9,3,FALSE,FALSE,medium,basic,0,0,2,6510.26,30-44,severely obese,high risk
+100592,48,male,north,28.4,1,FALSE,FALSE,medium,premium,1,0,0,8790,45-59,over weight,low risk
+100593,46,female,south,32.2,1,FALSE,FALSE,low,premium,0,0,1,6809.94,45-59,obese,high risk
+100594,55,female,east,28.7,2,TRUE,FALSE,low,standard,0,0,3,13801.41,45-59,over weight,high risk
+100595,35,female,east,21.3,0,FALSE,TRUE,high,standard,0,0,3,9822.8,30-44,normal weight,high risk
+100596,38,male,east,25.5,3,FALSE,FALSE,medium,basic,0,0,3,2618.47,30-44,over weight,low risk
+100597,29,male,north,27.7,2,FALSE,FALSE,low,premium,0,0,1,8755.25,under 30,over weight,medium risk
+100598,36,female,west,25.3,0,TRUE,TRUE,low,premium,0,0,4,17737.01,30-44,over weight,high risk
+100599,47,male,west,26.7,0,FALSE,FALSE,medium,premium,0,0,2,4114.63,45-59,over weight,low risk
+100600,52,female,west,27.4,0,FALSE,TRUE,medium,standard,0,0,3,5941.33,45-59,over weight,high risk
+100601,30,male,west,26.8,0,FALSE,FALSE,medium,standard,0,0,2,8009.82,30-44,over weight,low risk
+100602,53,female,west,28.1,2,TRUE,FALSE,low,premium,1,0,1,14534,45-59,over weight,high risk
+100603,60,male,east,23.3,3,FALSE,FALSE,high,standard,0,0,4,6700.8,60 and above,normal weight,low risk
+100604,47,male,north,24.4,0,FALSE,FALSE,medium,standard,1,1,1,8419.79,45-59,normal weight,low risk
+100605,66,female,east,22.4,0,TRUE,FALSE,low,basic,1,0,1,12972.55,60 and above,normal weight,high risk
+100606,32,female,east,31.6,2,FALSE,FALSE,medium,premium,1,0,3,8924.17,30-44,obese,medium risk
+100607,26,female,east,17.5,3,FALSE,FALSE,medium,basic,0,0,2,4940.15,under 30,under weight,high risk
+100608,19,female,south,32,1,FALSE,TRUE,high,basic,0,0,4,9122.72,under 30,obese,high risk
+100609,61,female,north,34.3,1,TRUE,FALSE,medium,standard,0,0,2,17345.85,60 and above,obese,high risk
+100610,51,male,south,26.4,2,FALSE,FALSE,medium,standard,0,0,2,9025.04,45-59,over weight,low risk
+100611,41,male,west,17,0,TRUE,FALSE,high,standard,0,0,4,11848.8,30-44,under weight,high risk
+100612,46,male,east,26,0,FALSE,FALSE,high,basic,0,0,0,4599.52,45-59,over weight,low risk
+100613,27,female,east,26.8,2,FALSE,FALSE,high,basic,0,0,3,6796.71,under 30,over weight,low risk
+100614,74,male,south,23.9,2,TRUE,TRUE,low,premium,0,1,2,24564.84,60 and above,normal weight,high risk
+100615,44,male,south,25.2,2,FALSE,TRUE,medium,premium,0,1,4,9876.34,30-44,over weight,high risk
+100616,43,female,west,34.4,3,FALSE,FALSE,low,standard,0,0,1,9994.02,30-44,obese,high risk
+100617,51,male,east,30.8,2,FALSE,FALSE,high,standard,0,0,2,7748.52,45-59,obese,medium risk
+100618,48,male,west,23.5,0,FALSE,FALSE,low,premium,0,0,3,8988.31,45-59,normal weight,medium risk
+100619,45,female,south,20.4,1,FALSE,FALSE,medium,standard,0,1,2,7619.03,45-59,normal weight,low risk
+100620,32,female,east,25.7,0,FALSE,FALSE,medium,standard,0,0,3,5092.99,30-44,over weight,low risk
+100621,48,female,south,26.7,0,FALSE,FALSE,medium,standard,0,0,3,10330.51,45-59,over weight,low risk
+100622,66,female,east,30.5,2,TRUE,FALSE,medium,standard,0,0,3,15384.62,60 and above,obese,high risk
+100623,59,male,south,25.6,3,FALSE,TRUE,high,premium,0,0,4,16301.41,45-59,over weight,high risk
+100624,63,male,south,30.4,5,TRUE,TRUE,medium,standard,0,0,2,24734.88,60 and above,obese,high risk
+100625,35,male,east,36,2,FALSE,TRUE,high,standard,1,0,1,11821.46,30-44,severely obese,high risk
+100626,29,female,west,30.8,0,FALSE,TRUE,medium,basic,0,1,0,9046.22,under 30,obese,high risk
+100627,40,female,north,27.2,0,FALSE,FALSE,medium,basic,0,0,1,6127.66,30-44,over weight,low risk
+100628,43,male,west,26.7,3,FALSE,TRUE,medium,standard,0,0,2,9043.54,30-44,over weight,high risk
+100629,56,male,south,26.3,2,FALSE,FALSE,low,basic,0,0,2,6781.37,45-59,over weight,medium risk
+100630,20,female,south,32.2,2,FALSE,FALSE,medium,basic,0,1,1,8986.65,under 30,obese,medium risk
+100631,62,male,north,25.3,3,TRUE,FALSE,medium,standard,3,1,0,18014.36,60 and above,over weight,high risk
+100632,40,male,north,27.6,2,TRUE,TRUE,medium,standard,0,1,0,23259.28,30-44,over weight,high risk
+100633,36,female,south,27.6,3,FALSE,FALSE,medium,standard,0,0,3,8179.73,30-44,over weight,low risk
+100634,29,female,north,24.9,0,TRUE,FALSE,medium,standard,1,1,2,9131.85,under 30,normal weight,high risk
+100635,20,male,south,20.7,3,FALSE,TRUE,low,premium,0,1,2,13633.48,under 30,normal weight,high risk
+100636,53,female,west,29.3,3,FALSE,FALSE,low,premium,0,0,4,9761.6,45-59,over weight,medium risk
+100637,43,female,north,27.3,0,TRUE,TRUE,medium,premium,0,0,1,15508.26,30-44,over weight,high risk
+100638,25,female,west,29.2,2,FALSE,FALSE,medium,standard,1,0,2,8958.06,under 30,over weight,low risk
+100639,25,female,south,24.6,1,FALSE,FALSE,low,basic,0,0,2,4685.44,under 30,normal weight,low risk
+100640,38,male,east,32.9,4,FALSE,FALSE,medium,premium,0,0,1,7386.02,30-44,obese,medium risk
+100641,64,male,south,24.2,0,FALSE,FALSE,medium,basic,1,0,3,9740.47,60 and above,normal weight,low risk
+100642,39,female,north,35.1,2,FALSE,FALSE,low,basic,1,0,3,10735.04,30-44,severely obese,high risk
+100643,22,male,north,19,0,FALSE,FALSE,medium,standard,0,0,2,4238.91,under 30,normal weight,low risk
+100644,39,male,north,29.4,2,TRUE,FALSE,medium,basic,0,0,3,13765.82,30-44,over weight,high risk
+100645,38,male,north,29.5,0,FALSE,TRUE,medium,premium,0,1,1,11700.11,30-44,over weight,high risk
+100646,18,female,east,23.2,0,FALSE,TRUE,high,standard,0,0,2,9302.44,under 30,normal weight,high risk
+100647,41,female,west,29.4,1,FALSE,FALSE,medium,standard,0,0,0,9044.22,30-44,over weight,low risk
+100648,39,male,west,33.2,4,FALSE,FALSE,medium,standard,0,1,1,8930.8,30-44,obese,medium risk
+100649,51,male,east,17.8,0,FALSE,FALSE,medium,standard,1,1,1,8784.95,45-59,under weight,high risk
+100650,66,female,north,30.5,0,FALSE,TRUE,low,basic,0,1,4,16906.74,60 and above,obese,high risk
+100651,57,female,south,17,3,TRUE,FALSE,medium,standard,0,0,0,14241.44,45-59,under weight,high risk
+100652,39,female,south,23.1,1,TRUE,TRUE,medium,standard,0,0,2,18282.01,30-44,normal weight,high risk
+100653,28,male,south,34.4,4,FALSE,FALSE,high,standard,0,0,2,7459.22,under 30,obese,medium risk
+100654,75,male,south,25.9,0,TRUE,TRUE,medium,premium,0,0,4,24654.57,60 and above,over weight,high risk
+100655,43,female,east,22.2,2,FALSE,FALSE,medium,basic,2,1,4,10300.13,30-44,normal weight,low risk
+100656,42,female,south,26.6,0,TRUE,TRUE,low,basic,0,0,3,15789.33,30-44,over weight,high risk
+100657,42,male,south,36.8,0,FALSE,FALSE,low,basic,1,0,4,12476.31,30-44,severely obese,high risk
+100658,45,male,west,19.3,2,FALSE,FALSE,medium,standard,0,0,3,2910.19,45-59,normal weight,low risk
+100659,40,female,west,22.7,2,FALSE,FALSE,medium,premium,0,0,4,5635.36,30-44,normal weight,low risk
+100660,35,male,south,34,3,FALSE,FALSE,low,standard,0,1,3,6506.54,30-44,obese,high risk
+100661,35,male,west,35.6,1,FALSE,FALSE,medium,standard,0,0,0,10491.65,30-44,severely obese,high risk
+100662,42,female,west,27,1,TRUE,FALSE,low,standard,0,0,2,12186.08,30-44,over weight,high risk
+100663,35,male,south,21.7,1,FALSE,FALSE,high,standard,0,0,3,10336.18,30-44,normal weight,low risk
+100664,33,female,south,36.7,5,FALSE,FALSE,low,basic,1,0,2,11379.76,30-44,severely obese,high risk
+100665,43,male,south,34.7,0,FALSE,FALSE,high,basic,0,1,1,7249.15,30-44,obese,medium risk
+100666,39,male,west,30.5,0,FALSE,FALSE,high,premium,0,0,2,9774.87,30-44,obese,medium risk
+100667,62,male,west,24.4,1,FALSE,TRUE,medium,standard,0,1,4,14210.01,60 and above,normal weight,high risk
+100668,18,male,north,26.6,2,FALSE,FALSE,medium,premium,0,0,0,3358.47,under 30,over weight,low risk
+100669,56,female,south,27.2,0,FALSE,FALSE,medium,standard,0,0,3,7388.16,45-59,over weight,low risk
+100670,58,male,north,29.5,4,FALSE,TRUE,medium,standard,0,0,3,14816.71,45-59,over weight,high risk
+100671,18,male,south,33.3,0,FALSE,FALSE,low,basic,0,0,4,8212.84,under 30,obese,high risk
+100672,38,female,north,31.3,4,FALSE,TRUE,low,standard,0,0,4,12665.41,30-44,obese,high risk
+100673,37,male,west,22.5,0,FALSE,FALSE,medium,standard,1,0,3,5403.65,30-44,normal weight,low risk
+100674,24,male,east,33.2,2,FALSE,FALSE,medium,basic,1,1,2,9814.42,under 30,obese,medium risk
+100675,32,female,west,28.6,4,FALSE,FALSE,medium,basic,0,1,1,8291.31,30-44,over weight,low risk
+100676,28,male,west,30.2,0,FALSE,FALSE,medium,basic,0,0,2,6155.28,under 30,obese,medium risk
+100677,65,male,east,34.8,5,FALSE,FALSE,medium,basic,0,0,3,11378.92,60 and above,obese,medium risk
+100678,54,female,south,22.9,1,FALSE,FALSE,low,standard,1,0,4,13311.39,45-59,normal weight,medium risk
+100679,59,male,east,27.8,4,FALSE,TRUE,low,standard,1,0,3,14777.13,45-59,over weight,high risk
+100680,51,female,north,25.4,2,FALSE,TRUE,low,basic,0,0,1,8694.59,45-59,over weight,high risk
+100681,27,female,east,20,1,FALSE,FALSE,low,basic,0,0,2,4760.07,under 30,normal weight,low risk
+100682,35,female,north,28.9,0,FALSE,FALSE,low,basic,0,0,1,4615.73,30-44,over weight,medium risk
+100683,48,male,east,39,1,TRUE,TRUE,medium,standard,1,2,0,26575.47,45-59,severely obese,high risk
+100684,26,male,north,18.7,0,TRUE,TRUE,low,basic,0,0,1,12373.59,under 30,normal weight,high risk
+100685,51,female,north,27.6,0,FALSE,FALSE,medium,standard,0,0,1,9072.49,45-59,over weight,low risk
+100686,39,female,north,30.3,0,FALSE,FALSE,medium,basic,0,0,3,5321.76,30-44,obese,medium risk
+100687,37,male,north,27.9,1,FALSE,FALSE,high,basic,0,0,1,7837.13,30-44,over weight,low risk
+100688,51,female,east,27.3,3,TRUE,TRUE,medium,premium,2,0,2,16867.97,45-59,over weight,high risk
+100689,48,male,east,21.8,0,TRUE,TRUE,low,standard,0,0,4,18156.38,45-59,normal weight,high risk
+100690,37,male,south,28.4,0,FALSE,FALSE,medium,basic,0,0,2,4300.08,30-44,over weight,low risk
+100691,57,female,north,24.5,2,FALSE,FALSE,medium,premium,0,0,0,11333.53,45-59,normal weight,low risk
+100692,28,male,north,17.2,0,FALSE,FALSE,medium,standard,0,1,1,9226.71,under 30,under weight,high risk
+100693,50,female,north,33.1,0,FALSE,FALSE,low,premium,1,0,1,7511.9,45-59,obese,high risk
+100694,50,male,north,32.1,0,FALSE,FALSE,high,standard,0,0,1,8737.31,45-59,obese,medium risk
+100695,38,male,west,27.6,4,FALSE,TRUE,medium,standard,0,1,1,12569.17,30-44,over weight,high risk
+100696,46,male,south,28.7,3,TRUE,FALSE,medium,premium,0,0,2,16136.89,45-59,over weight,high risk
+100697,26,female,south,31.9,1,FALSE,FALSE,medium,basic,0,0,1,6580.64,under 30,obese,medium risk
+100698,54,male,north,28.9,2,FALSE,FALSE,medium,standard,0,0,2,7955.88,45-59,over weight,low risk
+100699,40,female,north,31.5,1,TRUE,FALSE,medium,standard,0,0,3,18891.12,30-44,obese,high risk
+100700,35,female,south,26,2,TRUE,FALSE,medium,basic,1,1,2,12702.22,30-44,over weight,high risk
+100701,56,female,east,33.8,2,FALSE,TRUE,medium,basic,1,0,4,16208.85,45-59,obese,high risk
+100702,33,male,south,28.7,2,FALSE,FALSE,low,basic,0,0,2,6953.25,30-44,over weight,medium risk
+100703,24,male,north,27.8,0,FALSE,FALSE,high,standard,0,0,2,5333.75,under 30,over weight,low risk
+100704,22,male,south,21.2,0,FALSE,FALSE,medium,standard,0,0,3,7201.47,under 30,normal weight,low risk
+100705,50,male,north,29,1,TRUE,FALSE,low,standard,0,1,0,13478.01,45-59,over weight,high risk
+100706,25,female,north,23.2,4,TRUE,FALSE,low,basic,0,1,0,12390.67,under 30,normal weight,high risk
+100707,65,male,west,25.3,2,FALSE,FALSE,medium,standard,0,0,3,7950.36,60 and above,over weight,low risk
+100708,18,female,east,23.1,3,FALSE,FALSE,high,premium,0,0,2,7967.53,under 30,normal weight,low risk
+100709,64,male,east,23.4,5,FALSE,TRUE,low,standard,0,0,3,11633.98,60 and above,normal weight,high risk
+100710,45,male,south,37.2,0,TRUE,FALSE,medium,standard,0,0,4,18100.56,45-59,severely obese,high risk
+100711,41,male,south,33.5,2,FALSE,TRUE,low,premium,0,0,2,11283.4,30-44,obese,high risk
+100712,35,male,east,35.9,2,FALSE,FALSE,medium,standard,1,1,2,7502.63,30-44,severely obese,high risk
+100713,47,female,east,22.1,5,FALSE,FALSE,medium,standard,0,0,2,7523.43,45-59,normal weight,low risk
+100714,42,female,east,27.8,5,FALSE,FALSE,high,premium,0,1,4,9848.78,30-44,over weight,low risk
+100715,56,male,north,22.1,2,FALSE,FALSE,medium,standard,0,0,3,5775.42,45-59,normal weight,low risk
+100716,43,female,south,24.4,0,FALSE,FALSE,high,premium,0,0,4,9358.86,30-44,normal weight,low risk
+100717,44,female,south,23.4,3,TRUE,TRUE,medium,standard,1,1,2,19680.47,30-44,normal weight,high risk
+100718,37,female,west,32.9,0,TRUE,FALSE,low,basic,1,0,3,19994.5,30-44,obese,high risk
+100719,41,male,east,25.7,3,FALSE,TRUE,medium,premium,0,0,2,9500.71,30-44,over weight,high risk
+100720,46,female,east,32.4,4,FALSE,FALSE,medium,standard,0,0,1,11209.11,45-59,obese,medium risk
+100721,20,female,north,29.6,1,FALSE,FALSE,high,standard,0,0,4,13506.3,under 30,over weight,low risk
+100722,24,male,east,37.3,2,FALSE,FALSE,high,basic,0,0,0,5129.99,under 30,severely obese,high risk
+100723,52,male,north,21.1,1,FALSE,FALSE,low,basic,0,0,2,6497.68,45-59,normal weight,medium risk
+100724,44,female,south,33.2,1,TRUE,TRUE,low,premium,0,1,1,24718.4,30-44,obese,high risk
+100725,40,female,north,32.6,1,FALSE,TRUE,low,premium,1,0,3,15038.08,30-44,obese,high risk
+100726,42,female,east,23.1,3,FALSE,FALSE,high,standard,0,0,1,9352.53,30-44,normal weight,low risk
+100727,47,female,north,32.2,4,TRUE,TRUE,medium,standard,0,0,2,24986.18,45-59,obese,high risk
+100728,35,female,south,28.8,4,TRUE,TRUE,medium,standard,0,0,1,17166.73,30-44,over weight,high risk
+100729,32,male,west,26.2,0,FALSE,FALSE,medium,standard,1,0,2,3268.87,30-44,over weight,low risk
+100730,45,male,north,23.9,3,FALSE,FALSE,medium,premium,0,1,2,13520.46,45-59,normal weight,low risk
+100731,29,male,south,23.9,2,FALSE,TRUE,medium,basic,0,1,3,8397.28,under 30,normal weight,high risk
+100732,47,female,south,29.2,0,FALSE,TRUE,low,standard,0,0,0,11295.31,45-59,over weight,high risk
+100733,20,male,north,26.8,0,FALSE,TRUE,medium,standard,0,0,1,7881.75,under 30,over weight,high risk
+100734,55,female,west,31.4,0,FALSE,FALSE,low,standard,0,0,0,8431.92,45-59,obese,high risk
+100735,48,male,north,24.1,4,TRUE,FALSE,low,standard,0,0,2,16829.41,45-59,normal weight,high risk
+100736,45,male,south,24.1,2,FALSE,FALSE,high,standard,1,0,3,4708.3,45-59,normal weight,low risk
+100737,55,female,east,32.8,2,FALSE,FALSE,medium,basic,0,0,3,7852.41,45-59,obese,medium risk
+100738,64,male,east,22.1,0,FALSE,TRUE,medium,standard,0,0,2,27337.05,60 and above,normal weight,high risk
+100739,55,female,east,26,2,FALSE,FALSE,medium,basic,1,0,2,8806.77,45-59,over weight,low risk
+100740,18,male,south,26.9,0,TRUE,FALSE,medium,basic,0,1,3,14067.16,under 30,over weight,high risk
+100741,25,female,north,27.5,1,FALSE,FALSE,medium,basic,0,0,1,7168.23,under 30,over weight,low risk
+100742,34,female,east,26.5,2,FALSE,FALSE,high,standard,0,0,2,6704.73,30-44,over weight,low risk
+100743,42,male,east,29.3,0,FALSE,FALSE,high,standard,1,1,2,10345.7,30-44,over weight,low risk
+100744,49,female,west,30.8,3,FALSE,FALSE,medium,standard,0,0,1,7550.93,45-59,obese,medium risk
+100745,33,male,west,30.5,0,FALSE,FALSE,low,standard,0,0,0,9417.95,30-44,obese,high risk
+100746,44,female,west,23.1,2,FALSE,TRUE,medium,standard,1,0,1,12771.43,30-44,normal weight,high risk
+100747,32,male,south,25.9,1,FALSE,FALSE,medium,standard,0,0,2,5396.23,30-44,over weight,low risk
+100748,34,male,south,32.6,2,FALSE,FALSE,low,standard,0,1,0,8664.15,30-44,obese,high risk
+100749,24,male,west,31,0,FALSE,FALSE,high,standard,0,0,1,5853.97,under 30,obese,medium risk
+100750,30,female,south,21,0,TRUE,FALSE,low,standard,0,0,1,11223.79,30-44,normal weight,high risk
+100751,24,female,north,28.5,4,TRUE,FALSE,low,standard,0,0,0,13354.13,under 30,over weight,high risk
+100752,29,female,west,18.2,0,FALSE,FALSE,medium,premium,0,0,1,16058.99,under 30,under weight,high risk
+100753,56,female,west,28.1,3,FALSE,FALSE,high,premium,0,1,4,12425.18,45-59,over weight,low risk
+100754,30,male,south,35.7,5,FALSE,FALSE,low,basic,0,0,0,6433.83,30-44,severely obese,high risk
+100755,75,male,north,24.2,0,FALSE,FALSE,medium,basic,0,0,3,7287.41,60 and above,normal weight,low risk
+100756,48,male,south,23.9,0,FALSE,FALSE,medium,standard,1,1,2,10275.01,45-59,normal weight,low risk
+100757,44,male,west,31,2,TRUE,TRUE,low,standard,0,0,3,22505.87,30-44,obese,high risk
+100758,31,male,west,20.2,5,TRUE,FALSE,medium,basic,1,0,2,14780.15,30-44,normal weight,high risk
+100759,51,male,north,24.9,4,FALSE,FALSE,medium,premium,0,0,1,9198.36,45-59,normal weight,low risk
+100760,35,female,north,30,1,FALSE,TRUE,medium,basic,0,1,4,10113.85,30-44,obese,high risk
+100761,44,male,west,24.7,3,TRUE,TRUE,high,premium,0,0,2,17685.71,30-44,normal weight,high risk
+100762,75,male,south,27.4,0,FALSE,TRUE,low,premium,1,0,4,15442.84,60 and above,over weight,high risk
+100763,41,male,east,30.8,5,FALSE,FALSE,low,standard,1,1,2,11679.23,30-44,obese,high risk
+100764,57,female,west,29.8,5,FALSE,FALSE,high,basic,0,0,4,6450.95,45-59,over weight,low risk
+100765,33,female,north,28.4,0,FALSE,TRUE,medium,basic,0,0,3,5950.84,30-44,over weight,high risk
+100766,42,female,east,26,0,FALSE,FALSE,medium,standard,0,0,4,5411.26,30-44,over weight,low risk
+100767,65,male,north,29.9,0,FALSE,FALSE,medium,basic,0,0,2,9000.32,60 and above,over weight,low risk
+100768,34,male,south,26.7,0,FALSE,TRUE,medium,standard,0,1,2,7155.86,30-44,over weight,high risk
+100769,66,female,west,30.3,3,FALSE,FALSE,medium,standard,0,0,3,6721.32,60 and above,obese,medium risk
+100770,51,male,south,25.5,1,FALSE,FALSE,low,basic,0,1,3,8968.78,45-59,over weight,medium risk
+100771,35,female,west,26.5,0,FALSE,FALSE,medium,basic,0,0,4,9670.1,30-44,over weight,low risk
+100772,50,female,east,23.3,1,FALSE,FALSE,low,standard,0,0,1,9818.78,45-59,normal weight,medium risk
+100773,55,female,south,27.7,5,FALSE,FALSE,high,basic,1,0,3,10451.03,45-59,over weight,low risk
+100774,50,male,north,24.1,2,TRUE,FALSE,low,basic,0,0,1,23189.97,45-59,normal weight,high risk
+100775,22,male,south,21.9,1,FALSE,TRUE,medium,standard,0,1,2,9415.42,under 30,normal weight,high risk
+100776,33,female,south,28.4,0,FALSE,FALSE,high,premium,0,0,1,8805.83,30-44,over weight,low risk
+100777,39,male,north,28.4,5,TRUE,FALSE,medium,standard,0,0,2,12886.02,30-44,over weight,high risk
+100778,41,female,south,31,3,FALSE,FALSE,medium,basic,0,0,4,5047.7,30-44,obese,medium risk
+100779,50,male,south,25.8,0,FALSE,TRUE,medium,standard,0,0,1,7935.12,45-59,over weight,high risk
+100780,44,male,east,29.4,0,FALSE,FALSE,medium,premium,0,0,2,9958.31,30-44,over weight,low risk
+100781,25,male,east,29.5,0,FALSE,FALSE,medium,standard,1,0,2,5006.41,under 30,over weight,low risk
+100782,47,female,east,29.7,0,FALSE,FALSE,medium,standard,1,2,1,11677.35,45-59,over weight,low risk
+100783,50,male,north,24,2,TRUE,FALSE,high,basic,0,0,2,12842.53,45-59,normal weight,high risk
+100784,49,male,north,28.4,4,FALSE,FALSE,high,standard,0,0,2,8638.32,45-59,over weight,low risk
+100785,56,female,east,29.6,1,FALSE,FALSE,medium,basic,1,1,1,7707.92,45-59,over weight,low risk
+100786,53,male,south,27.9,3,TRUE,FALSE,high,standard,0,0,3,13477.43,45-59,over weight,high risk
+100787,48,female,north,18.3,1,FALSE,FALSE,medium,standard,0,0,4,6853.44,45-59,under weight,high risk
+100788,41,male,west,28.2,2,FALSE,FALSE,medium,premium,0,1,1,7537.44,30-44,over weight,low risk
+100789,20,female,west,36.8,2,FALSE,FALSE,high,basic,0,0,1,1767.75,under 30,severely obese,high risk
+100790,48,male,east,26.1,0,FALSE,FALSE,medium,basic,0,1,2,4576.86,45-59,over weight,low risk
+100791,45,male,north,24.3,1,FALSE,FALSE,high,standard,1,0,3,7014.47,45-59,normal weight,low risk
+100792,46,female,west,29.3,2,FALSE,FALSE,medium,standard,0,0,1,5202.61,45-59,over weight,low risk
+100793,25,female,east,28.4,0,FALSE,FALSE,medium,standard,0,1,0,8696.9,under 30,over weight,low risk
+100794,28,female,west,32.4,1,FALSE,FALSE,medium,basic,0,0,2,6455,under 30,obese,medium risk
+100795,56,female,east,22.3,1,FALSE,FALSE,high,basic,0,0,4,5574.09,45-59,normal weight,low risk
+100796,41,female,west,30.8,5,FALSE,FALSE,low,standard,0,0,2,11890.88,30-44,obese,high risk
+100797,51,male,south,30.4,1,FALSE,FALSE,medium,basic,1,1,2,11332.04,45-59,obese,medium risk
+100798,42,female,north,26.9,3,FALSE,FALSE,medium,premium,0,2,4,10778.46,30-44,over weight,low risk
+100799,42,female,east,29,1,FALSE,TRUE,medium,standard,0,1,3,7981.62,30-44,over weight,high risk
+100800,54,male,east,32.5,3,TRUE,FALSE,medium,standard,0,0,3,17827.24,45-59,obese,high risk
+100801,35,female,east,31.2,2,FALSE,TRUE,medium,standard,0,0,2,11140.79,30-44,obese,high risk
+100802,43,male,north,22.4,4,FALSE,FALSE,medium,standard,0,0,4,5134.02,30-44,normal weight,low risk
+100803,36,male,north,31,1,FALSE,FALSE,low,basic,0,0,3,9773.98,30-44,obese,high risk
+100804,36,male,west,27,2,FALSE,FALSE,medium,premium,0,1,4,8079.64,30-44,over weight,low risk
+100805,38,male,east,27.7,2,FALSE,FALSE,medium,basic,0,0,3,3803.14,30-44,over weight,low risk
+100806,45,male,west,27.9,1,FALSE,FALSE,medium,standard,0,1,3,8944.14,45-59,over weight,low risk
+100807,36,female,east,26.6,0,TRUE,FALSE,low,basic,1,0,1,19011.39,30-44,over weight,high risk
+100808,58,female,east,33.3,0,FALSE,TRUE,high,standard,1,0,2,13150.56,45-59,obese,high risk
+100809,30,female,east,26.8,0,FALSE,FALSE,medium,basic,0,0,3,1453.85,30-44,over weight,low risk
+100810,40,male,west,22.4,3,FALSE,FALSE,medium,basic,1,0,1,5155.95,30-44,normal weight,low risk
+100811,36,female,east,25.5,0,FALSE,TRUE,medium,premium,0,1,2,8098.78,30-44,over weight,high risk
+100812,61,male,east,28.9,0,FALSE,FALSE,medium,basic,0,0,1,10115.6,60 and above,over weight,low risk
+100813,45,male,north,33.1,2,FALSE,TRUE,medium,premium,0,0,3,8700.2,45-59,obese,high risk
+100814,55,male,south,30.6,1,TRUE,FALSE,medium,premium,1,0,1,17850.23,45-59,obese,high risk
+100815,23,male,east,23.1,1,FALSE,FALSE,medium,basic,0,0,3,4187.76,under 30,normal weight,low risk
+100816,45,female,south,38.8,0,FALSE,TRUE,medium,standard,0,0,3,14650.31,45-59,severely obese,high risk
+100817,54,male,north,29.1,4,FALSE,TRUE,medium,premium,0,0,1,11638.25,45-59,over weight,high risk
+100818,43,male,south,33.3,3,FALSE,FALSE,low,basic,0,0,2,5745.79,30-44,obese,high risk
+100819,56,female,south,27.2,3,FALSE,FALSE,medium,standard,0,0,1,8717.34,45-59,over weight,low risk
+100820,35,female,north,29.7,1,FALSE,FALSE,low,premium,1,0,1,8912.61,30-44,over weight,medium risk
+100821,60,male,south,31.8,3,FALSE,FALSE,low,basic,1,0,2,11963.96,60 and above,obese,high risk
+100822,72,male,west,33.9,0,FALSE,TRUE,high,standard,1,1,1,17488.74,60 and above,obese,high risk
+100823,37,male,south,32.1,0,FALSE,TRUE,medium,standard,0,1,4,10536.64,30-44,obese,high risk
+100824,36,male,north,31.2,0,FALSE,FALSE,medium,premium,0,0,0,9434.53,30-44,obese,medium risk
+100825,61,male,north,26.7,2,TRUE,FALSE,medium,basic,0,0,3,14733.84,60 and above,over weight,high risk
+100826,63,male,east,25.6,1,FALSE,FALSE,high,standard,1,0,2,11030.37,60 and above,over weight,low risk
+100827,35,female,south,28.8,1,FALSE,FALSE,medium,standard,0,1,2,8505.75,30-44,over weight,low risk
+100828,37,female,west,31.5,0,TRUE,FALSE,medium,standard,1,0,2,18405.19,30-44,obese,high risk
+100829,38,female,east,26.4,1,FALSE,TRUE,medium,premium,0,1,3,13472.48,30-44,over weight,high risk
+100830,25,male,west,31.8,2,FALSE,FALSE,high,standard,0,0,3,6347.89,under 30,obese,medium risk
+100831,30,male,south,33.7,1,FALSE,TRUE,medium,basic,0,0,3,12844.3,30-44,obese,high risk
+100832,29,male,east,23,2,TRUE,FALSE,high,standard,1,2,1,15451.74,under 30,normal weight,high risk
+100833,32,female,south,23.4,0,FALSE,FALSE,low,standard,0,0,2,5666.38,30-44,normal weight,low risk
+100834,42,male,west,26.9,3,FALSE,FALSE,medium,standard,0,1,1,8673.3,30-44,over weight,low risk
+100835,45,male,east,29,2,FALSE,FALSE,medium,standard,0,0,0,10209.81,45-59,over weight,low risk
+100836,62,male,south,25.7,0,FALSE,FALSE,low,standard,1,1,2,13837.83,60 and above,over weight,medium risk
+100837,29,male,south,33.2,0,FALSE,FALSE,high,standard,0,0,2,3922.4,under 30,obese,medium risk
+100838,55,female,north,29.8,2,FALSE,FALSE,low,premium,0,0,2,10416.49,45-59,over weight,medium risk
+100839,39,male,east,27.6,3,FALSE,FALSE,low,basic,0,0,3,6205.62,30-44,over weight,medium risk
+100840,41,female,north,21,1,FALSE,FALSE,medium,premium,0,0,1,8156,30-44,normal weight,low risk
+100841,51,female,east,21.8,0,FALSE,FALSE,low,standard,0,0,1,8532.12,45-59,normal weight,medium risk
+100842,27,female,south,28.3,3,FALSE,FALSE,low,standard,0,0,0,8421.05,under 30,over weight,medium risk
+100843,47,male,east,18.1,2,TRUE,FALSE,medium,premium,1,0,3,16499.56,45-59,under weight,high risk
+100844,44,male,west,32.1,1,FALSE,FALSE,medium,standard,0,1,2,14099.32,30-44,obese,medium risk
+100845,48,male,west,27,1,FALSE,FALSE,low,standard,0,0,2,6477.24,45-59,over weight,medium risk
+100846,46,male,west,42.2,0,FALSE,FALSE,medium,standard,0,1,3,9205.92,45-59,severely obese,high risk
+100847,74,female,north,38.8,2,FALSE,TRUE,low,standard,1,0,3,22397.24,60 and above,severely obese,high risk
+100848,34,male,north,26.4,1,TRUE,TRUE,low,premium,0,0,2,19488.67,30-44,over weight,high risk
+100849,35,female,east,26.8,5,TRUE,TRUE,medium,premium,0,0,2,16941.64,30-44,over weight,high risk
+100850,34,female,south,31.7,1,TRUE,FALSE,medium,basic,0,0,2,13817.23,30-44,obese,high risk
+100851,35,female,south,35,1,FALSE,FALSE,medium,basic,0,0,2,4513.08,30-44,severely obese,high risk
+100852,34,female,north,19.9,2,FALSE,FALSE,medium,standard,0,0,1,4532.83,30-44,normal weight,low risk
+100853,57,female,south,19.9,4,FALSE,FALSE,low,basic,0,0,1,9420,45-59,normal weight,medium risk
+100854,60,female,north,25.2,3,FALSE,TRUE,high,standard,0,1,1,12294.08,60 and above,over weight,high risk
+100855,35,female,west,29.9,1,FALSE,FALSE,high,basic,1,2,3,10674.16,30-44,over weight,low risk
+100856,31,male,south,29.4,2,TRUE,FALSE,high,standard,0,0,4,13264.61,30-44,over weight,high risk
+100857,48,female,east,32.5,2,FALSE,FALSE,low,basic,1,0,2,9694.37,45-59,obese,high risk
+100858,35,female,north,26.4,1,FALSE,FALSE,high,basic,0,1,1,6931.87,30-44,over weight,low risk
+100859,50,female,east,17.3,0,FALSE,FALSE,high,standard,0,0,3,6534.37,45-59,under weight,high risk
+100860,45,male,south,31.5,1,TRUE,FALSE,medium,standard,0,0,3,16520.95,45-59,obese,high risk
+100861,22,female,west,23.2,0,FALSE,FALSE,low,premium,0,0,3,2581.45,under 30,normal weight,low risk
+100862,62,female,west,19,4,FALSE,TRUE,medium,premium,0,1,3,13763.59,60 and above,normal weight,high risk
+100863,65,male,south,28.8,1,TRUE,TRUE,high,standard,2,1,4,21533.19,60 and above,over weight,high risk
+100864,34,female,west,30.8,4,FALSE,FALSE,medium,basic,0,0,0,6821.56,30-44,obese,medium risk
+100865,37,female,west,26.8,1,FALSE,FALSE,medium,premium,0,1,1,9345.18,30-44,over weight,low risk
+100866,46,female,west,25.6,2,FALSE,FALSE,high,premium,0,1,1,9832.35,45-59,over weight,low risk
+100867,46,female,west,26.9,2,FALSE,FALSE,medium,standard,0,0,3,9758.26,45-59,over weight,low risk
+100868,51,female,south,26.1,0,TRUE,FALSE,medium,basic,0,0,0,12123.07,45-59,over weight,high risk
+100869,68,female,east,22.2,1,FALSE,TRUE,medium,premium,0,2,2,11166.25,60 and above,normal weight,high risk
+100870,40,male,north,26.3,0,FALSE,FALSE,high,basic,1,0,2,6552.88,30-44,over weight,low risk
+100871,32,male,north,29.5,2,FALSE,FALSE,low,standard,0,0,1,9038.6,30-44,over weight,medium risk
+100872,24,male,west,28.4,1,FALSE,FALSE,medium,premium,1,1,3,9268.1,under 30,over weight,low risk
+100873,32,female,south,28,3,FALSE,FALSE,medium,basic,0,0,1,5062.9,30-44,over weight,low risk
+100874,42,male,east,23,0,FALSE,FALSE,medium,premium,0,1,2,10000.19,30-44,normal weight,low risk
+100875,65,female,west,27.4,0,FALSE,FALSE,medium,premium,0,0,3,11133.67,60 and above,over weight,low risk
+100876,35,female,west,17.5,1,FALSE,FALSE,high,premium,1,0,0,5459.67,30-44,under weight,high risk
+100877,45,male,west,28.4,4,FALSE,FALSE,high,basic,0,0,3,6686.43,45-59,over weight,low risk
+100878,42,female,south,33.9,2,FALSE,FALSE,low,premium,0,1,3,12136.37,30-44,obese,high risk
+100879,57,female,north,21.3,1,FALSE,FALSE,medium,basic,0,1,4,7112.48,45-59,normal weight,low risk
+100880,75,female,south,26.15,1,FALSE,FALSE,low,standard,0,0,4,10214.69,60 and above,over weight,medium risk
+100881,35,male,west,28.8,0,TRUE,FALSE,low,standard,0,0,1,13132.46,30-44,over weight,high risk
+100882,36,female,north,33,5,FALSE,FALSE,medium,standard,0,0,2,6879.23,30-44,obese,medium risk
+100883,56,male,south,25.9,2,FALSE,TRUE,high,standard,0,0,1,13189.08,45-59,over weight,high risk
+100884,51,male,west,24.7,0,FALSE,TRUE,high,standard,0,0,2,10563.69,45-59,normal weight,high risk
+100885,66,female,east,19.4,2,FALSE,FALSE,low,basic,0,0,1,11125.96,60 and above,normal weight,low risk
+100886,50,female,south,28.2,0,FALSE,FALSE,low,standard,0,0,1,5470.74,45-59,over weight,medium risk
+100887,37,female,east,36.5,5,FALSE,FALSE,medium,basic,1,0,3,11662.52,30-44,severely obese,high risk
+100888,50,female,north,29,0,TRUE,TRUE,medium,premium,1,0,2,19054.18,45-59,over weight,high risk
+100889,56,female,north,27.8,2,FALSE,FALSE,medium,basic,0,0,2,6569.79,45-59,over weight,low risk
+100890,53,male,west,29.3,0,FALSE,FALSE,high,basic,0,0,2,7655.06,45-59,over weight,low risk
+100891,49,male,east,27.7,2,FALSE,TRUE,high,basic,0,0,2,12535.3,45-59,over weight,high risk
+100892,56,male,west,24.3,3,FALSE,TRUE,medium,standard,0,0,4,14924.53,45-59,normal weight,high risk
+100893,57,female,north,27.9,2,TRUE,FALSE,medium,basic,0,0,1,19467.38,45-59,over weight,high risk
+100894,60,male,west,29.1,2,FALSE,FALSE,medium,standard,0,0,2,7881.72,60 and above,over weight,low risk
+100895,50,male,east,27.8,4,FALSE,FALSE,medium,standard,2,2,2,14832,45-59,over weight,low risk
+100896,40,male,east,23.1,0,FALSE,FALSE,medium,premium,0,0,0,4422.02,30-44,normal weight,low risk
+100897,44,female,east,33.4,1,FALSE,FALSE,low,standard,0,1,2,9125.9,30-44,obese,high risk
+100898,58,male,west,31,0,FALSE,FALSE,high,basic,0,0,3,7968.82,45-59,obese,medium risk
+100899,31,female,east,24.7,5,FALSE,FALSE,medium,standard,0,0,0,4336.45,30-44,normal weight,low risk
+100900,47,female,east,32.2,1,FALSE,FALSE,medium,basic,0,0,0,6851.48,45-59,obese,medium risk
+100901,37,female,west,25.1,2,TRUE,TRUE,medium,premium,0,0,1,21505.9,30-44,over weight,high risk
+100902,42,male,east,24,2,FALSE,FALSE,low,basic,1,1,3,9423.57,30-44,normal weight,low risk
+100903,59,male,south,24.6,0,FALSE,FALSE,low,standard,0,1,3,8246.28,45-59,normal weight,medium risk
+100904,44,female,east,19.6,0,FALSE,FALSE,medium,standard,0,1,2,4888.32,30-44,normal weight,low risk
+100905,43,female,south,27.3,0,FALSE,FALSE,medium,premium,0,0,2,7760.14,30-44,over weight,low risk
+100906,24,female,north,18.7,1,FALSE,TRUE,medium,basic,0,0,4,7188.41,under 30,normal weight,high risk
+100907,52,female,east,22.3,0,FALSE,FALSE,medium,standard,0,0,3,3848.13,45-59,normal weight,low risk
+100908,50,female,west,18.4,0,FALSE,FALSE,medium,basic,2,0,2,5908.75,45-59,under weight,high risk
+100909,70,female,west,28,3,FALSE,FALSE,medium,standard,0,0,3,7278.81,60 and above,over weight,low risk
+100910,38,male,south,26.7,5,TRUE,FALSE,medium,premium,2,0,2,19506.88,30-44,over weight,high risk
+100911,45,female,south,26.1,1,FALSE,TRUE,high,standard,0,1,2,10943.89,45-59,over weight,high risk
+100912,45,female,north,22.9,1,FALSE,FALSE,medium,standard,0,0,3,7957.14,45-59,normal weight,low risk
+100913,63,female,west,22.9,0,FALSE,FALSE,medium,premium,0,1,4,9149.45,60 and above,normal weight,low risk
+100914,41,male,west,29.6,2,FALSE,FALSE,low,standard,0,0,0,9468.32,30-44,over weight,medium risk
+100915,46,male,east,25.1,3,FALSE,FALSE,medium,standard,1,0,2,7534.75,45-59,over weight,low risk
+100916,50,male,west,29.2,0,TRUE,FALSE,low,standard,0,0,4,13492.22,45-59,over weight,high risk
+100917,44,female,east,23.6,0,FALSE,FALSE,medium,standard,0,1,1,12146.75,30-44,normal weight,low risk
+100918,36,male,east,28.1,3,TRUE,TRUE,low,basic,0,0,4,19101.91,30-44,over weight,high risk
+100919,45,female,north,33.5,2,FALSE,FALSE,low,standard,0,1,2,12302.85,45-59,obese,high risk
+100920,56,male,south,30.6,0,FALSE,FALSE,high,standard,1,0,1,6876.93,45-59,obese,medium risk
+100921,29,male,east,25.3,2,FALSE,FALSE,medium,basic,0,1,0,5701.56,under 30,over weight,low risk
+100922,44,male,east,28.7,1,FALSE,FALSE,low,standard,0,0,1,5911.72,30-44,over weight,medium risk
+100923,33,male,south,26.1,1,FALSE,FALSE,low,standard,0,0,1,6840.42,30-44,over weight,medium risk
+100924,58,male,west,28,3,TRUE,FALSE,medium,basic,0,0,2,12951.09,45-59,over weight,high risk
+100925,22,female,north,25.4,3,TRUE,FALSE,low,standard,0,1,3,12816.9,under 30,over weight,high risk
+100926,35,male,south,26.6,1,TRUE,FALSE,medium,premium,0,0,4,14904.8,30-44,over weight,high risk
+100927,47,female,east,28.6,4,FALSE,TRUE,medium,premium,0,0,2,10963,45-59,over weight,high risk
+100928,62,male,east,23.6,1,FALSE,FALSE,medium,premium,0,0,2,9712.79,60 and above,normal weight,low risk
+100929,41,female,east,22.9,3,FALSE,FALSE,medium,premium,0,0,2,6286.61,30-44,normal weight,low risk
+100930,35,female,south,21,1,FALSE,FALSE,high,basic,1,0,2,8014.94,30-44,normal weight,low risk
+100931,66,female,north,21,4,FALSE,FALSE,low,standard,0,0,2,9446.56,60 and above,normal weight,low risk
+100932,23,female,east,21.5,4,FALSE,TRUE,medium,premium,0,1,0,8674.59,under 30,normal weight,high risk
+100933,18,female,east,27.5,0,FALSE,FALSE,medium,standard,0,0,0,5535.85,under 30,over weight,low risk
+100934,48,male,north,23.7,4,FALSE,FALSE,low,standard,0,0,0,6108.47,45-59,normal weight,medium risk
+100935,35,female,east,29.6,3,FALSE,FALSE,medium,standard,0,0,1,6238.81,30-44,over weight,low risk
+100936,29,female,south,27.3,3,FALSE,FALSE,medium,standard,0,0,3,7000.5,under 30,over weight,low risk
+100937,51,male,east,18.9,0,FALSE,FALSE,medium,premium,0,0,1,8025.2,45-59,normal weight,low risk
+100938,45,female,west,30.5,3,FALSE,FALSE,medium,standard,1,2,4,8908.45,45-59,obese,medium risk
+100939,35,male,north,30.9,3,FALSE,FALSE,medium,standard,0,0,4,4717.01,30-44,obese,medium risk
+100940,25,male,north,26.2,0,TRUE,FALSE,medium,premium,0,0,4,6856.49,under 30,over weight,high risk
+100941,53,male,west,29.7,4,FALSE,FALSE,medium,standard,2,0,4,11087.2,45-59,over weight,low risk
+100942,50,male,east,23.9,0,FALSE,FALSE,medium,basic,0,0,1,4462.58,45-59,normal weight,low risk
+100943,41,female,east,27.9,0,FALSE,FALSE,medium,standard,0,0,2,7492.53,30-44,over weight,low risk
+100944,66,male,west,22.5,1,FALSE,TRUE,medium,premium,0,0,1,15995.82,60 and above,normal weight,high risk
+100945,28,female,west,19,2,FALSE,TRUE,low,premium,0,1,3,11348.65,under 30,normal weight,high risk
+100946,22,female,west,25.2,2,FALSE,TRUE,medium,premium,0,0,4,11671.51,under 30,over weight,high risk
+100947,33,male,east,26.7,0,FALSE,TRUE,high,standard,0,0,4,10542.06,30-44,over weight,high risk
+100948,41,female,south,25.7,5,FALSE,TRUE,medium,standard,2,2,2,18343.97,30-44,over weight,high risk
+100949,45,male,south,22.3,0,FALSE,FALSE,low,premium,0,0,3,12176.16,45-59,normal weight,medium risk
+100950,39,male,north,25.6,0,FALSE,FALSE,medium,premium,1,0,1,6128.8,30-44,over weight,low risk
+100951,47,male,east,28.9,0,FALSE,TRUE,medium,basic,0,0,0,11871.47,45-59,over weight,high risk
+100952,26,male,south,26.8,2,FALSE,FALSE,medium,basic,0,0,3,6577.9,under 30,over weight,low risk
+100953,61,female,west,28.9,4,FALSE,FALSE,high,premium,0,0,2,8941.52,60 and above,over weight,low risk
+100954,41,female,east,24.5,2,FALSE,FALSE,medium,premium,0,0,4,9283.95,30-44,normal weight,low risk
+100955,57,male,east,33.2,3,FALSE,FALSE,low,premium,0,0,0,7812.11,45-59,obese,high risk
+100956,46,female,south,22.3,0,FALSE,FALSE,medium,premium,0,0,3,4326.43,45-59,normal weight,low risk
+100957,48,male,north,29.9,2,TRUE,FALSE,medium,standard,0,1,2,13944.61,45-59,over weight,high risk
+100958,49,male,north,33,1,FALSE,FALSE,medium,standard,0,0,3,8418.22,45-59,obese,medium risk
+100959,48,male,south,29.8,1,FALSE,TRUE,medium,standard,0,0,3,12112.88,45-59,over weight,high risk
+100960,50,female,north,26.8,0,FALSE,FALSE,high,basic,1,0,4,6288.97,45-59,over weight,low risk
+100961,59,female,east,25.6,2,FALSE,FALSE,high,standard,0,0,1,10513.12,45-59,over weight,low risk
+100962,45,female,west,32.3,1,TRUE,FALSE,medium,standard,0,0,4,19656.91,45-59,obese,high risk
+100963,51,female,west,21.4,3,FALSE,FALSE,high,standard,0,0,1,4103.47,45-59,normal weight,low risk
+100964,41,male,east,23.1,1,FALSE,FALSE,high,standard,0,0,1,5228.61,30-44,normal weight,low risk
+100965,61,female,north,26.3,0,TRUE,TRUE,low,standard,1,0,2,19682.41,60 and above,over weight,high risk
+100966,33,female,west,32.8,2,FALSE,TRUE,low,basic,0,0,3,11278.7,30-44,obese,high risk
+100967,65,female,west,29.9,0,FALSE,FALSE,medium,basic,0,0,2,8111.58,60 and above,over weight,low risk
+100968,41,male,north,23.1,3,TRUE,FALSE,high,basic,0,0,3,10806.6,30-44,normal weight,high risk
+100969,23,male,east,25.5,2,FALSE,FALSE,medium,basic,0,0,3,7923.54,under 30,over weight,low risk
+100970,44,female,south,24.8,0,FALSE,FALSE,medium,premium,0,0,1,8265.84,30-44,normal weight,low risk
+100971,33,female,west,30.8,5,FALSE,FALSE,low,basic,0,0,4,5115.98,30-44,obese,high risk
+100972,53,female,west,32.2,1,FALSE,TRUE,low,basic,0,0,1,11816.59,45-59,obese,high risk
+100973,34,female,north,21.1,0,FALSE,TRUE,medium,standard,0,2,4,14909.9,30-44,normal weight,high risk
+100974,36,male,west,34.6,2,TRUE,TRUE,low,standard,0,1,2,23889.99,30-44,obese,high risk
+100975,18,male,east,30.5,0,FALSE,FALSE,medium,basic,0,1,2,6048.67,under 30,obese,medium risk
+100976,36,female,west,32.2,3,FALSE,TRUE,low,premium,0,0,2,10914.1,30-44,obese,high risk
+100977,18,female,south,24.7,3,TRUE,FALSE,medium,standard,0,0,1,11166.2,under 30,normal weight,high risk
+100978,21,male,west,26.2,5,FALSE,TRUE,medium,basic,0,0,2,8105.48,under 30,over weight,high risk
+100979,52,female,north,27.9,1,FALSE,FALSE,medium,basic,0,0,1,6891.13,45-59,over weight,low risk
+100980,52,male,south,25.4,1,FALSE,FALSE,medium,premium,2,2,1,13386.07,45-59,over weight,low risk
+100981,48,female,north,29.9,3,TRUE,FALSE,low,standard,0,0,1,14550.48,45-59,over weight,high risk
+100982,29,female,west,32.9,0,FALSE,FALSE,medium,standard,0,0,2,7692.42,under 30,obese,medium risk
+100983,41,female,west,22.5,2,FALSE,FALSE,medium,basic,0,0,3,3241.57,30-44,normal weight,low risk
+100984,42,female,west,25.9,2,FALSE,FALSE,medium,standard,0,0,2,6722.76,30-44,over weight,low risk
+100985,27,male,west,26.4,0,FALSE,FALSE,medium,standard,0,0,4,3276.32,under 30,over weight,low risk
+100986,62,female,north,21.8,1,TRUE,FALSE,low,basic,2,0,3,14525.3,60 and above,normal weight,high risk
+100987,53,female,south,30.5,3,FALSE,TRUE,high,standard,0,0,3,9626.44,45-59,obese,high risk
+100988,39,female,north,24.2,3,FALSE,TRUE,medium,standard,0,0,3,8976.33,30-44,normal weight,high risk
+100989,42,female,north,26.6,0,TRUE,FALSE,medium,basic,1,0,2,13341.99,30-44,over weight,high risk
+100990,45,female,north,25.6,0,FALSE,FALSE,low,standard,1,1,3,11809.12,45-59,over weight,medium risk
+100991,18,female,south,23.2,0,FALSE,FALSE,high,premium,0,0,0,3569.2,under 30,normal weight,low risk
+100992,39,male,south,27.4,3,FALSE,FALSE,high,standard,0,0,3,7717.75,30-44,over weight,low risk
+100993,33,female,north,26.3,0,FALSE,TRUE,medium,premium,0,0,3,13215.49,30-44,over weight,high risk
+100994,29,female,north,25.4,2,FALSE,FALSE,medium,basic,0,0,1,4955.08,under 30,over weight,low risk
+100995,38,male,north,24.1,0,TRUE,FALSE,medium,premium,0,0,3,13283.61,30-44,normal weight,high risk
+100996,65,female,west,29.6,2,FALSE,TRUE,medium,basic,0,0,0,12960.55,60 and above,over weight,high risk
+100997,50,male,east,35.2,1,FALSE,FALSE,medium,basic,0,0,1,6570.46,45-59,severely obese,high risk
+100998,35,female,west,27.9,3,FALSE,FALSE,medium,standard,0,0,0,4429.79,30-44,over weight,low risk
+100999,49,male,south,32.2,0,FALSE,FALSE,medium,standard,0,0,3,10152.66,45-59,obese,medium risk
+101000,60,male,west,21.8,2,FALSE,TRUE,medium,premium,0,1,3,12904.24,60 and above,normal weight,high risk
+101001,54,male,west,28.6,0,FALSE,FALSE,low,standard,0,0,3,9682.25,45-59,over weight,medium risk
+101002,43,male,south,27.799999999999997,2,TRUE,FALSE,medium,basic,0,0,0,14140.98,30-44,over weight,high risk
+101003,34,female,south,20.6,3,FALSE,FALSE,high,standard,0,0,2,5667.29,30-44,normal weight,low risk
+101004,51,male,north,24.4,0,FALSE,FALSE,medium,standard,0,0,3,8127.59,45-59,normal weight,low risk
+101005,47,female,north,33,3,FALSE,TRUE,medium,standard,1,1,1,12818.62,45-59,obese,high risk
+101006,54,female,south,32.1,2,TRUE,FALSE,medium,standard,0,0,2,19500.08,45-59,obese,high risk
+101007,50,female,south,28.8,0,FALSE,FALSE,medium,standard,0,0,0,9231.16,45-59,over weight,low risk
+101008,56,male,east,21,1,FALSE,TRUE,high,premium,1,0,1,14216.49,45-59,normal weight,high risk
+101009,35,female,north,26.4,0,FALSE,FALSE,high,premium,0,0,2,7326.24,30-44,over weight,low risk
+101010,59,male,north,29.4,2,TRUE,TRUE,low,standard,0,0,3,21801.19,45-59,over weight,high risk
+101011,45,male,west,28.4,3,FALSE,FALSE,high,standard,0,0,1,10417.33,45-59,over weight,low risk
+101012,69,male,north,20,0,FALSE,TRUE,medium,standard,1,0,1,13515.72,60 and above,normal weight,high risk
+101013,33,male,south,23.2,1,FALSE,FALSE,high,standard,1,0,1,5445.26,30-44,normal weight,low risk
+101014,65,female,west,27.9,3,FALSE,FALSE,medium,standard,0,0,1,10152.65,60 and above,over weight,low risk
+101015,45,female,north,30,4,FALSE,FALSE,high,premium,0,0,1,9009.18,45-59,obese,medium risk
+101016,34,female,north,17.4,1,FALSE,FALSE,low,standard,0,2,2,9132.29,30-44,under weight,high risk
+101017,36,female,south,26.6,4,FALSE,FALSE,medium,premium,0,1,2,12159.04,30-44,over weight,low risk
+101018,38,female,south,28,1,TRUE,TRUE,high,premium,0,0,2,14828.06,30-44,over weight,high risk
+101019,48,female,east,31.5,1,TRUE,FALSE,low,premium,1,0,3,20564.7,45-59,obese,high risk
+101020,49,female,west,30.8,3,FALSE,FALSE,low,standard,0,0,3,15145.36,45-59,obese,high risk
+101021,35,male,north,29.9,1,TRUE,FALSE,medium,standard,1,2,1,14221.71,30-44,over weight,high risk
+101022,42,male,east,23.9,1,FALSE,FALSE,high,basic,0,0,0,2281.42,30-44,normal weight,low risk
+101023,70,female,south,19.8,1,FALSE,FALSE,low,standard,0,0,4,5569.08,60 and above,normal weight,low risk
+101024,64,male,south,26.4,3,FALSE,FALSE,high,basic,0,0,1,7417.9,60 and above,over weight,low risk
+101025,48,female,east,32.2,3,FALSE,FALSE,medium,standard,0,0,1,7279.48,45-59,obese,medium risk
+101026,42,female,south,33.8,1,FALSE,TRUE,medium,standard,0,0,0,9737.36,30-44,obese,high risk
+101027,44,male,south,30.8,1,FALSE,TRUE,high,standard,0,1,3,11607.61,30-44,obese,high risk
+101028,50,female,north,29.7,1,FALSE,FALSE,medium,premium,2,3,2,13529,45-59,over weight,low risk
+101029,29,female,south,28.8,2,FALSE,TRUE,low,premium,0,1,4,15050.68,under 30,over weight,high risk
+101030,39,male,south,24.9,0,FALSE,FALSE,medium,basic,0,0,3,4073.97,30-44,normal weight,low risk
+101031,20,male,west,26.3,3,FALSE,TRUE,medium,standard,0,0,2,10995.73,under 30,over weight,high risk
+101032,47,male,north,35.2,1,TRUE,FALSE,medium,standard,0,1,2,18326.51,45-59,severely obese,high risk
+101033,50,male,south,23.5,1,FALSE,FALSE,high,standard,2,0,1,7223.36,45-59,normal weight,low risk
+101034,36,male,south,34.6,0,FALSE,FALSE,medium,standard,0,0,1,7247.8,30-44,obese,medium risk
+101035,62,female,east,26.7,0,FALSE,FALSE,medium,standard,0,0,1,9937.84,60 and above,over weight,low risk
+101036,26,female,east,33,4,FALSE,FALSE,medium,standard,0,0,1,9275.16,under 30,obese,medium risk
+101037,23,female,east,20.6,1,TRUE,TRUE,low,premium,0,0,1,17705.44,under 30,normal weight,high risk
+101038,45,female,west,30.2,0,FALSE,TRUE,low,premium,0,0,2,12567.61,45-59,obese,high risk
+101039,56,male,west,24.6,1,FALSE,FALSE,high,basic,0,1,2,4397.7,45-59,normal weight,low risk
+101040,64,female,south,21.8,1,FALSE,FALSE,medium,standard,0,1,4,6770.26,60 and above,normal weight,low risk
+101041,36,male,east,28.3,0,FALSE,FALSE,low,standard,1,0,2,6788.4,30-44,over weight,medium risk
+101042,56,male,west,32.5,1,TRUE,FALSE,medium,standard,0,0,4,17866.11,45-59,obese,high risk
+101043,41,male,west,23.7,2,FALSE,FALSE,medium,basic,0,0,2,7878.07,30-44,normal weight,low risk
+101044,40,male,west,20.7,2,FALSE,FALSE,high,standard,0,0,2,2112.18,30-44,normal weight,low risk
+101045,53,male,south,27.4,1,FALSE,TRUE,medium,standard,0,0,2,8093.35,45-59,over weight,high risk
+101046,50,female,north,27.3,1,FALSE,FALSE,low,basic,0,0,1,7863.19,45-59,over weight,medium risk
+101047,22,male,south,29.4,5,FALSE,FALSE,medium,standard,1,0,1,7873.14,under 30,over weight,low risk
+101048,61,female,east,32.3,1,FALSE,FALSE,medium,standard,0,0,4,9003.86,60 and above,obese,medium risk
+101049,60,male,south,27.8,0,FALSE,FALSE,medium,basic,0,0,4,10491.85,60 and above,over weight,low risk
+101050,34,female,south,35.6,0,FALSE,FALSE,medium,basic,0,0,0,7805.57,30-44,severely obese,high risk
+101051,47,male,west,28.7,1,TRUE,FALSE,high,premium,1,1,1,18737.84,45-59,over weight,high risk
+101052,48,male,south,26.1,3,FALSE,FALSE,high,basic,0,0,2,5702.56,45-59,over weight,low risk
+101053,45,female,west,20.3,0,FALSE,TRUE,medium,premium,0,2,1,11757.07,45-59,normal weight,high risk
+101054,35,female,south,26.1,2,FALSE,TRUE,medium,standard,0,0,2,8422.73,30-44,over weight,high risk
+101055,33,male,south,25.7,0,FALSE,FALSE,medium,basic,0,0,1,7781.06,30-44,over weight,low risk
+101056,42,female,south,31.8,1,FALSE,FALSE,high,basic,0,0,2,7358.93,30-44,obese,medium risk
+101057,57,male,west,30,3,FALSE,FALSE,high,basic,0,0,1,6436.95,45-59,obese,medium risk
+101058,49,male,north,22.4,1,FALSE,TRUE,low,basic,0,0,2,10231.37,45-59,normal weight,high risk
+101059,37,female,north,28.1,2,FALSE,FALSE,medium,basic,0,0,0,8370.85,30-44,over weight,low risk
+101060,52,female,west,30.8,0,FALSE,FALSE,medium,standard,1,0,2,8506.87,45-59,obese,medium risk
+101061,18,female,north,33.7,3,FALSE,FALSE,low,basic,1,0,4,6395.62,under 30,obese,high risk
+101062,57,male,north,31.9,0,FALSE,FALSE,low,standard,2,0,1,11857.55,45-59,obese,high risk
+101063,19,female,east,30.2,3,FALSE,FALSE,medium,standard,1,1,3,4335.52,under 30,obese,medium risk
+101064,37,male,south,27.6,0,TRUE,TRUE,medium,standard,2,0,4,19922.14,30-44,over weight,high risk
+101065,27,female,east,28.8,3,TRUE,FALSE,low,basic,0,0,4,13249.46,under 30,over weight,high risk
+101066,25,male,north,32.6,1,FALSE,FALSE,medium,basic,0,0,3,7073.7,under 30,obese,medium risk
+101067,57,male,east,22,2,FALSE,FALSE,medium,basic,0,0,2,9700.25,45-59,normal weight,low risk
+101068,36,male,south,25.7,1,FALSE,FALSE,medium,standard,0,0,3,4453.75,30-44,over weight,low risk
+101069,47,female,east,24.2,4,FALSE,TRUE,medium,standard,0,0,1,7394.45,45-59,normal weight,high risk
+101070,41,male,north,29.2,0,TRUE,TRUE,low,premium,2,0,2,22326.99,30-44,over weight,high risk
+101071,48,male,east,33.2,0,FALSE,TRUE,medium,standard,1,0,4,11870.87,45-59,obese,high risk
+101072,43,male,north,24.8,1,FALSE,TRUE,low,standard,1,1,3,13901.97,30-44,normal weight,high risk
+101073,25,male,south,17,0,FALSE,FALSE,medium,standard,0,0,4,5065.71,under 30,under weight,high risk
+101074,55,female,north,26,0,FALSE,FALSE,low,standard,0,0,3,8449.83,45-59,over weight,medium risk
+101075,36,female,north,31.4,4,FALSE,FALSE,medium,basic,0,0,3,6920.64,30-44,obese,medium risk
+101076,22,male,west,29.3,5,FALSE,FALSE,low,basic,0,1,3,4972.85,under 30,over weight,medium risk
+101077,36,female,south,29.2,1,FALSE,FALSE,medium,standard,1,2,3,10651.55,30-44,over weight,low risk
+101078,62,male,west,26.8,4,FALSE,TRUE,medium,standard,0,0,2,16266.15,60 and above,over weight,high risk
+101079,53,male,west,22.1,2,FALSE,FALSE,low,standard,0,0,4,5140.21,45-59,normal weight,medium risk
+101080,37,female,east,29.7,0,FALSE,FALSE,medium,standard,0,0,3,3597.52,30-44,over weight,low risk
+101081,37,male,north,23.6,2,FALSE,FALSE,low,standard,1,0,3,7228.81,30-44,normal weight,low risk
+101082,38,female,south,37.2,2,FALSE,FALSE,medium,standard,0,0,3,5585.4,30-44,severely obese,high risk
+101083,69,male,west,30.9,5,FALSE,FALSE,low,standard,0,0,2,7259.44,60 and above,obese,high risk
+101084,47,male,south,25,0,TRUE,FALSE,medium,standard,1,0,0,12799.93,45-59,over weight,high risk
+101085,48,male,north,24.9,2,TRUE,FALSE,medium,standard,0,0,4,13296.5,45-59,normal weight,high risk
+101086,55,female,east,27.5,0,TRUE,TRUE,high,standard,0,0,3,16825.63,45-59,over weight,high risk
+101087,45,female,west,26.5,0,FALSE,FALSE,medium,standard,0,0,1,7307.37,45-59,over weight,low risk
+101088,39,male,west,32.4,0,FALSE,TRUE,medium,premium,0,1,1,13012.51,30-44,obese,high risk
+101089,39,male,north,28.2,5,FALSE,FALSE,medium,standard,0,0,3,4755.36,30-44,over weight,low risk
+101090,41,male,east,24.2,3,TRUE,TRUE,high,standard,0,0,4,17084.64,30-44,normal weight,high risk
+101091,42,female,north,36,3,TRUE,FALSE,medium,standard,0,0,3,15724.95,30-44,severely obese,high risk
+101092,51,female,north,28,1,TRUE,TRUE,low,standard,0,2,3,21012.18,45-59,over weight,high risk
+101093,43,female,west,31,1,FALSE,FALSE,high,basic,0,0,2,3456.31,30-44,obese,medium risk
+101094,52,male,south,25.1,0,TRUE,FALSE,medium,premium,0,0,1,11151.26,45-59,over weight,high risk
+101095,41,female,south,29.1,0,FALSE,FALSE,high,basic,0,0,0,3403.16,30-44,over weight,low risk
+101096,43,female,north,28.9,1,FALSE,FALSE,high,standard,0,0,3,5231.73,30-44,over weight,low risk
+101097,18,male,west,18.3,3,FALSE,FALSE,low,standard,0,0,0,5275.21,under 30,under weight,high risk
+101098,54,female,west,36.9,1,FALSE,FALSE,medium,premium,0,0,2,10162.29,45-59,severely obese,high risk
+101099,47,male,east,33.5,0,FALSE,FALSE,low,basic,0,0,2,8092.73,45-59,obese,high risk
