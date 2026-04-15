@@ -2,6 +2,7 @@
 title: "Marcus_Ar_Bast_Rappot"
 format: html
 ---
+
 # 1) Dataförståelse
 source("../scripts/")
 ```{r}
@@ -33,7 +34,7 @@ inconsistent capitalization:
 - smoker: "yes" and "Yes"
 - plan_type: "standard" and "Standard", "premium" and "Premium"
 
-#2) Datastädning och förberedelse
+# 2) Datastädning och förberedelse
 
 ```{r}
 source("../scripts/clean_data.R")
@@ -41,7 +42,7 @@ df_clean <- clean_data(df_raw)
 look_at_data(df_clean)
 #print(unique(df_clean$prior_claims))
 ```
-#2.1) Datastädning och förberedelse Clean up
+## 2.1) Datastädning och förberedelse Clean up
 Removed the C from customer_id.
 
 Made new Column:
@@ -85,7 +86,7 @@ df_add_column <- bmi_category(df_clean)
 df_add_column <- health_risk_level(df_add_column)
 look_at_data(df_add_column)
 ```
-#2.1) Datastädning och förberedelse Add columns
+## 2.1) Datastädning och förberedelse Add columns
 
 Added columns:
 
@@ -115,10 +116,37 @@ people who are older and dont exercise tend to also have poorer health and harde
 
 Everyone not in high or medium risk are added here.
 
+
+
+# 3) Beskrivande analys
+
+
+## Figure/Tabell 1
+```{r}
+knitr::include_graphics("../save/images/col_by_age_group_of_charge.png")
+```
+
+
+
+![](../save/images/col_by_age_group_of_charge.png)
+
+
+
+
+## Figure/Tabell 2
 ```{r}
 
 ```
 
+## Figure/Tabell 3
+```{r}
+
+```
+
+## Figure/Tabell 4
+```{r}
+
+```
 
 Example of an comment. 
 Here is the place i will write my comments and the report of 
