@@ -192,6 +192,13 @@ Annual Check up:
 Every plan type has slightly above 2 in their average annual check up. meaning on average everyone get at least one probably two checkups per year.
 
 
+# 4) Regressionsanalys
+
+```{r}
+
+```
+
+
 
 Example of an comment. 
 Here is the place i will write my comments and the report of 
