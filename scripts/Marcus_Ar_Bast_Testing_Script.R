@@ -73,7 +73,20 @@ ggplot(df_add_column, aes(x = exercise_level , y = charges)) +
 smoker_boxplot(df_add_column)
 
 
+df_add_column %>% 
+  group_by(plan_type) %>% 
+  summarise(
 
+    avg_charges = mean(charges, na.rm = TRUE),
+    median_charges = median(charges, na.rm = TRUE),
+    avg_prior_claims = mean(prior_claims, na.rm = TRUE),
+    avg_prior_accidents = mean(prior_accidents, na.rm = TRUE),
+    avg_annual_checkups = mean(annual_checkups, na.rm = TRUE),
+    n = n()
+    
+  )
 
+df_add_column %>% 
+  select(plan_type, charges)
 
-
+charged_prior_checkup_table(df_add_column)

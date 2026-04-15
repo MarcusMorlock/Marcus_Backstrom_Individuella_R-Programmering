@@ -172,9 +172,26 @@ This figure shows that on average smokers are charged more then none smokers but
 ## Figure/Tabell 4
 ```{r}
 
-
+charged_prior_checkup_table(df_add_column)
 
 ```
+This table shows the average(mean) charges, prior_claims, prior_accident, annual_checkups for each plan_type.
+
+plan Types:
+- Basic
+- Standard
+- Premiums
+
+Charged:
+The average charge of each plan type is no all that large, while the min charge and max charge per plan type varied widely. an outlier is that the highest charge is an standard plan type and not premium.
+
+Prior:
+On average around 0.27 of costumers have prior claims and 0.24 have prior accidents, that means for every 4 costumer 1 will have made a claim. 
+
+Annual Check up:
+Every plan type has slightly above 2 in their average annual check up. meaning on average everyone get at least one probably two checkups per year.
+
+
 
 Example of an comment. 
 Here is the place i will write my comments and the report of 
