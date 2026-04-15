@@ -85,6 +85,7 @@ source("../scripts/add_column.R")
 df_add_column <- bmi_category(df_clean)
 df_add_column <- health_risk_level(df_add_column)
 look_at_data(df_add_column)
+write_csv(df_add_column, "../data/insurance_costs_cleaned_columns_added.csv")
 ```
 ## 2.1) Datastädning och förberedelse Add columns
 
@@ -121,22 +122,40 @@ Everyone not in high or medium risk are added here.
 # 3) Beskrivande analys
 
 
-## Figure/Tabell 1
-```{r}
-knitr::include_graphics("../save/images/col_by_age_group_of_charge.png")
-```
-
-
-
-![](../save/images/col_by_age_group_of_charge.png)
-
-
-
-
-## Figure/Tabell 2
+## Charge by age group
 ```{r}
 
+knitr::include_graphics("../save/images/col_age_group_by_charge.png")
 ```
+
+The Figure shows 4 age groups:
+
+- under 30
+- 30-40
+- 45-59
+- 60 and above
+
+under 30 and 60 and above are around the same are of roughly 1 400 000 
+while 30-40 are roughly at 4 500 000 and 45-59 are around 4 000 000.
+
+this shows that majority of the income comes from people around the age of 30-59. 
+
+
+
+
+## Health Risk Level summarize charges
+```{r}
+source("../scripts/tables.R")
+health_risk_level_charges_summarize(df_add_column)
+```
+There´s a clear trend where low risk pay less while high risk pay more.
+
+- low risk average charges around 7050
+- medium risk average charges around 8150
+- high risk average charges around 12930
+
+
+
 
 ## Figure/Tabell 3
 ```{r}
