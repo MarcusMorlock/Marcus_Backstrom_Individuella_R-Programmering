@@ -224,19 +224,123 @@ This Analysis can only be used as a first step for a variable selection.
 
 
 
-## 4.2
+## 4.2 Regression model.
+
+
+### 4.2.1 Top 5:
 
 ```{r}
+model_and_summary(df_add_column, choice = c("smoker", "exercise_level", "chronic_condition", "prior_accidents", "age"))
 
 ```
+Taking the resulst from the Regression analysis (r2_adjr2_per_variable, funktion) i took the top 5 and did a model to see the results.
+
+Variables:
+
+Dependent variable:
+- charges
+
+Independent variables:
+- smoker
+- exercise_level
+- chornic_condition
+- prior_accidents
+- age
+
+Summery:
+- R-Squared = 0.7007
+- Adjusted R-Squared = 0.6991
 
 
 
+### 4.2.2 Swap exercise_level for bmi
+```{r}
+model_and_summary(df_add_column, choice = c("smoker", "bmi", "chronic_condition", "prior_accidents", "age" ))
+```
+swapped out the variable exercise_level with bmi to see if bmi is a better variable and got a better R-squared then the top 5 model.
+
+Variables:
+
+Dependent variable:
+- charges
+
+Independent variables:
+- smoker
+- bmi
+- chornic_condition
+- prior_accidents
+- age
+
+Summery:
+- R-Squared = 0.7093
+- Adjusted R-Squared = 0.708
 
 
+### 4.2.3 Add bmi
+```{r}
+final_model <- model_and_summary(df_add_column, choice = c("smoker", "exercise_level", "chronic_condition", "prior_accidents", "age", "bmi" ))
+final_model
+```
+for the final model as bmi increased the R-squared i added it and kept exercise_level and got the highest R-Squared result
+
+Variables:
+
+Dependent variable:
+- charges
+
+Independent variables:
+- smoker
+- exercise_level
+- chornic_condition
+- prior_accidents_
+- bmi
+- age
 
 
+Summery:
+- R-Squared = 0.7232
+- Adjusted R-Squared = 0.7215
 
+Result:
+
+This shows that the top 5 were a acceptable starting point but an variable like bmi that was at the bottom of the list where each variable were tested against charges is more useful then one in the top 5 when it´s in a multiple regression model.
+
+#### 4.2.3.1 interpretation of regression model.
+
+interpretation:
+
+Final model explains 72.15% of the variation in insurance charges (Adjusted R-Squared = 0.7215). This indicates the model has reasonably good explanatory power.
+
+The coefficients:
+
+- smoker: being a smoker increases the charges by 7382 on average with an std error of 190 which is barely 2% of the Estimated meaning it´s very precise. 
+
+- chronic_condition: having a chronic condition on average will cost a customer 4105 more and as an std error of 170 which like with smoker is low compared to the estimated making it precise. 
+
+- age: Each additional year of age is associated with an increase of 68 in charges.
+
+- bmi: each unit in bmi adds on average 153 in charges.
+
+- prior_accidents: each accident add on average 1255 in charges.
+
+- exercise_level: compared to high exercise level, a low exercise level is associated with 1 575 higher in charge while medium is associated with 667 in charges.
+
+all of the above variables has high t value and low p value expect for exercise_level medium. which means they got a statistically significant impact.and even exercise_leve lmedium  has an usable level of t and p value.
+
+
+which variables seem to be of most importance:
+
+smoker and chronic_condition has the highest impact on the model. 
+
+whether the results seem reasonable:
+
+smoker and chronic_condition are both something that is logical and easy for an insurance company to look at and use for a reason to charge more. bmi and age can also be used and indicate health problems which require them to charge more. prior_accidents means there can be an assumption that they will have more and need to use the insurance. that exercise_level has an impact make sense but is harder as a company to motivate and use as a reason to charge more.
+
+what limitations exist in the model:
+
+it got a total of 0.72 meaning it can explain mathematically explain 72% of the variance in charges, meaning a whole 28% is not explained by the model. there are other factors that is not part of the data that can explain more or less charges and.
+There can be factors such as genetics or an area prone to disastrous that could change the charges. 
+The model assumes linear relationships between the predictors and charges. 
 
 
 

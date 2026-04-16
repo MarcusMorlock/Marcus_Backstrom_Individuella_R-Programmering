@@ -165,6 +165,7 @@ summary(model_5)
 summary(model_6)
 
 glimpse(df_add_column)
+
 # 
 # model_and_summary <- function(df, target = "charges", choice = "") {
 #   model_test_sum <- lm(reformulate(choice, target), data = df)
@@ -177,10 +178,13 @@ model_and_summary(df_add_column, choice = c("smoker", "exercise_level", "chronic
 # Swap exercise_level for bmi
 model_and_summary(df_add_column, choice = c("smoker", "bmi", "chronic_condition", "prior_accidents", "age" ))
 
-#Swap prior_accidents for plan_type
-model_and_summary(df_add_column, choice = c("smoker", "bmi", "chronic_condition", "plan_type", "age" ))
+# Add bmi
+model_and_summary(df_add_column, choice = c("smoker", "exercise_level", "chronic_condition", "prior_accidents", "age", "bmi" ))
 
 
+
+#Swap age for age_group
+model_and_summary(df_add_column, choice = c("smoker", "bmi"))
 
 
 
