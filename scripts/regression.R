@@ -30,3 +30,8 @@ r2_adjr2_per_variable <- function(df) {
   invisible(results)
   
 }
+
+model_and_summary <- function(df, target = "charges", choice = "") {
+  model_test_summary <- lm(reformulate(choice, target), data = df)
+  summary(model_test_summary)
+}

@@ -87,7 +87,7 @@ df_add_column <- health_risk_level(df_add_column)
 look_at_data(df_add_column)
 write_csv(df_add_column, "../data/insurance_costs_cleaned_columns_added.csv")
 ```
-## 2.1) Datastädning och förberedelse Add columns
+## 2.2) Datastädning och förberedelse Add columns
 
 Added columns:
 
@@ -126,7 +126,7 @@ df_fixed <- source("../scripts/load_clean_add_columns_df.R")
 # 3) Beskrivande analys
 
 
-## Charge by age group
+## 3.1  Charge by age group
 ```{r}
 
 knitr::include_graphics("../save/images/col_age_group_by_charge.png")
@@ -147,7 +147,7 @@ this shows that majority of the income comes from people around the age of 30-59
 
 
 
-## Health Risk Level summarize charges
+## 3.2 Health Risk Level summarize charges
 ```{r}
 source("../scripts/tables.R")
 health_risk_level_charges_summarize(df_add_column)
@@ -161,7 +161,7 @@ Charged Average:
 
 High risk group has a high range from min charges (1767) and max charges (32559), both the mean (average) and median charges of the high risk groups are the highest. This indicate that the health_risk_level variable successfully captures important cost differences on average. however the low minimum value of high risk group suggest that some costumers may be classified wrong or should be charged more.
 
-## Smoker Charged
+## 3.3 Smoker Charged
 ```{r}
 knitr::include_graphics("../save/images/smoker_charged_boxplot.png")
 ```
@@ -170,7 +170,7 @@ This figure shows that on average smokers are charged more then none smokers but
 
 
 
-## Figure/Tabell 4
+## 3.4 charges prior
 ```{r}
 
 charged_prior_checkup_table(df_add_column)

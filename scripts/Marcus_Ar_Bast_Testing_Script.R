@@ -3,7 +3,7 @@ df_fixed <- load_data("data/insurance_costs_cleaned_columns_added.csv")
 source("scripts/load_data.R")
 df_raw <- load_data("data/insurance_costs.csv")
 
-source("scripts/utility.R")
+# source("scripts/utility.R")
 
 source("scripts/clean_data.R")
 df_clean <- clean_data(df_raw)
@@ -145,6 +145,54 @@ source("scripts/regression.R")
 regression_tibble <- r2_adjr2_per_variable(df_add_column)
 
 regression_tibble
+
+
+
+
+model_1 <- lm(charges ~ smoker ,data = df_add_column)
+model_2 <- lm(charges ~ smoker + chronic_condition ,data = df_add_column)
+model_3 <- lm(charges ~ smoker + chronic_condition + age  ,data = df_add_column)
+model_4 <- lm(charges ~ smoker + chronic_condition + age + prior_accidents  ,data = df_add_column)
+model_5 <- lm(charges ~ smoker + chronic_condition + age + prior_accidents + exercise_level  ,data = df_add_column)
+
+model_6 <- lm(charges ~ smoker + sex ,data = df_add_column)
+
+summary(model_1)
+summary(model_2)
+summary(model_3)
+summary(model_4)
+summary(model_5)
+summary(model_6)
+
+glimpse(df_add_column)
+
+model_and_summary <- function(df, target = "charges", choice = "") {
+  model_test_sum <- lm(reformulate(choice, target), data = df)
+  summary(model_test_sum)
+}
+
+model_and_summary(df_add_column, choice = c("smoker", "children"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
