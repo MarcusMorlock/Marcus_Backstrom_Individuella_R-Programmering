@@ -165,21 +165,35 @@ summary(model_5)
 summary(model_6)
 
 glimpse(df_add_column)
+# 
+# model_and_summary <- function(df, target = "charges", choice = "") {
+#   model_test_sum <- lm(reformulate(choice, target), data = df)
+#   summary(model_test_sum)
+# }
 
-model_and_summary <- function(df, target = "charges", choice = "") {
-  model_test_sum <- lm(reformulate(choice, target), data = df)
-  summary(model_test_sum)
-}
+# Top 5:
+model_and_summary(df_add_column, choice = c("smoker", "exercise_level", "chronic_condition", "prior_accidents", "age"))
 
-model_and_summary(df_add_column, choice = c("smoker", "children"))
+# Swap exercise_level for bmi
+model_and_summary(df_add_column, choice = c("smoker", "bmi", "chronic_condition", "prior_accidents", "age" ))
 
-
-
-
+#Swap prior_accidents for plan_type
+model_and_summary(df_add_column, choice = c("smoker", "bmi", "chronic_condition", "plan_type", "age" ))
 
 
 
 
+
+
+
+
+# All numeric + factor variables except charges and id
+all_predictors <- setdiff(names(df_add_column), c("customer_id","charges", "age_group", "bmi_category", "health_risk_level"))
+
+model_all <- lm(reformulate(all_predictors, "charges"), data = df_add_column)
+
+summary(model_all)$r.squared      # This will be high but probably < 1
+summary(model_all)$adj.r.squared  # This will likely be lower than regular R²
 
 
 
