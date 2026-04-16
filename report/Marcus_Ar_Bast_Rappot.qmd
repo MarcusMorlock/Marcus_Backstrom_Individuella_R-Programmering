@@ -195,9 +195,49 @@ Every plan type has slightly above 2 in their average annual check up. meaning o
 
 # 4) Regressionsanalys
 
+## 4.1 Regression variable analysis
+
+```{r}
+source("../scripts/regression.R")
+regression_tibble <- r2_adjr2_per_variable(df_add_column)
+
+```
+This function performs a univariate regression analysis (one predictor at a time) to examine the individual linear relationship between each variable and the target variable charges.
+
+Top 5:
+- smoker             : R2 = 0.4568    Adj.R2 = 0.4563
+- chronic_condition  : R2 = 0.1901    Adj.R2 = 0.1894
+- age                : R2 = 0.0667    Adj.R2 = 0.0658
+- prior_accidents    : R2 = 0.0596    Adj.R2 = 0.0587
+- exercise_level     : R2 = 0.0512    Adj.R2 = 0.0494
+
+Bottom 5:
+- bmi                : R2 = 0.0225    Adj.R2 = 0.0217
+- annual_checkups    : R2 = 0.0037    Adj.R2 = 0.0028
+- region             : R2 = 0.0020    Adj.R2 = -0.0007
+- children           : R2 = 0.0010    Adj.R2 = 0.0001
+- sex                : R2 = 0.0001    Adj.R2 = -0.0008
+
+Important:
+This Analysis only shows individual relationship between each variable and charges and not how they would perform together in a multiple regression model.Some variables may appear weak individually but can still contribute when combined with others.
+This Analysis can only be used as a first step for a variable selection.
+
+
+
+## 4.2
+
 ```{r}
 
 ```
+
+
+
+
+
+
+
+
+
 
 
 
