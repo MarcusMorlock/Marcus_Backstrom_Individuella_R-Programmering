@@ -346,7 +346,11 @@ The model assumes linear relationships between the predictors and charges.
 # 5) Tolkning och slutsatser
 
 
-
+Most Impactful Variables:
+- Smoker
+- Chronic_condition
+- Age
+- Bmi
 
 
 
