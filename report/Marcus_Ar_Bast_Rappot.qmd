@@ -85,7 +85,7 @@ source("../scripts/add_column.R")
 df_add_column <- bmi_category(df_clean)
 df_add_column <- health_risk_level(df_add_column)
 look_at_data(df_add_column)
-write_csv(df_add_column, "../data/insurance_costs_cleaned_columns_added.csv")
+#write_csv(df_add_column, "../data/insurance_costs_cleaned_columns_added.csv")
 ```
 ## 2.2) Datastädning och förberedelse Add columns
 
@@ -343,28 +343,8 @@ There can be factors such as genetics or an area prone to disastrous that could 
 The model assumes linear relationships between the predictors and charges. 
 
 
+# 5) Tolkning och slutsatser
 
-
-Example of an comment. 
-Here is the place i will write my comments and the report of 
-- syfte
-- metod
-- resultat
-- regressionsanalys
-- slutsatser
-- begränsningar
-
-
-
-
-
-
-
-```{r}
-
-ggplot(df_clean)
-
-```
 
 
 
