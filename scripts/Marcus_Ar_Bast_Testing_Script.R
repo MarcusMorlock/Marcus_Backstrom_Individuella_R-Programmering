@@ -150,6 +150,7 @@ regression_tibble
 
 
 model_1 <- lm(charges ~ smoker ,data = df_add_column)
+model_1_2 <- lm(charges ~ chronic_condition ,data = df_add_column)
 model_2 <- lm(charges ~ smoker + chronic_condition ,data = df_add_column)
 model_3 <- lm(charges ~ smoker + chronic_condition + age  ,data = df_add_column)
 model_4 <- lm(charges ~ smoker + chronic_condition + age + prior_accidents  ,data = df_add_column)
@@ -158,6 +159,7 @@ model_5 <- lm(charges ~ smoker + chronic_condition + age + prior_accidents + exe
 model_6 <- lm(charges ~ smoker + sex ,data = df_add_column)
 
 summary(model_1)
+summary(model_1_2)
 summary(model_2)
 summary(model_3)
 summary(model_4)
@@ -181,10 +183,18 @@ model_and_summary(df_add_column, choice = c("smoker", "bmi", "chronic_condition"
 # Add bmi
 model_and_summary(df_add_column, choice = c("smoker", "exercise_level", "chronic_condition", "prior_accidents", "age", "bmi" ))
 
+model_and_summary(df_add_column, choice = c("smoker", "chronic_condition", "bmi" ))
+model_and_summary(df_add_column, choice = c("smoker", "chronic_condition" ))
+model_and_summary(df_add_column, choice = c("smoker", "chronic_condition", "age" ))
+model_and_summary(df_add_column, choice = c("smoker", "chronic_condition", "age", "bmi" ))
 
 
 #Swap age for age_group
 model_and_summary(df_add_column, choice = c("smoker", "bmi"))
+model_and_summary(df_add_column, choice = c("smoker"))
+model_and_summary(df_add_column, choice = c("smoker", "plan_type"))
+model_and_summary(df_add_column, choice = c("smoker", "age"))
+model_and_summary(df_add_column, choice = c("bmi", "age", "plan_type"))
 
 
 
