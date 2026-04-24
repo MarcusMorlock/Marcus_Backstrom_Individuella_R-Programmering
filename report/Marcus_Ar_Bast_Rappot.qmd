@@ -120,7 +120,8 @@ Everyone not in high or medium risk are added here.
 
 ## 3.1  Charge by age group
 ```{r}
-knitr::include_graphics("../save/images/col_age_group_by_charge.png")
+source("../scripts/figure.R")
+col_age_group_by_charge(df_add_column)
 ```
 
 The Figure shows 4 age groups:
@@ -154,7 +155,7 @@ High risk group has a high range from min charges (1767) and max charges (32559)
 
 ## 3.3 Smoker Charged
 ```{r}
-knitr::include_graphics("../save/images/smoker_charged_boxplot.png")
+smoker_boxplot(df_add_column)
 ```
 This figure shows that on average smokers are charged more then none smokers but there are several cases of none smokers paying as high as smokers. Meaning that smoker pays more but there are other factors that makes people who dont smoke still get charged a high amount.
 
@@ -413,13 +414,13 @@ done a Regression Linear Model using the variables from the cleaned data with ch
 ## Results
 
 ```{r}
-knitr::include_graphics("../save/images/smoker_charged_boxplot.png")
+smoker_boxplot(df_add_column)
 ```
 
 This figure shows that smokers pay more then none smokers on average from the data set but also shows that none smoker as more outliers then smokers meaning that there are some other factor inside none smoker that make some pay a higher rate.
 
 ```{r}
-knitr::include_graphics("../save/images/col_age_group_by_charge.png")
+col_age_group_by_charge(df_add_column)
 ```
 
 This figure shows that majority of customers are around the age of 30-59 as both groups 30-44 and 45-59 are more or less equal.

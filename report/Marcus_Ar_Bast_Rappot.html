@@ -344,7 +344,6 @@ Levels: basic premium standard
 [1] 45-59        30-44        60 and above under 30    
 Levels: under 30 30-44 45-59 60 and above</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#print(unique(df_clean$prior_claims))</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <section id="datastädning-och-förberedelse-clean-up" class="level2">
 <h2 class="anchored" data-anchor-id="datastädning-och-förberedelse-clean-up">2.1) Datastädning och förberedelse Clean up</h2>
@@ -383,10 +382,10 @@ Levels: under 30 30-44 45-59 60 and above</code></pre>
 <li>chronic_condition</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"../scripts/add_column.R"</span>)</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>df_add_column <span class="ot">&lt;-</span> <span class="fu">bmi_category</span>(df_clean)</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>df_add_column <span class="ot">&lt;-</span> <span class="fu">health_risk_level</span>(df_add_column)</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">look_at_data</span>(df_add_column)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"../scripts/add_column.R"</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>df_add_column <span class="ot">&lt;-</span> <span class="fu">bmi_category</span>(df_clean)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>df_add_column <span class="ot">&lt;-</span> <span class="fu">health_risk_level</span>(df_add_column)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">look_at_data</span>(df_add_column)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 1,100
 Columns: 17
@@ -467,7 +466,6 @@ Levels: under weight normal weight over weight obese severely obese
 [1] low risk    high risk   medium risk
 Levels: low risk medium risk high risk</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#write_csv(df_add_column, "../data/insurance_costs_cleaned_columns_added.csv")</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="datastädning-och-förberedelse-add-columns" class="level2">
@@ -491,71 +489,6 @@ Levels: low risk medium risk high risk</code></pre>
 <li>low risk:</li>
 </ul>
 <p>Everyone not in high or medium risk are added here.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># do all the above at once</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>df_fixed <span class="ot">&lt;-</span> <span class="fu">source</span>(<span class="st">"../scripts/load_clean_add_columns_df.R"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 1100 Columns: 14
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (7): customer_id, sex, region, smoker, chronic_condition, exercise_level...
-dbl (7): age, bmi, children, prior_accidents, prior_claims, annual_checkups,...
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Rows: 1,100
-Columns: 14
-$ customer_id       &lt;chr&gt; "C100000", "C100001", "C100002", "C100003", "C100004…
-$ age               &lt;dbl&gt; 48, 40, 50, 62, 39, 39, 63, 52, 36, 49, 36, 36, 45, …
-$ sex               &lt;chr&gt; "female", "male", "female", "male", "female", "femal…
-$ region            &lt;chr&gt; "east", "west", "south", "north", "east", "west", "e…
-$ bmi               &lt;dbl&gt; 24.8, 29.5, 18.3, 25.5, 27.3, 23.3, 23.9, 24.8, 28.6…
-$ children          &lt;dbl&gt; 0, 1, 2, 5, 2, 4, 3, 2, 0, 2, 2, 2, 1, 1, 1, 1, 0, 3…
-$ smoker            &lt;chr&gt; "no", "no", "no", "yes", "no", "no", "no", "no", "no…
-$ chronic_condition &lt;chr&gt; "no", "no", "no", "no", "no", "no", "no", "no", "yes…
-$ exercise_level    &lt;chr&gt; "high", "medium", "high", "medium", "medium", "high"…
-$ plan_type         &lt;chr&gt; "basic", "basic", "standard", "basic", "basic", "sta…
-$ prior_accidents   &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0…
-$ prior_claims      &lt;dbl&gt; 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 3, 0, 0, 0…
-$ annual_checkups   &lt;dbl&gt; 1, 4, 3, NA, 0, 2, 1, 2, 3, 2, 3, 3, 4, 4, 2, 1, 2, …
-$ charges           &lt;dbl&gt; 6439.10, 8274.06, 5190.99, 14500.35, 6534.40, 8026.3…
-      customer_id               age               sex            region 
-                0                 0                 0                 0 
-              bmi          children            smoker chronic_condition 
-               28                 0                 0                 0 
-   exercise_level         plan_type   prior_accidents      prior_claims 
-               22                 0                 0                 0 
-  annual_checkups           charges 
-               20                 0 
-Rows: 1,100
-Columns: 15
-$ customer_id       &lt;int&gt; 100000, 100001, 100002, 100003, 100004, 100005, 1000…
-$ age               &lt;int&gt; 48, 40, 50, 62, 39, 39, 63, 52, 36, 49, 36, 36, 45, …
-$ sex               &lt;fct&gt; female, male, female, male, female, female, female, …
-$ region            &lt;fct&gt; east, west, south, north, east, west, east, north, e…
-$ bmi               &lt;dbl&gt; 24.8, 29.5, 18.3, 25.5, 27.3, 23.3, 23.9, 24.8, 28.6…
-$ children          &lt;int&gt; 0, 1, 2, 5, 2, 4, 3, 2, 0, 2, 2, 2, 1, 1, 1, 1, 0, 3…
-$ smoker            &lt;lgl&gt; FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALS…
-$ chronic_condition &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FAL…
-$ exercise_level    &lt;fct&gt; high, medium, high, medium, medium, high, high, medi…
-$ plan_type         &lt;fct&gt; basic, basic, standard, basic, basic, standard, basi…
-$ prior_accidents   &lt;int&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0…
-$ prior_claims      &lt;int&gt; 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 3, 0, 0, 0…
-$ annual_checkups   &lt;int&gt; 1, 4, 3, 2, 0, 2, 1, 2, 3, 2, 3, 3, 4, 4, 2, 1, 2, 1…
-$ charges           &lt;dbl&gt; 6439.10, 8274.06, 5190.99, 14500.35, 6534.40, 8026.3…
-$ age_group         &lt;fct&gt; 45-59, 30-44, 45-59, 60 and above, 30-44, 30-44, 60 …
-      customer_id               age               sex            region 
-                0                 0                 0                 0 
-              bmi          children            smoker chronic_condition 
-                0                 0                 0                 0 
-   exercise_level         plan_type   prior_accidents      prior_claims 
-                0                 0                 0                 0 
-  annual_checkups           charges         age_group 
-                0                 0                 0 </code></pre>
-</div>
-</div>
 </section>
 </section>
 <section id="beskrivande-analys" class="level1">
@@ -563,11 +496,26 @@ $ age_group         &lt;fct&gt; 45-59, 30-44, 45-59, 60 and above, 30-44, 30-44,
 <section id="charge-by-age-group" class="level2">
 <h2 class="anchored" data-anchor-id="charge-by-age-group">3.1 Charge by age group</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"../save/images/col_age_group_by_charge.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"../scripts/figure.R"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'scales'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:purrr':
+
+    discard</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:readr':
+
+    col_factor</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">col_age_group_by_charge</span>(df_add_column)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="../save/images/col_age_group_by_charge.png" class="img-fluid figure-img"></p>
+<p><img src="Marcus_Ar_Bast_Rappot_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -585,8 +533,8 @@ $ age_group         &lt;fct&gt; 45-59, 30-44, 45-59, 60 and above, 30-44, 30-44,
 <section id="health-risk-level-summarize-charges" class="level2">
 <h2 class="anchored" data-anchor-id="health-risk-level-summarize-charges">3.2 Health Risk Level summarize charges</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"../scripts/tables.R"</span>)</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">health_risk_level_charges_summarize</span>(df_add_column)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"../scripts/tables.R"</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">health_risk_level_charges_summarize</span>(df_add_column)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 6
   health_risk_level avg_charges median_charges min_charges max_charges     n
@@ -603,11 +551,11 @@ $ age_group         &lt;fct&gt; 45-59, 30-44, 45-59, 60 and above, 30-44, 30-44,
 <section id="smoker-charged" class="level2">
 <h2 class="anchored" data-anchor-id="smoker-charged">3.3 Smoker Charged</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"../save/images/smoker_charged_boxplot.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">smoker_boxplot</span>(df_add_column)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="../save/images/smoker_charged_boxplot.png" class="img-fluid figure-img"></p>
+<p><img src="Marcus_Ar_Bast_Rappot_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -617,7 +565,7 @@ $ age_group         &lt;fct&gt; 45-59, 30-44, 45-59, 60 and above, 30-44, 30-44,
 <section id="charges-prior" class="level2">
 <h2 class="anchored" data-anchor-id="charges-prior">3.4 charges prior</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">charged_prior_checkup_table</span>(df_add_column)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">charged_prior_checkup_table</span>(df_add_column)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 9
   plan_type avg_charges min_charges max_charges median_charges avg_prior_claims
@@ -641,8 +589,8 @@ $ age_group         &lt;fct&gt; 45-59, 30-44, 45-59, 60 and above, 30-44, 30-44,
 <section id="regression-variable-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="regression-variable-analysis">4.1 Regression variable analysis</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"../scripts/regression.R"</span>)</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>regression_tibble <span class="ot">&lt;-</span> <span class="fu">r2_adjr2_per_variable</span>(df_add_column)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"../scripts/regression.R"</span>)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>regression_tibble <span class="ot">&lt;-</span> <span class="fu">r2_adjr2_per_variable</span>(df_add_column)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>smoker             : R2 = 0.4568    Adj.R2 = 0.4563
 chronic_condition  : R2 = 0.1901    Adj.R2 = 0.1894
@@ -668,7 +616,7 @@ sex                : R2 = 0.0001    Adj.R2 = -0.0008</code></pre>
 <section id="top-5" class="level3">
 <h3 class="anchored" data-anchor-id="top-5">4.2.1 Top 5:</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">model_and_summary</span>(df_add_column, <span class="at">choice =</span> <span class="fu">c</span>(<span class="st">"smoker"</span>, <span class="st">"exercise_level"</span>, <span class="st">"chronic_condition"</span>, <span class="st">"prior_accidents"</span>, <span class="st">"age"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">model_and_summary</span>(df_add_column, <span class="at">choice =</span> <span class="fu">c</span>(<span class="st">"smoker"</span>, <span class="st">"exercise_level"</span>, <span class="st">"chronic_condition"</span>, <span class="st">"prior_accidents"</span>, <span class="st">"age"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -704,7 +652,7 @@ F-statistic: 426.5 on 6 and 1093 DF,  p-value: &lt; 2.2e-16</code></pre>
 <section id="swap-exercise_level-for-bmi" class="level3">
 <h3 class="anchored" data-anchor-id="swap-exercise_level-for-bmi">4.2.2 Swap exercise_level for bmi</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">model_and_summary</span>(df_add_column, <span class="at">choice =</span> <span class="fu">c</span>(<span class="st">"smoker"</span>, <span class="st">"bmi"</span>, <span class="st">"chronic_condition"</span>, <span class="st">"prior_accidents"</span>, <span class="st">"age"</span> ))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">model_and_summary</span>(df_add_column, <span class="at">choice =</span> <span class="fu">c</span>(<span class="st">"smoker"</span>, <span class="st">"bmi"</span>, <span class="st">"chronic_condition"</span>, <span class="st">"prior_accidents"</span>, <span class="st">"age"</span> ))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -739,8 +687,8 @@ F-statistic: 533.9 on 5 and 1094 DF,  p-value: &lt; 2.2e-16</code></pre>
 <section id="add-bmi" class="level3">
 <h3 class="anchored" data-anchor-id="add-bmi">4.2.3 Add bmi</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>final_model <span class="ot">&lt;-</span> <span class="fu">model_and_summary</span>(df_add_column, <span class="at">choice =</span> <span class="fu">c</span>(<span class="st">"smoker"</span>, <span class="st">"exercise_level"</span>, <span class="st">"chronic_condition"</span>, <span class="st">"prior_accidents"</span>, <span class="st">"age"</span>, <span class="st">"bmi"</span> ))</span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>final_model</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>final_model <span class="ot">&lt;-</span> <span class="fu">model_and_summary</span>(df_add_column, <span class="at">choice =</span> <span class="fu">c</span>(<span class="st">"smoker"</span>, <span class="st">"exercise_level"</span>, <span class="st">"chronic_condition"</span>, <span class="st">"prior_accidents"</span>, <span class="st">"age"</span>, <span class="st">"bmi"</span> ))</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>final_model</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -801,9 +749,101 @@ F-statistic: 407.7 on 7 and 1092 DF,  p-value: &lt; 2.2e-16</code></pre>
 </section>
 <section id="tolkning-och-slutsatser" class="level1">
 <h1>5) Tolkning och slutsatser</h1>
+<section id="which-factors-seem-to-have-the-clearest-connection-with-costs" class="level2">
+<h2 class="anchored" data-anchor-id="which-factors-seem-to-have-the-clearest-connection-with-costs">5.1 which factors seem to have the clearest connection with costs</h2>
 <p>Most Impactful Variables: - Smoker: Most impactful alone it explain roughly 45% of the charges. - Chronic_condition also very impactful alone it explains roughly 19% of the charges - Age impactful, alone it explain roughly 6% of the charges - Bmi alone bmi only stood for roughly 2% but when used with other variables it help explain more then the 2% it does alone.</p>
-<p>the 4 of them combined with the regression model explain roughly 69% of the charges and a model that includes every varaible explains roughly 75% meaning that smoker and chornic_condition together explain the majority of what the model can explain and adding age and bmi put´s it at roughly 69% which is only 6% less then they all combined explain.</p>
+<p>the 4 of them combined with the regression model explain roughly 69% of the charges and a model that includes every variable explains roughly 75% meaning that smoker and Chronic_condition together explain the majority of what the model can explain and adding age and bmi put´s it at roughly 69% which is only 6% less then they all combined explain.</p>
 <p>The model even with all the variable only get roughly 75% meaning a whole 25% cannot be explained by the data when looking at the charges.</p>
+</section>
+<section id="what-the-analysis-shows" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-analysis-shows">5.2 what the analysis shows</h2>
+<p>The analysis shows that smoker is the major factor impacting charges with Chronic condition being second place. the other factors have a minor to no individual impact indicating the company view smoking and chronic condition as risk factors and the other´s as less retentive factors.</p>
+</section>
+<section id="what-the-model-does-not-capture" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-model-does-not-capture">5.3 what the model does not capture</h2>
+<p>The model with all variables only account for 75% so 25% cannot be explained by the model using the existing variables.<br>
+This is a regression model meaning it seeks linear correlations making it unable to capture none linear correlations for example if low bmi and high bmi has a high impact or old age does. There can also be many other factors that is not within this data set that affect the price such as known genetic problems that is not included in chronic_condition as some people might or might not consider genetics defects a chronic_condition. When they started the plan and if they paid for a 5 year plan with a price and the plan got more expansive later making newer customers pay more. Some empty variables were either filled with a assumed value or discarded which affects the result.</p>
+</section>
+<section id="what-improvements-could-have-been-made" class="level2">
+<h2 class="anchored" data-anchor-id="what-improvements-could-have-been-made">5.4 what improvements could have been made</h2>
+<p>I used a Linear model which cannot capture none linear correlations meaning that factors like Bmi or Age which can easily have a none linear correlation with charges by having a much higher charge rate for old age or high bmi. so excluding them fully and even dropping them could have been an ide. to not drop or add values for variables with no values but ignoring them not allowing any phantom data to enter. Get a more detailed or more relevant data set, to ignore data that should not affect the outcome such as sex, children, region, annual checkups and focus on the logical and variables that a linear model can explain such as smoker, chronic_condition, prior_claims and plan_type.</p>
+<p>#6) Självreflektion</p>
+</section>
+<section id="what-do-you-think-you-did-well-in-the-task" class="level2">
+<h2 class="anchored" data-anchor-id="what-do-you-think-you-did-well-in-the-task">6.1 What do you think you did well in the task?</h2>
+<p>I like my structure of using scripts and keeping the Rapport.qmd with as little code as possible.</p>
+</section>
+<section id="what-was-the-most-difficult" class="level2">
+<h2 class="anchored" data-anchor-id="what-was-the-most-difficult">6.2 What was the most difficult?</h2>
+<p>Reading the regression model and describing the summery. choosing the right visuals and tables. being worried i write to short summery then worried it´s too long and unsure if what i write make sense and has any value and if i´m writing the same thing several times. Deciding what should be in which script and giving it a good name and keeping a theme inside the script so they had a pattern. Making a variable that is useful and has any value even though i did not use them in the regression model as adding something like age_group and keeping age just add´s noise and a combined variable like risk_level has several variables and it felt better to keep the raw data then the summery of the data.</p>
+</section>
+<section id="which-grade-do-you-think-your-submission-corresponds-to-g-or-vg-briefly-justify-your-reasons-by-referring-to-which-requirements-of-the-assignment-you-think-you-have-met." class="level2">
+<h2 class="anchored" data-anchor-id="which-grade-do-you-think-your-submission-corresponds-to-g-or-vg-briefly-justify-your-reasons-by-referring-to-which-requirements-of-the-assignment-you-think-you-have-met.">6.3 &amp; 6.4 Which grade do you think your submission corresponds to, G or VG? Briefly justify your reasons by referring to which requirements of the assignment you think you have met.</h2>
+<p>Grade = G</p>
+<p>I´ve managed to take the data set given and clean it up as required and managed to get a model that makes sense and seem to do it´s job. added comment´s where it makes sense and explained what the result showed. Did relevant figures and tables that helped me get an ide and understand the data which i could use to make the regression model. Shown i can take what i´ve learnt before and translate it into R and use this new language and system to achieved similar results as in Python.</p>
+<hr>
+</section>
+</section>
+<section id="written-report" class="level1">
+<h1>Written report</h1>
+<hr>
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+<p>The purpose of this report is to do an analysis of which factors has a strong impact on the charges and if an regression model can be used as support for future pricing for client´s with similar situations.</p>
+<hr>
+</section>
+<section id="method" class="level2">
+<h2 class="anchored" data-anchor-id="method">Method</h2>
+<p>Used the given data and looked at it and cleaned it up to make it useful and impactful. Looked at the data and made a few figures and a table to easier visualize and understand the data so to help with making the regression model. done a Regression Linear Model using the variables from the cleaned data with charges as the target data and then seen which other variables affected charges.</p>
+<hr>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">smoker_boxplot</span>(df_add_column)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Marcus_Ar_Bast_Rappot_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This figure shows that smokers pay more then none smokers on average from the data set but also shows that none smoker as more outliers then smokers meaning that there are some other factor inside none smoker that make some pay a higher rate.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">col_age_group_by_charge</span>(df_add_column)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Marcus_Ar_Bast_Rappot_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This figure shows that majority of customers are around the age of 30-59 as both groups 30-44 and 45-59 are more or less equal.</p>
+<p>These two figures show that smoker is a strong indicator but not the only one for high charges and that people base on age dont pay much more showing that Age has an impact but from the age of 30-59 the cost is relatively even while under 30 and above 60 is relatively low. this means they either have less people in the age groups under 30 and above 60 or they are charged less.</p>
+<hr>
+</section>
+<section id="regression-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="regression-analysis">Regression Analysis</h2>
+<p>Top 5: - smoker : R2 = 0.4568 Adj.R2 = 0.4563 - chronic_condition : R2 = 0.1901 Adj.R2 = 0.1894 - age : R2 = 0.0667 Adj.R2 = 0.0658 - prior_accidents : R2 = 0.0596 Adj.R2 = 0.0587 - exercise_level : R2 = 0.0512 Adj.R2 = 0.0494</p>
+<p>These are the top 5 taken by how much they individually explained the amount charged given by the regression model which shows that smoker were the biggest and chronic_condition had a big impact while the rest had minor roles.</p>
+<p>the total R2 is 75% when all variables are added meaning that only 75% of the charges cost are represented in the data set and a whole 25% cannot be explained by the model base on the variables given.</p>
+<hr>
+</section>
+<section id="conclusions" class="level2">
+<h2 class="anchored" data-anchor-id="conclusions">Conclusions</h2>
+<p>Smoking is the highest cause for a higher charge cost with chronic condition after, the linear model could not find a high affect from the other variables alone but with smoker, age, bmi and chronic condition roughly 69% of the 75% could be explained making smoker and chronic condition the most important with bmi and age having a noticeable difference.</p>
+<p>So smoker´s pay more but there are other variables like chronic condition which also has a big impact on the rate people are charged, sex and children and region and the like have very low impact and bmi and age on their own has less of an impact while combining them with the two major factors they have a noticeable impact.</p>
+<p>The model can be used as a rough guide and an estimation but when applied to costumer the actual charge will have to be tweaked.</p>
+<hr>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">limitations</h2>
+<p>This report used an liner regression model which has a hard time picking up patterns that are none linear patterns in variables. and the model showed that the data only shows an estimated 75% of the reason for the charges it means that some other factors are responsible for 25% of the cost.</p>
+<p>Were not told what kind of insurance company it is or what their policies are. so the fact that having children did not show any impact on the data is fine if the company dont have any policies or are not aimed at family´s with children but if the company is an family insurance where they campaign for insurance for kids. the fact that the variable children had no impact would be an error or prove the data is flawed. So a limitation is not know the company well enough so i have to take all the data as correct and usable.</p>
+<hr>
+</section>
 </section>
 
 </main>
