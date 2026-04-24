@@ -345,12 +345,52 @@ The model assumes linear relationships between the predictors and charges.
 
 # 5) Tolkning och slutsatser
 
-
+## 5.1 which factors seem to have the clearest connection with costs
 Most Impactful Variables:
-- Smoker
-- Chronic_condition
-- Age
-- Bmi
+- Smoker: Most impactful alone it explain roughly 45% of the charges. 
+- Chronic_condition also very impactful alone it explains roughly 19% of the charges
+- Age impactful, alone it explain roughly 6% of the charges
+- Bmi alone bmi only stood for roughly 2% but when used with other variables it help explain more then the 2% it does alone.
+
+the 4 of them combined with the regression model explain roughly 69% of the charges and a model that includes every variable explains roughly 75% meaning that smoker and Chronic_condition together explain the majority of what the model can explain and adding age and bmi put´s it at roughly 69% which is only 6% less then they all combined explain.
+
+
+The model even with all the variable only get roughly 75% meaning a whole 25% cannot be explained by the data when looking at the charges.
+
+
+## 5.2 what the analysis shows
+
+The analysis shows that smoker is the major factor impacting charges with Chronic condition being second place. the other factors have a minor to no individual impact indicating the company view smoking and chronic condition as risk factors and the other´s as less retentive factors. 
+
+## 5.3 what the model does not capture
+
+The model with all variables only account for 75% so 25% cannot be explained by the model using the existing variables.   
+This is a regression model meaning it seeks linear correlations making it unable to capture none linear correlations for example if low bmi and high bmi has a high impact or old age does. 
+There can also be many other factors that is not within this data set that affect the price such as known genetic problems that is not included in chronic_condition  as some people might or might not consider genetics defects a chronic_condition. 
+When they started the plan and if they paid for a 5 year plan with a price and the plan got more expansive later making newer customers pay more. 
+Some empty variables were either filled with a assumed value or discarded which affects the result.
+
+## 5.4 what improvements could have been made
+
+I used a Linear model which cannot capture none linear correlations meaning that factors like Bmi or Age which can easily have a none linear correlation with charges by having a much higher charge rate for old age or high bmi. so excluding them fully and even dropping them could have been an ide. 
+to not drop or add values for variables with no values but ignoring them not allowing any phantom data to enter. 
+Get a more detailed or more relevant data set, to ignore data that should not affect the outcome such as sex, children, region, annual checkups and focus on the logical and variables that a linear model can explain such as smoker, chronic_condition, prior_claims and plan_type. 
+
+
+#6) Självreflektion
+
+## 6.1 What do you think you did well in the task?
+
+I like my structure of using scripts and keeping the Rapport.qmd with as little code as possible.
+
+
+
+
+
+
+
+
+
 
 
 

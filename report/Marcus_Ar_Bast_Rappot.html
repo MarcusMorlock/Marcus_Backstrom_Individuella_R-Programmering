@@ -240,7 +240,9 @@ $ charges           &lt;dbl&gt; 6439.10, 8274.06, 5190.99, 14500.35, 6534.40, 80
 <li>smoker: “yes” and “Yes”</li>
 <li>plan_type: “standard” and “Standard”, “premium” and “Premium”</li>
 </ul>
-<p>#2) Datastädning och förberedelse</p>
+</section>
+<section id="datastädning-och-förberedelse" class="level1">
+<h1>2) Datastädning och förberedelse</h1>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"../scripts/clean_data.R"</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df_clean <span class="ot">&lt;-</span> <span class="fu">clean_data</span>(df_raw)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -344,7 +346,9 @@ Levels: under 30 30-44 45-59 60 and above</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#print(unique(df_clean$prior_claims))</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>#2.1) Datastädning och förberedelse Clean up Removed the C from customer_id.</p>
+<section id="datastädning-och-förberedelse-clean-up" class="level2">
+<h2 class="anchored" data-anchor-id="datastädning-och-förberedelse-clean-up">2.1) Datastädning och förberedelse Clean up</h2>
+<p>Removed the C from customer_id.</p>
 <p>Made new Column:</p>
 <ul>
 <li>age_group age &lt; 30 = “under 30”, age &lt; 45 = “30-44”, age &lt; 60 = “45-59”, the rest = “60 and above”</li>
@@ -463,8 +467,11 @@ Levels: under weight normal weight over weight obese severely obese
 [1] low risk    high risk   medium risk
 Levels: low risk medium risk high risk</code></pre>
 </div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#write_csv(df_add_column, "../data/insurance_costs_cleaned_columns_added.csv")</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>#2.1) Datastädning och förberedelse Add columns</p>
+</section>
+<section id="datastädning-och-förberedelse-add-columns" class="level2">
+<h2 class="anchored" data-anchor-id="datastädning-och-förberedelse-add-columns">2.2) Datastädning och förberedelse Add columns</h2>
 <p>Added columns:</p>
 <ul>
 <li><p>bmi_category: bmi &lt; 18.5 = “under weight”, bmi &lt; 25 = “normal weight”, bmi &lt; 30 = “over weight”, bmi &lt; 35 = “obese”, the rest = “severely obese”.</p></li>
@@ -484,17 +491,319 @@ Levels: low risk medium risk high risk</code></pre>
 <li>low risk:</li>
 </ul>
 <p>Everyone not in high or medium risk are added here.</p>
-<p>Example of an comment. Here is the place i will write my comments and the report of - syfte - metod - resultat - regressionsanalys - slutsatser - begränsningar</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(df_clean)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># do all the above at once</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>df_fixed <span class="ot">&lt;-</span> <span class="fu">source</span>(<span class="st">"../scripts/load_clean_add_columns_df.R"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 1100 Columns: 14
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (7): customer_id, sex, region, smoker, chronic_condition, exercise_level...
+dbl (7): age, bmi, children, prior_accidents, prior_claims, annual_checkups,...
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 1,100
+Columns: 14
+$ customer_id       &lt;chr&gt; "C100000", "C100001", "C100002", "C100003", "C100004…
+$ age               &lt;dbl&gt; 48, 40, 50, 62, 39, 39, 63, 52, 36, 49, 36, 36, 45, …
+$ sex               &lt;chr&gt; "female", "male", "female", "male", "female", "femal…
+$ region            &lt;chr&gt; "east", "west", "south", "north", "east", "west", "e…
+$ bmi               &lt;dbl&gt; 24.8, 29.5, 18.3, 25.5, 27.3, 23.3, 23.9, 24.8, 28.6…
+$ children          &lt;dbl&gt; 0, 1, 2, 5, 2, 4, 3, 2, 0, 2, 2, 2, 1, 1, 1, 1, 0, 3…
+$ smoker            &lt;chr&gt; "no", "no", "no", "yes", "no", "no", "no", "no", "no…
+$ chronic_condition &lt;chr&gt; "no", "no", "no", "no", "no", "no", "no", "no", "yes…
+$ exercise_level    &lt;chr&gt; "high", "medium", "high", "medium", "medium", "high"…
+$ plan_type         &lt;chr&gt; "basic", "basic", "standard", "basic", "basic", "sta…
+$ prior_accidents   &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0…
+$ prior_claims      &lt;dbl&gt; 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 3, 0, 0, 0…
+$ annual_checkups   &lt;dbl&gt; 1, 4, 3, NA, 0, 2, 1, 2, 3, 2, 3, 3, 4, 4, 2, 1, 2, …
+$ charges           &lt;dbl&gt; 6439.10, 8274.06, 5190.99, 14500.35, 6534.40, 8026.3…
+      customer_id               age               sex            region 
+                0                 0                 0                 0 
+              bmi          children            smoker chronic_condition 
+               28                 0                 0                 0 
+   exercise_level         plan_type   prior_accidents      prior_claims 
+               22                 0                 0                 0 
+  annual_checkups           charges 
+               20                 0 
+Rows: 1,100
+Columns: 15
+$ customer_id       &lt;int&gt; 100000, 100001, 100002, 100003, 100004, 100005, 1000…
+$ age               &lt;int&gt; 48, 40, 50, 62, 39, 39, 63, 52, 36, 49, 36, 36, 45, …
+$ sex               &lt;fct&gt; female, male, female, male, female, female, female, …
+$ region            &lt;fct&gt; east, west, south, north, east, west, east, north, e…
+$ bmi               &lt;dbl&gt; 24.8, 29.5, 18.3, 25.5, 27.3, 23.3, 23.9, 24.8, 28.6…
+$ children          &lt;int&gt; 0, 1, 2, 5, 2, 4, 3, 2, 0, 2, 2, 2, 1, 1, 1, 1, 0, 3…
+$ smoker            &lt;lgl&gt; FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALS…
+$ chronic_condition &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FAL…
+$ exercise_level    &lt;fct&gt; high, medium, high, medium, medium, high, high, medi…
+$ plan_type         &lt;fct&gt; basic, basic, standard, basic, basic, standard, basi…
+$ prior_accidents   &lt;int&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0…
+$ prior_claims      &lt;int&gt; 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 3, 0, 0, 0…
+$ annual_checkups   &lt;int&gt; 1, 4, 3, 2, 0, 2, 1, 2, 3, 2, 3, 3, 4, 4, 2, 1, 2, 1…
+$ charges           &lt;dbl&gt; 6439.10, 8274.06, 5190.99, 14500.35, 6534.40, 8026.3…
+$ age_group         &lt;fct&gt; 45-59, 30-44, 45-59, 60 and above, 30-44, 30-44, 60 …
+      customer_id               age               sex            region 
+                0                 0                 0                 0 
+              bmi          children            smoker chronic_condition 
+                0                 0                 0                 0 
+   exercise_level         plan_type   prior_accidents      prior_claims 
+                0                 0                 0                 0 
+  annual_checkups           charges         age_group 
+                0                 0                 0 </code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="beskrivande-analys" class="level1">
+<h1>3) Beskrivande analys</h1>
+<section id="charge-by-age-group" class="level2">
+<h2 class="anchored" data-anchor-id="charge-by-age-group">3.1 Charge by age group</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"../save/images/col_age_group_by_charge.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Marcus_Ar_Bast_Rappot_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="../save/images/col_age_group_by_charge.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
+<p>The Figure shows 4 age groups:</p>
+<ul>
+<li>under 30</li>
+<li>30-40</li>
+<li>45-59</li>
+<li>60 and above</li>
+</ul>
+<p>under 30 and 60 and above are around the same are of roughly 1 400 000 while 30-40 are roughly at 4 500 000 and 45-59 are around 4 000 000.</p>
+<p>this shows that majority of the income comes from people around the age of 30-59.</p>
+</section>
+<section id="health-risk-level-summarize-charges" class="level2">
+<h2 class="anchored" data-anchor-id="health-risk-level-summarize-charges">3.2 Health Risk Level summarize charges</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"../scripts/tables.R"</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">health_risk_level_charges_summarize</span>(df_add_column)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 6
+  health_risk_level avg_charges median_charges min_charges max_charges     n
+  &lt;fct&gt;                   &lt;dbl&gt;          &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt; &lt;int&gt;
+1 low risk                7048.          7075.       1204.      14832    389
+2 medium risk             8143.          7863.       2364.      16621.   181
+3 high risk              12926.         12566.       1768.      32559.   530</code></pre>
+</div>
+</div>
+<p>There´s a clear trend where low risk pay less while medium risk pay more and high risk pays the highest.</p>
+<p>Charged Average: - low risk average charges: around 7050 - medium risk average charges: around 8150 - high risk average charges: around 12930</p>
+<p>High risk group has a high range from min charges (1767) and max charges (32559), both the mean (average) and median charges of the high risk groups are the highest. This indicate that the health_risk_level variable successfully captures important cost differences on average. however the low minimum value of high risk group suggest that some costumers may be classified wrong or should be charged more.</p>
+</section>
+<section id="smoker-charged" class="level2">
+<h2 class="anchored" data-anchor-id="smoker-charged">3.3 Smoker Charged</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"../save/images/smoker_charged_boxplot.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="../save/images/smoker_charged_boxplot.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This figure shows that on average smokers are charged more then none smokers but there are several cases of none smokers paying as high as smokers. Meaning that smoker pays more but there are other factors that makes people who dont smoke still get charged a high amount.</p>
+</section>
+<section id="charges-prior" class="level2">
+<h2 class="anchored" data-anchor-id="charges-prior">3.4 charges prior</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">charged_prior_checkup_table</span>(df_add_column)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 9
+  plan_type avg_charges min_charges max_charges median_charges avg_prior_claims
+  &lt;fct&gt;           &lt;dbl&gt;       &lt;dbl&gt;       &lt;dbl&gt;          &lt;dbl&gt;            &lt;dbl&gt;
+1 basic           9062.       1204.      23932           8093.            0.254
+2 standard       10228.       1535.      32559.          9132.            0.275
+3 premium        11244.       2069.      24718.         10342.            0.293
+# ℹ 3 more variables: avg_prior_accidents &lt;dbl&gt;, avg_annual_checkups &lt;dbl&gt;,
+#   n &lt;int&gt;</code></pre>
+</div>
+</div>
+<p>This table shows the average(mean) charges, prior_claims, prior_accident, annual_checkups for each plan_type.</p>
+<p>plan Types: - Basic - Standard - Premiums</p>
+<p>Charged: The average charge of each plan type is no all that large, while the min charge and max charge per plan type varied widely. an outlier is that the highest charge is an standard plan type and not premium.</p>
+<p>Prior: On average around 0.27 of costumers have prior claims and 0.24 have prior accidents, that means for every 4 costumer 1 will have made a claim.</p>
+<p>Annual Check up: Every plan type has slightly above 2 in their average annual check up. meaning on average everyone get at least one probably two checkups per year.</p>
+</section>
+</section>
+<section id="regressionsanalys" class="level1">
+<h1>4) Regressionsanalys</h1>
+<section id="regression-variable-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="regression-variable-analysis">4.1 Regression variable analysis</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"../scripts/regression.R"</span>)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>regression_tibble <span class="ot">&lt;-</span> <span class="fu">r2_adjr2_per_variable</span>(df_add_column)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>smoker             : R2 = 0.4568    Adj.R2 = 0.4563
+chronic_condition  : R2 = 0.1901    Adj.R2 = 0.1894
+age                : R2 = 0.0667    Adj.R2 = 0.0658
+prior_accidents    : R2 = 0.0596    Adj.R2 = 0.0587
+exercise_level     : R2 = 0.0512    Adj.R2 = 0.0494
+prior_claims       : R2 = 0.0330    Adj.R2 = 0.0321
+plan_type          : R2 = 0.0280    Adj.R2 = 0.0263
+bmi                : R2 = 0.0225    Adj.R2 = 0.0217
+annual_checkups    : R2 = 0.0037    Adj.R2 = 0.0028
+region             : R2 = 0.0020    Adj.R2 = -0.0007
+children           : R2 = 0.0010    Adj.R2 = 0.0001
+sex                : R2 = 0.0001    Adj.R2 = -0.0008</code></pre>
+</div>
+</div>
+<p>This function performs a univariate regression analysis (one predictor at a time) to examine the individual linear relationship between each variable and the target variable charges.</p>
+<p>Top 5: - smoker : R2 = 0.4568 Adj.R2 = 0.4563 - chronic_condition : R2 = 0.1901 Adj.R2 = 0.1894 - age : R2 = 0.0667 Adj.R2 = 0.0658 - prior_accidents : R2 = 0.0596 Adj.R2 = 0.0587 - exercise_level : R2 = 0.0512 Adj.R2 = 0.0494</p>
+<p>Bottom 5: - bmi : R2 = 0.0225 Adj.R2 = 0.0217 - annual_checkups : R2 = 0.0037 Adj.R2 = 0.0028 - region : R2 = 0.0020 Adj.R2 = -0.0007 - children : R2 = 0.0010 Adj.R2 = 0.0001 - sex : R2 = 0.0001 Adj.R2 = -0.0008</p>
+<p>Important: This Analysis only shows individual relationship between each variable and charges and not how they would perform together in a multiple regression model.Some variables may appear weak individually but can still contribute when combined with others. This Analysis can only be used as a first step for a variable selection.</p>
+</section>
+<section id="regression-model." class="level2">
+<h2 class="anchored" data-anchor-id="regression-model.">4.2 Regression model.</h2>
+<section id="top-5" class="level3">
+<h3 class="anchored" data-anchor-id="top-5">4.2.1 Top 5:</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">model_and_summary</span>(df_add_column, <span class="at">choice =</span> <span class="fu">c</span>(<span class="st">"smoker"</span>, <span class="st">"exercise_level"</span>, <span class="st">"chronic_condition"</span>, <span class="st">"prior_accidents"</span>, <span class="st">"age"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = reformulate(choice, target), data = df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-9081.6 -1724.7   -93.4  1492.2 18150.6 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)            3465.15     311.23  11.134  &lt; 2e-16 ***
+smokerTRUE             7298.87     197.73  36.913  &lt; 2e-16 ***
+exercise_levellow      1807.93     226.37   7.987 3.50e-15 ***
+exercise_levelmedium    824.04     202.20   4.075 4.93e-05 ***
+chronic_conditionTRUE  4096.01     177.19  23.116  &lt; 2e-16 ***
+prior_accidents        1256.24     152.36   8.245 4.70e-16 ***
+age                      70.64       6.20  11.393  &lt; 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 2509 on 1093 degrees of freedom
+Multiple R-squared:  0.7007,    Adjusted R-squared:  0.6991 
+F-statistic: 426.5 on 6 and 1093 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p>Taking the resulst from the Regression analysis (r2_adjr2_per_variable, funktion) i took the top 5 and did a model to see the results.</p>
+<p>Variables:</p>
+<p>Dependent variable: - charges</p>
+<p>Independent variables: - smoker - exercise_level - chornic_condition - prior_accidents - age</p>
+<p>Summery: - R-Squared = 0.7007 - Adjusted R-Squared = 0.6991</p>
+</section>
+<section id="swap-exercise_level-for-bmi" class="level3">
+<h3 class="anchored" data-anchor-id="swap-exercise_level-for-bmi">4.2.2 Swap exercise_level for bmi</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">model_and_summary</span>(df_add_column, <span class="at">choice =</span> <span class="fu">c</span>(<span class="st">"smoker"</span>, <span class="st">"bmi"</span>, <span class="st">"chronic_condition"</span>, <span class="st">"prior_accidents"</span>, <span class="st">"age"</span> ))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = reformulate(choice, target), data = df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-9632.9 -1616.2  -109.8  1531.3 18149.0 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)           -130.900    516.526  -0.253      0.8    
+smokerTRUE            7558.550    193.458  39.071   &lt;2e-16 ***
+bmi                    165.370     16.476  10.037   &lt;2e-16 ***
+chronic_conditionTRUE 4105.647    174.535  23.523   &lt;2e-16 ***
+prior_accidents       1259.372    150.075   8.392   &lt;2e-16 ***
+age                     69.483      6.111  11.370   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 2472 on 1094 degrees of freedom
+Multiple R-squared:  0.7093,    Adjusted R-squared:  0.708 
+F-statistic: 533.9 on 5 and 1094 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p>swapped out the variable exercise_level with bmi to see if bmi is a better variable and got a better R-squared then the top 5 model.</p>
+<p>Variables:</p>
+<p>Dependent variable: - charges</p>
+<p>Independent variables: - smoker - bmi - chornic_condition - prior_accidents - age</p>
+<p>Summery: - R-Squared = 0.7093 - Adjusted R-Squared = 0.708</p>
+</section>
+<section id="add-bmi" class="level3">
+<h3 class="anchored" data-anchor-id="add-bmi">4.2.3 Add bmi</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>final_model <span class="ot">&lt;-</span> <span class="fu">model_and_summary</span>(df_add_column, <span class="at">choice =</span> <span class="fu">c</span>(<span class="st">"smoker"</span>, <span class="st">"exercise_level"</span>, <span class="st">"chronic_condition"</span>, <span class="st">"prior_accidents"</span>, <span class="st">"age"</span>, <span class="st">"bmi"</span> ))</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>final_model</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = reformulate(choice, target), data = df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-9353.9 -1596.6  -143.7  1428.4 17535.6 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)           -482.883    514.850  -0.938 0.348497    
+smokerTRUE            7382.334    190.439  38.765  &lt; 2e-16 ***
+exercise_levellow     1575.147    219.183   7.186 1.23e-12 ***
+exercise_levelmedium   666.799    195.243   3.415 0.000661 ***
+chronic_conditionTRUE 4105.268    170.477  24.081  &lt; 2e-16 ***
+prior_accidents       1255.264    146.587   8.563  &lt; 2e-16 ***
+age                     68.093      5.971  11.403  &lt; 2e-16 ***
+bmi                    152.675     16.196   9.427  &lt; 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 2414 on 1092 degrees of freedom
+Multiple R-squared:  0.7232,    Adjusted R-squared:  0.7215 
+F-statistic: 407.7 on 7 and 1092 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p>for the final model as bmi increased the R-squared i added it and kept exercise_level and got the highest R-Squared result</p>
+<p>Variables:</p>
+<p>Dependent variable: - charges</p>
+<p>Independent variables: - smoker - exercise_level - chornic_condition - prior_accidents_ - bmi - age</p>
+<p>Summery: - R-Squared = 0.7232 - Adjusted R-Squared = 0.7215</p>
+<p>Result:</p>
+<p>This shows that the top 5 were a acceptable starting point but an variable like bmi that was at the bottom of the list where each variable were tested against charges is more useful then one in the top 5 when it´s in a multiple regression model.</p>
+<section id="interpretation-of-regression-model." class="level4">
+<h4 class="anchored" data-anchor-id="interpretation-of-regression-model.">4.2.3.1 interpretation of regression model.</h4>
+<p>interpretation:</p>
+<p>Final model explains 72.15% of the variation in insurance charges (Adjusted R-Squared = 0.7215). This indicates the model has reasonably good explanatory power.</p>
+<p>The coefficients:</p>
+<ul>
+<li><p>smoker: being a smoker increases the charges by 7382 on average with an std error of 190 which is barely 2% of the Estimated meaning it´s very precise.</p></li>
+<li><p>chronic_condition: having a chronic condition on average will cost a customer 4105 more and as an std error of 170 which like with smoker is low compared to the estimated making it precise.</p></li>
+<li><p>age: Each additional year of age is associated with an increase of 68 in charges.</p></li>
+<li><p>bmi: each unit in bmi adds on average 153 in charges.</p></li>
+<li><p>prior_accidents: each accident add on average 1255 in charges.</p></li>
+<li><p>exercise_level: compared to high exercise level, a low exercise level is associated with 1 575 higher in charge while medium is associated with 667 in charges.</p></li>
+</ul>
+<p>all of the above variables has high t value and low p value expect for exercise_level medium. which means they got a statistically significant impact.and even exercise_leve lmedium has an usable level of t and p value.</p>
+<p>which variables seem to be of most importance:</p>
+<p>smoker and chronic_condition has the highest impact on the model.</p>
+<p>whether the results seem reasonable:</p>
+<p>smoker and chronic_condition are both something that is logical and easy for an insurance company to look at and use for a reason to charge more. bmi and age can also be used and indicate health problems which require them to charge more. prior_accidents means there can be an assumption that they will have more and need to use the insurance. that exercise_level has an impact make sense but is harder as a company to motivate and use as a reason to charge more.</p>
+<p>what limitations exist in the model:</p>
+<p>it got a total of 0.72 meaning it can explain mathematically explain 72% of the variance in charges, meaning a whole 28% is not explained by the model. there are other factors that is not part of the data that can explain more or less charges and. There can be factors such as genetics or an area prone to disastrous that could change the charges. The model assumes linear relationships between the predictors and charges.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="tolkning-och-slutsatser" class="level1">
+<h1>5) Tolkning och slutsatser</h1>
+<p>Most Impactful Variables: - Smoker: Most impactful alone it explain roughly 45% of the charges. - Chronic_condition also very impactful alone it explains roughly 19% of the charges - Age impactful, alone it explain roughly 6% of the charges - Bmi alone bmi only stood for roughly 2% but when used with other variables it help explain more then the 2% it does alone.</p>
+<p>the 4 of them combined with the regression model explain roughly 69% of the charges and a model that includes every varaible explains roughly 75% meaning that smoker and chornic_condition together explain the majority of what the model can explain and adding age and bmi put´s it at roughly 69% which is only 6% less then they all combined explain.</p>
+<p>The model even with all the variable only get roughly 75% meaning a whole 25% cannot be explained by the data when looking at the charges.</p>
 </section>
 
 </main>
