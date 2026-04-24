@@ -128,7 +128,6 @@ df_fixed <- source("../scripts/load_clean_add_columns_df.R")
 
 ## 3.1  Charge by age group
 ```{r}
-
 knitr::include_graphics("../save/images/col_age_group_by_charge.png")
 ```
 
@@ -398,9 +397,83 @@ Grade = G
 I´ve managed to take the data set given and clean it up as required and managed to get a model that makes sense and seem to do it´s job. added comment´s where it makes sense and explained what the result showed. Did relevant figures and tables that helped me get an ide and understand the data which i could use to make the regression model.
 Shown i can take what i´ve learnt before and translate it into R and use this new language and system to achieved similar results as in Python. 
 
+--------------------------------------------------------------------------------------------------------
+
+# Written report
+
+----------------------
+
+## Purpose
+
+The purpose of this report is to do an analysis of which factors has a strong impact on the charges and if an regression model can be used as support for future pricing for client´s with similar situations.
+
+
+----------------------
+
+## Method
+
+Used the given data and looked at it and cleaned it up to make it useful and impactful.
+Looked at the data and made a few figures and a table to easier visualize and understand the data  so to help with making the regression model.
+done a Regression Linear Model using the variables from the cleaned data with charges as the target data and then seen which other variables affected charges.
+
+----------------------
+
+## Results
+
+```{r}
+knitr::include_graphics("../save/images/smoker_charged_boxplot.png")
+```
+
+This figure shows that smokers pay more then none smokers on average from the data set but also shows that none smoker as more outliers then smokers meaning that there are some other factor inside none smoker that make some pay a higher rate.
+
+```{r}
+knitr::include_graphics("../save/images/col_age_group_by_charge.png")
+```
+
+This figure shows that majority of customers are around the age of 30-59 as both groups 30-44 and 45-59 are more or less equal.
+
+These two figures show that smoker is a strong indicator but not the only one for high charges and that people base on age dont pay much more showing that Age has an impact but from the age of 30-59 the cost is relatively even while under 30 and above 60 is relatively low. this means they either have less people in the age groups under 30 and above 60 or they are charged less. 
 
 
 
+----------------------
+
+
+## Regression Analysis
+
+
+Top 5:
+- smoker             : R2 = 0.4568    Adj.R2 = 0.4563
+- chronic_condition  : R2 = 0.1901    Adj.R2 = 0.1894
+- age                : R2 = 0.0667    Adj.R2 = 0.0658
+- prior_accidents    : R2 = 0.0596    Adj.R2 = 0.0587
+- exercise_level     : R2 = 0.0512    Adj.R2 = 0.0494
+
+These are the top 5 taken by how much they individually explained the amount charged given by the regression model which shows that smoker were the biggest and chronic_condition had a big impact while the rest had minor roles.
+
+the total R2 is 75% when all variables are added meaning that only 75% of the charges cost are represented in the data set and a whole 25% cannot be explained by the model base on the variables given.
+
+----------------------
+
+
+## Conclusions
+
+Smoking is the highest cause for a higher charge cost with chronic condition after, the linear model could not find a high affect from the other variables alone but with smoker, age, bmi and chronic condition roughly 69% of the 75% could be explained making smoker and chronic condition the most important with bmi and age having a noticeable difference. 
+
+So smoker´s pay more but there are other variables like chronic condition which also has a big impact on the rate people are charged, sex and children and region and the like have very low impact and bmi and age on their own has less of an impact while combining them with the two major factors they have a noticeable impact.
+
+The model can be used as a rough guide and an estimation but when applied to costumer the actual charge will have to be tweaked.
+
+----------------------
+
+
+## limitations
+
+This report used an liner regression model which has a hard time picking up patterns that are none linear patterns in variables. and the model showed that the data only shows an estimated 75% of the reason for the charges it means that some other factors are responsible for 25% of the cost. 
+
+Were not told what kind of insurance company it is or what their policies are. so the fact that having children did not show any impact on the data is fine if the company dont have any policies or are not aimed at family´s with children but if the company is an family insurance where they campaign for insurance for kids. the fact that the variable children had no impact would be an error or prove the data is flawed. So a limitation is not know the company well enough so i have to take all the data as correct and usable. 
+
+----------------------
 
 
 
