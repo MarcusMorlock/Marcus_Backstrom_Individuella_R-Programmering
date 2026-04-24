@@ -384,6 +384,27 @@ Get a more detailed or more relevant data set, to ignore data that should not af
 I like my structure of using scripts and keeping the Rapport.qmd with as little code as possible.
 
 
+## 6.2 What was the most difficult?
+
+Reading the regression model and describing the summery. choosing the right visuals and tables.
+being worried i write to short summery then worried it´s too long and unsure if what i write make sense and has any value and if i´m writing the same thing several times. 
+Deciding what should be in which script and giving it a good name and keeping a theme inside the script so they had a pattern.
+Making a variable that is useful and has any value even though i did not use them in the regression model as adding something like age_group and keeping age just add´s noise and a combined variable like risk_level has several variables and it felt better to keep the raw data then the summery of the data. 
+
+## 6.3 & 6.4 Which grade do you think your submission corresponds to, G or VG? Briefly justify your reasons by referring to which requirements of the assignment you think you have met.
+
+Grade = G
+
+I´ve managed to take the data set given and clean it up as required and managed to get a model that makes sense and seem to do it´s job. added comment´s where it makes sense and explained what the result showed. Did relevant figures and tables that helped me get an ide and understand the data which i could use to make the regression model.
+Shown i can take what i´ve learnt before and translate it into R and use this new language and system to achieved similar results as in Python. 
+
+
+
+
+
+
+
+
 
 
 
