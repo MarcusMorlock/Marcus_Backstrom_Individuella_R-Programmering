@@ -1,3 +1,4 @@
+# Create bmi category based into 5 different categories
 bmi_category <- function(df) {
   df_add_bmi_category<- df %>% 
     mutate(
@@ -13,6 +14,8 @@ bmi_category <- function(df) {
   return(df_add_bmi_category)
 }
 
+
+# Create a risk level category based on smoker and chronic_condition and the bmi category.
 health_risk_level <- function(df) {
   df_add_health_risk_level <- df %>%
     mutate(

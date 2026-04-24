@@ -1,3 +1,5 @@
+
+#Clean the data and stream line it. Also creates age_group category putting them into 4 groups.
 clean_data <- function(df) {
   df_clean <- df %>% 
     mutate(

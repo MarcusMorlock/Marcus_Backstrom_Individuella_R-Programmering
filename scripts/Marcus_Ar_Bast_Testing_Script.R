@@ -1,3 +1,4 @@
+# Experimentation hell 
 
 df_fixed <- load_data("data/insurance_costs_cleaned_columns_added.csv")
 source("scripts/load_data.R")

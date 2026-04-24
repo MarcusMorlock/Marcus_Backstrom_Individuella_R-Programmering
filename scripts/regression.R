@@ -1,4 +1,5 @@
 
+# removes the self made categories and customer id and return the r squared and adj r squared for each variable in data frame.
 
 r2_adjr2_per_variable <- function(df) {
   predicts <- setdiff(names(df), c("customer_id","charges", "age_group", "bmi_category", "health_risk_level"))
@@ -31,6 +32,7 @@ r2_adjr2_per_variable <- function(df) {
   
 }
 
+# make a quick summery with multiple variables with charges as default target.
 model_and_summary <- function(df, target = "charges", choice = "") {
   choice <- str_trim(choice, side = "both")
   model_test_summary <- lm(reformulate(choice, target), data = df)

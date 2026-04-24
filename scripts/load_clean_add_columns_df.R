@@ -1,3 +1,5 @@
+# attempt at speeding up and doing them all at once.
+
 source("../scripts/load_data.R")
 
 source("../scripts/clean_data.R")

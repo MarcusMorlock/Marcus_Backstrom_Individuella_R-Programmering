@@ -13,6 +13,7 @@ library(tidyverse)
 #   
 # }
 
+# Create a bar of charges based on age groups.
 col_age_group_by_charge <- function(df) {
   col_ageGroup_by_charge <- ggplot(df, aes(x = age_group, y = charges)) +
     geom_col() +
@@ -26,6 +27,7 @@ col_age_group_by_charge <- function(df) {
 
 }
 
+# Create a box plot of smokers based on charges.
 smoker_boxplot <- function(df) {
   df %>% 
     mutate(

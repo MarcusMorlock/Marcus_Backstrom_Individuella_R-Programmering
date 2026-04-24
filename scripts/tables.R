@@ -1,4 +1,4 @@
-
+# Create a quick summery table of health risk using charges mean, median, min , max.
 health_risk_level_charges_summarize <- function(df) {
   df %>% 
     group_by(health_risk_level) %>% 
@@ -11,6 +11,7 @@ health_risk_level_charges_summarize <- function(df) {
     )
 }
 
+# create a quick summery of plan_type based on charges, prior_claims, prior_accidents_ annual_checkups.
 charged_prior_checkup_table <- function(df) {
   df %>% 
     mutate(plan_type = factor(plan_type, levels = c("basic", "standard", "premium"))) %>% 

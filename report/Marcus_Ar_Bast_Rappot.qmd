@@ -10,7 +10,10 @@ source("../scripts/")
 source("../scripts/load_data.R")
 source("../scripts/utility.R")
 
+# Read csv and turn it into a data frame
 df_raw <- load_data("../data/insurance_costs.csv")
+
+#look at the data but skip customer_id in unique 
 look_at_data(df_raw,skip_col = "customer_id")
 
 ```
@@ -38,7 +41,10 @@ inconsistent capitalization:
 
 ```{r}
 source("../scripts/clean_data.R")
+# Clean the data frame and create age_group variable which puts ages into 4 groups.
 df_clean <- clean_data(df_raw)
+
+#look at data again.
 look_at_data(df_clean)
 ```
 ## 2.1) Datastädning och förberedelse Clean up
@@ -81,8 +87,14 @@ From char to logic:
 
 ```{r}
 source("../scripts/add_column.R")
+
+#Create bmi_category
 df_add_column <- bmi_category(df_clean)
+
+#Create health_risk_level
 df_add_column <- health_risk_level(df_add_column)
+
+#look again.
 look_at_data(df_add_column)
 ```
 ## 2.2) Datastädning och förberedelse Add columns
@@ -121,6 +133,8 @@ Everyone not in high or medium risk are added here.
 ## 3.1  Charge by age group
 ```{r}
 source("../scripts/figure.R")
+
+#create bar chart for age group by charges
 col_age_group_by_charge(df_add_column)
 ```
 
@@ -142,6 +156,8 @@ this shows that majority of the income comes from people around the age of 30-59
 ## 3.2 Health Risk Level summarize charges
 ```{r}
 source("../scripts/tables.R")
+
+#Create summery of risk_level by charges with avg, median, min , max.
 health_risk_level_charges_summarize(df_add_column)
 ```
 There´s a clear trend where low risk pay less while medium risk pay more and high risk pays the highest.
@@ -155,6 +171,7 @@ High risk group has a high range from min charges (1767) and max charges (32559)
 
 ## 3.3 Smoker Charged
 ```{r}
+# smoker box plot by charges.
 smoker_boxplot(df_add_column)
 ```
 This figure shows that on average smokers are charged more then none smokers but there are several cases of none smokers paying as high as smokers. Meaning that smoker pays more but there are other factors that makes people who dont smoke still get charged a high amount.
@@ -164,7 +181,7 @@ This figure shows that on average smokers are charged more then none smokers but
 
 ## 3.4 charges prior
 ```{r}
-
+# plan type summery with charges, prior claims , annual checkup and prior accidents.
 charged_prior_checkup_table(df_add_column)
 
 ```
@@ -191,6 +208,8 @@ Every plan type has slightly above 2 in their average annual check up. meaning o
 
 ```{r}
 source("../scripts/regression.R")
+
+# List of the r2 value of each variable against charges individually.
 regression_tibble <- r2_adjr2_per_variable(df_add_column)
 
 ```
@@ -222,6 +241,7 @@ This Analysis can only be used as a first step for a variable selection.
 ### 4.2.1 Top 5:
 
 ```{r}
+# regression model based on target = charges and choices. excluding bmi_category, age_group, health_risk_level.
 model_and_summary(df_add_column, choice = c("smoker", "exercise_level", "chronic_condition", "prior_accidents", "age"))
 
 ```
@@ -247,6 +267,7 @@ Summery:
 
 ### 4.2.2 Swap exercise_level for bmi
 ```{r}
+# regression model based on target = charges and choices. excluding bmi_category, age_group, health_risk_level.
 model_and_summary(df_add_column, choice = c("smoker", "bmi", "chronic_condition", "prior_accidents", "age" ))
 ```
 swapped out the variable exercise_level with bmi to see if bmi is a better variable and got a better R-squared then the top 5 model.
@@ -270,6 +291,7 @@ Summery:
 
 ### 4.2.3 Add bmi
 ```{r}
+# regression model based on target = charges and choices. excluding bmi_category, age_group, health_risk_level.
 final_model <- model_and_summary(df_add_column, choice = c("smoker", "exercise_level", "chronic_condition", "prior_accidents", "age", "bmi" ))
 final_model
 ```
