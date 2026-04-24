@@ -40,7 +40,6 @@ inconsistent capitalization:
 source("../scripts/clean_data.R")
 df_clean <- clean_data(df_raw)
 look_at_data(df_clean)
-#print(unique(df_clean$prior_claims))
 ```
 ## 2.1) Datastädning och förberedelse Clean up
 Removed the C from customer_id.
@@ -85,7 +84,6 @@ source("../scripts/add_column.R")
 df_add_column <- bmi_category(df_clean)
 df_add_column <- health_risk_level(df_add_column)
 look_at_data(df_add_column)
-#write_csv(df_add_column, "../data/insurance_costs_cleaned_columns_added.csv")
 ```
 ## 2.2) Datastädning och förberedelse Add columns
 
@@ -116,12 +114,6 @@ people who are older and dont exercise tend to also have poorer health and harde
 - low risk:
 
 Everyone not in high or medium risk are added here.
-
-```{r}
-# do all the above at once
-df_fixed <- source("../scripts/load_clean_add_columns_df.R")
-```
-
 
 # 3) Beskrivande analys
 
